@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#193e34">
+    <title>Royal · Lector de storyboards</title>
+    <link rel="stylesheet" href="./styles.css">
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar" id="sidebar" aria-label="Índice de storyboards">
+        <div class="sidebar-top">
+          <div class="brand-mark" aria-hidden="true">R</div>
+          <div>
+            <p class="eyebrow">Archivo visual</p>
+            <h1>Royal</h1>
+          </div>
+          <button class="icon-button sidebar-close" id="closeSidebar" type="button" aria-label="Cerrar índice">×</button>
+        </div>
+        <p class="sidebar-intro">Una historia, lámina a lámina.</p>
+        <nav id="contents" aria-label="Capítulos y secuencias"></nav>
+        <div class="sidebar-bottom">
+          <span class="sidebar-dot" aria-hidden="true"></span>
+          <span>Las versiones actuales se abren por defecto.</span>
+        </div>
+      </aside>
+
+      <button class="sidebar-scrim" id="sidebarScrim" type="button" aria-label="Cerrar índice" hidden></button>
+
+      <main class="main-content">
+        <header class="topbar">
+          <button class="icon-button menu-button" id="openSidebar" type="button" aria-label="Abrir índice" aria-controls="sidebar" aria-expanded="false">☰</button>
+          <div class="topbar-title">
+            <span class="topbar-overline">Lector de storyboards</span>
+            <strong id="topChapter">Cargando capítulo…</strong>
+          </div>
+          <div class="topbar-actions">
+            <button class="text-button" id="resetVersions" type="button" title="Volver a la versión actual de cada secuencia" disabled>Ver actuales</button>
+            <button class="icon-button" id="fullscreenButton" type="button" aria-label="Pantalla completa" title="Pantalla completa">⛶</button>
+          </div>
+        </header>
+
+        <section class="reader" aria-label="Página del storyboard">
+          <div class="reader-heading">
+            <div class="reader-heading-text">
+              <p class="eyebrow" id="sectionType">Secuencia</p>
+              <h2 id="sectionTitle">Preparando el lector…</h2>
+              <p class="section-subtitle" id="sectionSubtitle"></p>
+            </div>
+            <div class="version-control">
+              <label for="versionSelect">Versión de esta secuencia</label>
+              <select id="versionSelect" disabled></select>
+            </div>
+          </div>
+
+          <div class="version-note" id="versionNote" role="status" hidden></div>
+          <div class="error-note" id="errorNote" role="alert" hidden></div>
+
+          <div class="book" id="book">
+            <button class="page-arrow previous" id="previousPage" type="button" aria-label="Página anterior" title="Página anterior" disabled>‹</button>
+            <figure class="sheet-frame">
+              <button class="sheet-open" id="openZoom" type="button" aria-label="Ampliar lámina" title="Ampliar lámina">
+                <img id="sheetImage" alt="" decoding="async">
+                <span class="image-loading" id="imageLoading">Cargando lámina…</span>
+              </button>
+              <figcaption class="sheet-caption">
+                <span id="sheetLabel">Lámina</span>
+                <span class="caption-zoom" aria-hidden="true">⌕ Ampliar</span>
+              </figcaption>
+            </figure>
+            <button class="page-arrow next" id="nextPage" type="button" aria-label="Página siguiente" title="Página siguiente" disabled>›</button>
+          </div>
+
+          <div class="reading-footer">
+            <div class="page-position">
+              <strong id="sectionPosition">Lámina 1 de 1</strong>
+              <span id="overallPosition">Página 1 de 1</span>
+            </div>
+            <div class="progress-track" aria-label="Progreso de lectura"><div class="progress-fill" id="progressFill"></div></div>
+            <p class="keyboard-hint">← → pasar página · pulsa la imagen para ampliarla</p>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <dialog class="zoom-dialog" id="zoomDialog" aria-label="Lámina ampliada">
+      <div class="zoom-topbar">
+        <strong id="zoomTitle">Lámina</strong>
+        <div class="zoom-actions">
+          <button type="button" id="zoomOut" aria-label="Reducir imagen">−</button>
+          <span id="zoomLevel">100 %</span>
+          <button type="button" id="zoomIn" aria-label="Ampliar imagen">+</button>
+          <button class="zoom-close" type="button" id="closeZoom" aria-label="Cerrar imagen ampliada">×</button>
+        </div>
+      </div>
+      <div class="zoom-scroll" id="zoomScroll"><img id="zoomImage" alt=""></div>
+    </dialog>
+  </body>
+</html>
