@@ -63,6 +63,7 @@
             <figure class="sheet-frame">
               <button class="sheet-open" id="openZoom" type="button" aria-label="Ampliar lámina" title="Ampliar lámina">
                 <img id="sheetImage" alt="" decoding="async">
+                <span class="pin-layer" id="sheetPins" aria-hidden="true"></span>
                 <span class="image-loading" id="imageLoading">Cargando lámina…</span>
               </button>
               <figcaption class="sheet-caption">
@@ -81,6 +82,18 @@
             <div class="progress-track" aria-label="Progreso de lectura"><div class="progress-fill" id="progressFill"></div></div>
             <p class="keyboard-hint">← → pasar página · pulsa la imagen para ampliarla</p>
           </div>
+          <section class="notes-section" aria-label="Notas del storyboard">
+            <div class="notes-heading">
+              <div><p class="eyebrow">Comentarios</p><h3>Notas de esta lámina <span id="noteCount">0</span></h3></div>
+              <div class="notes-actions">
+                <button class="text-button" id="addNote" type="button">Añadir nota</button>
+                <button class="text-button" id="viewAllNotes" type="button">Ver todas</button>
+              </div>
+            </div>
+            <p class="notes-help" id="notesHelp">Pulsa «Añadir nota» y después toca el punto de la imagen que quieras comentar. No hace falta registrarse.</p>
+            <p class="notes-status" id="notesStatus" role="status"></p>
+            <div class="note-list" id="noteList"></div>
+          </section>
         </section>
       </main>
     </div>
@@ -95,7 +108,24 @@
           <button class="zoom-close" type="button" id="closeZoom" aria-label="Cerrar imagen ampliada">×</button>
         </div>
       </div>
-      <div class="zoom-scroll" id="zoomScroll"><img id="zoomImage" alt=""></div>
+      <div class="zoom-scroll" id="zoomScroll"><div class="zoom-canvas" id="zoomCanvas"><img id="zoomImage" alt=""><span class="zoom-pin-layer" id="zoomPins" aria-hidden="true"></span></div></div>
+    </dialog>
+    <dialog class="note-dialog" id="noteDialog" aria-labelledby="noteDialogTitle">
+      <form id="noteForm" method="dialog">
+        <div class="note-dialog-heading"><h2 id="noteDialogTitle">Nueva nota</h2><button class="icon-button" id="cancelNote" type="button" aria-label="Cerrar">×</button></div>
+        <p>La nota quedará visible para quienes abran este storyboard.</p>
+        <label for="noteAuthor">Nombre (opcional)</label>
+        <input id="noteAuthor" maxlength="40" autocomplete="name" placeholder="Anónimo">
+        <label for="noteBody">Tu comentario</label>
+        <textarea id="noteBody" maxlength="1000" rows="5" required placeholder="¿Qué cambiarías en este punto?"></textarea>
+        <input id="noteWebsite" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" class="honeypot">
+        <p class="notes-status" id="noteFormStatus" role="status"></p>
+        <div class="note-dialog-actions"><button class="text-button" id="cancelNoteBottom" type="button">Cancelar</button><button class="primary-button" id="saveNote" type="submit">Guardar nota</button></div>
+      </form>
+    </dialog>
+    <dialog class="all-notes-dialog" id="allNotesDialog" aria-labelledby="allNotesTitle">
+      <div class="all-notes-header"><div><p class="eyebrow">Royal</p><h2 id="allNotesTitle">Todas las notas</h2></div><button class="icon-button" id="closeAllNotes" type="button" aria-label="Cerrar">×</button></div>
+      <div class="all-notes-list" id="allNotesList"></div>
     </dialog>
   </body>
 </html>
