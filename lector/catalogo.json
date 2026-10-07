@@ -1,5 +1,5 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "title": "Royal",
   "chapters": [
     {
@@ -15,27 +15,15 @@
             {
               "id": "v1",
               "label": "Primera versión",
-              "pages": [
-                { "label": "Lámina A", "image": "../Capitulo_1/E1_S1_A.png" },
-                { "label": "Lámina B", "image": "../Capitulo_1/E1_S1_B.png" },
-                { "label": "Lámina C", "image": "../Capitulo_1/E1_S1_C.png" }
-              ]
+              "manifest": "Capitulo_1/storyboards/E1_S1/v1/manifest.json"
             },
             {
               "id": "v2",
-              "pages": [
-                { "label": "Lámina A", "image": "../Capitulo_1/E1_S1_A_v2.png" },
-                { "label": "Lámina B", "image": "../Capitulo_1/E1_S1_B_v2.png" },
-                { "label": "Lámina C", "image": "../Capitulo_1/E1_S1_C_v2.png" }
-              ]
+              "manifest": "Capitulo_1/storyboards/E1_S1/v2/manifest.json"
             },
             {
               "id": "v3",
-              "pages": [
-                { "label": "Lámina A", "image": "../Capitulo_1/E1_S1_A_v3.png" },
-                { "label": "Lámina B", "image": "../Capitulo_1/E1_S1_B_v3.png" },
-                { "label": "Lámina C", "image": "../Capitulo_1/E1_S1_C_v3.png" }
-              ]
+              "manifest": "Capitulo_1/storyboards/E1_S1/v3/manifest.json"
             }
           ]
         },
@@ -46,9 +34,7 @@
           "versions": [
             {
               "id": "v1",
-              "pages": [
-                { "label": "Planos 1–9", "image": "../Capitulo_1/E1_S2_La_Idea_Peligrosa_Storyboard_v1.png" }
-              ]
+              "manifest": "Capitulo_1/storyboards/E1_S2/v1/manifest.json"
             }
           ]
         },
@@ -60,15 +46,11 @@
           "versions": [
             {
               "id": "v2",
-              "pages": [
-                { "label": "Fundido de rostros", "image": "../Capitulo_1/E1_S2_S3_Empalme_Storyboard_v2.png" }
-              ]
+              "manifest": "Capitulo_1/storyboards/E1_TRANSICION_S2_S3/v2/manifest.json"
             },
             {
               "id": "v3",
-              "pages": [
-                { "label": "Fundido de rostros", "image": "../Capitulo_1/E1_S2_S3_Empalme_Storyboard_v3.png" }
-              ]
+              "manifest": "Capitulo_1/storyboards/E1_TRANSICION_S2_S3/v3/manifest.json"
             }
           ]
         },
@@ -82,23 +64,15 @@
               "label": "Desayuno anterior",
               "status": "historical",
               "note": "Esta versión cuenta una presentación anterior de Royal; la historia cambió después.",
-              "pages": [
-                { "label": "Desayuno", "image": "../Capitulo_1/E1_S3_Desayuno_Storyboard_v1.png" }
-              ]
+              "manifest": "Capitulo_1/storyboards/E1_S3/v1/manifest.json"
             },
             {
               "id": "v2",
-              "pages": [
-                { "label": "Lámina A · Planos 1–8", "image": "../Capitulo_1/E1_S3_La_Noche_A_v2.png" },
-                { "label": "Lámina B · Planos 9–16", "image": "../Capitulo_1/E1_S3_La_Noche_B_v2.png" }
-              ]
+              "manifest": "Capitulo_1/storyboards/E1_S3/v2/manifest.json"
             },
             {
               "id": "v3",
-              "pages": [
-                { "label": "Lámina A · Planos 1–8", "image": "../Capitulo_1/E1_S3_La_Noche_A_v3.png" },
-                { "label": "Lámina B · Planos 9–16", "image": "../Capitulo_1/E1_S3_La_Noche_B_v3.png" }
-              ]
+              "manifest": "Capitulo_1/storyboards/E1_S3/v3/manifest.json"
             }
           ]
         },
@@ -109,17 +83,11 @@
           "versions": [
             {
               "id": "v1",
-              "pages": [
-                { "label": "Lámina A · Planos 1–6", "image": "../Capitulo_1/E1_S4_Amanecer_y_Camino_A_v1.png" },
-                { "label": "Lámina B · Planos 7–10", "image": "../Capitulo_1/E1_S4_Amanecer_y_Camino_B_v1.png" }
-              ]
+              "manifest": "Capitulo_1/storyboards/E1_S4/v1/manifest.json"
             },
             {
               "id": "v2",
-              "pages": [
-                { "label": "Lámina A · Planos 1–6", "image": "../Capitulo_1/E1_S4_Amanecer_y_Camino_A_v2.png" },
-                { "label": "Lámina B · Planos 7–10", "image": "../Capitulo_1/E1_S4_Amanecer_y_Camino_B_v2.png" }
-              ]
+              "manifest": "Capitulo_1/storyboards/E1_S4/v2/manifest.json"
             }
           ]
         }

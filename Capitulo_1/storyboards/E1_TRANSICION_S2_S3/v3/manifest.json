@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_TRANSICION_S2_S3",
+  "versionId": "v3",
+  "panels": [
+    {
+      "id": "E1_TRANSICION_S2_S3_v3_001",
+      "shotId": "TR-01",
+      "title": "El abuelo",
+      "image": "Capitulo_1/storyboards/E1_TRANSICION_S2_S3/v3/paneles/TR-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_S3_Empalme_Storyboard_v3.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          14,
+          62,
+          748,
+          394
+        ]
+      }
+    },
+    {
+      "id": "E1_TRANSICION_S2_S3_v3_002",
+      "shotId": "TR-02",
+      "title": "Cenital",
+      "image": "Capitulo_1/storyboards/E1_TRANSICION_S2_S3/v3/paneles/TR-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_S3_Empalme_Storyboard_v3.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          774,
+          62,
+          748,
+          394
+        ]
+      }
+    },
+    {
+      "id": "E1_TRANSICION_S2_S3_v3_003",
+      "shotId": "TR-03",
+      "title": "Fundido de rostros",
+      "image": "Capitulo_1/storyboards/E1_TRANSICION_S2_S3/v3/paneles/TR-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_S3_Empalme_Storyboard_v3.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          14,
+          519,
+          748,
+          433
+        ]
+      }
+    },
+    {
+      "id": "E1_TRANSICION_S2_S3_v3_004",
+      "shotId": "TR-04",
+      "title": "Royal",
+      "image": "Capitulo_1/storyboards/E1_TRANSICION_S2_S3/v3/paneles/TR-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_S3_Empalme_Storyboard_v3.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          774,
+          519,
+          748,
+          433
+        ]
+      }
+    }
+  ]
+}

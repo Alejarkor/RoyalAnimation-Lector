@@ -1,543 +1,122 @@
 "use strict";
 
-const ui = {
-  contents: document.getElementById("contents"),
-  topChapter: document.getElementById("topChapter"),
-  sectionType: document.getElementById("sectionType"),
-  sectionTitle: document.getElementById("sectionTitle"),
-  sectionSubtitle: document.getElementById("sectionSubtitle"),
-  versionSelect: document.getElementById("versionSelect"),
-  versionNote: document.getElementById("versionNote"),
-  errorNote: document.getElementById("errorNote"),
-  book: document.getElementById("book"),
-  image: document.getElementById("sheetImage"),
-  imageLoading: document.getElementById("imageLoading"),
-  sheetLabel: document.getElementById("sheetLabel"),
-  sectionPosition: document.getElementById("sectionPosition"),
-  overallPosition: document.getElementById("overallPosition"),
-  progressFill: document.getElementById("progressFill"),
-  previous: document.getElementById("previousPage"),
-  next: document.getElementById("nextPage"),
-  resetVersions: document.getElementById("resetVersions"),
-  fullscreen: document.getElementById("fullscreenButton"),
-  sidebar: document.getElementById("sidebar"),
-  sidebarScrim: document.getElementById("sidebarScrim"),
-  openSidebar: document.getElementById("openSidebar"),
-  closeSidebar: document.getElementById("closeSidebar"),
-  openZoom: document.getElementById("openZoom"),
-  zoomDialog: document.getElementById("zoomDialog"),
-  zoomTitle: document.getElementById("zoomTitle"),
-  zoomImage: document.getElementById("zoomImage"),
-  zoomLevel: document.getElementById("zoomLevel"),
-  zoomIn: document.getElementById("zoomIn"),
-  zoomOut: document.getElementById("zoomOut"),
-  closeZoom: document.getElementById("closeZoom"),
-  sheetPins: document.getElementById("sheetPins"),
-  zoomPins: document.getElementById("zoomPins"),
-  zoomCanvas: document.getElementById("zoomCanvas"),
-  addNote: document.getElementById("addNote"),
-  viewAllNotes: document.getElementById("viewAllNotes"),
-  notesHelp: document.getElementById("notesHelp"),
-  notesStatus: document.getElementById("notesStatus"),
-  noteCount: document.getElementById("noteCount"),
-  noteList: document.getElementById("noteList"),
-  noteDialog: document.getElementById("noteDialog"),
-  noteForm: document.getElementById("noteForm"),
-  noteAuthor: document.getElementById("noteAuthor"),
-  noteBody: document.getElementById("noteBody"),
-  noteWebsite: document.getElementById("noteWebsite"),
-  noteFormStatus: document.getElementById("noteFormStatus"),
-  saveNote: document.getElementById("saveNote"),
-  cancelNote: document.getElementById("cancelNote"),
-  cancelNoteBottom: document.getElementById("cancelNoteBottom"),
-  allNotesDialog: document.getElementById("allNotesDialog"),
-  allNotesList: document.getElementById("allNotesList"),
-  closeAllNotes: document.getElementById("closeAllNotes")
-};
-
+const $ = (id) => document.getElementById(id);
+const ui = Object.fromEntries(["sidebar","scrim","contents","resetVersions","toggleSidebar","closeSidebar","chapterTitle","sectionTitle","versionSelect","panelCount","themeToggle","openNotes","noteCount","fullscreen","versionNote","errorNote","readingArea","panelGrid","previousPage","nextPage","pagePosition","zoomDialog","zoomTitle","sourceLink","zoomOut","zoomLevel","zoomIn","closeZoom","zoomScroll","zoomCanvas","zoomImage","zoomPins","notesDialog","closeNotes","notesTitle","addNote","allNotes","notesStatus","notesList","noteDialog","noteTitle","noteForm","noteAuthor","noteBody","noteWebsite","noteFormStatus","cancelNote","cancelNoteBottom","saveNote"].map((id) => [id,$(id)]));
 const notesApi = "https://royal-notas-storyboard.alejarkor.chatgpt.site/api/notes";
-let notes = [];
-let noteMode = false;
-let notePosition = null;
+const asset = (path) => new URL(`../${path}`, document.baseURI).href;
+const validCount = [1,2,4,6];
+const storedCount = Number(localStorage.getItem("royal.panelCount"));
+let panelCount = validCount.includes(storedCount) ? storedCount : 2;
+let catalog, pages = [], currentPage = 0, notes = [], entries = [], selectedVersions = {}, noteMode = false, noteTarget = null, zoomPanel = null, zoomScale = 1;
 
-function imageKey(entry) {
-  return entry.page.image.replace(/^\.\.\//, "");
+function setTheme(theme) {
+  document.documentElement.dataset.theme = theme;
+  ui.themeToggle.textContent = theme === "dark" ? "☀" : "☾";
+  ui.themeToggle.setAttribute("aria-label", theme === "dark" ? "Cambiar a tema claro" : "Cambiar a tema oscuro");
+  document.querySelector('meta[name="theme-color"]').content = theme === "dark" ? "#151820" : "#f5f1e9";
+  localStorage.setItem("royal.theme", theme);
 }
+setTheme(localStorage.getItem("royal.theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
+ui.panelCount.value = String(panelCount);
 
-function noteDate(note) {
-  return new Intl.DateTimeFormat("es-ES", { dateStyle: "medium", timeStyle: "short" }).format(note.created_at);
-}
-
-function imageArea(image) {
-  const rect = image.getBoundingClientRect();
-  const ratio = image.naturalWidth / image.naturalHeight;
-  const width = Math.min(rect.width, rect.height * ratio);
-  const height = width / ratio;
-  return { left: rect.left + (rect.width - width) / 2, top: rect.top + (rect.height - height) / 2, width, height };
-}
-
-function pointOnImage(event, image) {
-  const area = imageArea(image);
-  const x = (event.clientX - area.left) / area.width;
-  const y = (event.clientY - area.top) / area.height;
-  if (x < 0 || x > 1 || y < 0 || y > 1) return null;
-  return { x: Math.round(x * 10000), y: Math.round(y * 10000) };
-}
-
-function renderPins() {
-  ui.sheetPins.replaceChildren();
-  ui.zoomPins.replaceChildren();
-  const entry = readingPages[currentIndex];
-  if (!entry || !ui.image.naturalWidth) return;
-  const pageNotes = notes.filter((note) => note.image === imageKey(entry));
-  const area = imageArea(ui.image);
-  const parent = ui.openZoom.getBoundingClientRect();
-  ui.sheetPins.style.left = `${area.left - parent.left}px`;
-  ui.sheetPins.style.top = `${area.top - parent.top}px`;
-  ui.sheetPins.style.width = `${area.width}px`;
-  ui.sheetPins.style.height = `${area.height}px`;
-  for (const [index, note] of pageNotes.entries()) {
-    for (const layer of [ui.sheetPins, ui.zoomPins]) {
-      const pin = document.createElement("span");
-      pin.className = "note-pin";
-      pin.style.left = `${note.x / 100}%`;
-      pin.style.top = `${note.y / 100}%`;
-      pin.textContent = String(index + 1);
-      pin.title = `${note.author}: ${note.body}`;
-      layer.append(pin);
+function selectedVersion(section) { return section.versions.find((version) => version.id === (selectedVersions[section.id] || section.currentVersion)); }
+function rebuildPages() {
+  pages = [];
+  for (const chapter of catalog.chapters) for (const section of chapter.sections) {
+    const version = selectedVersion(section);
+    for (let start = 0; start < version.panels.length; start += panelCount) {
+      pages.push({chapter,section,version,start,panels:version.panels.slice(start,start + panelCount)});
     }
   }
 }
-
-function renderNotes() {
-  const entry = readingPages[currentIndex];
-  if (!entry) return;
-  const pageNotes = notes.filter((note) => note.image === imageKey(entry));
-  ui.noteCount.textContent = String(pageNotes.length);
-  ui.noteList.replaceChildren();
-  if (!pageNotes.length) {
-    const empty = document.createElement("p");
-    empty.className = "notes-empty";
-    empty.textContent = "Todavía no hay notas en esta lámina.";
-    ui.noteList.append(empty);
-  }
-  for (const [index, note] of pageNotes.entries()) {
-    const card = document.createElement("article");
-    card.className = "note-card";
-    const marker = document.createElement("span");
-    marker.className = "note-card-marker";
-    marker.textContent = String(index + 1);
-    const content = document.createElement("div");
-    const meta = document.createElement("strong");
-    meta.textContent = `${note.author} · ${noteDate(note)}`;
-    const body = document.createElement("p");
-    body.textContent = note.body;
-    content.append(meta, body);
-    card.append(marker, content);
-    ui.noteList.append(card);
-  }
-  renderPins();
+function findPage(sectionId,panelIndex=0) {
+  const index = pages.findIndex((page) => page.section.id === sectionId && panelIndex >= page.start && panelIndex < page.start + page.panels.length);
+  return index < 0 ? 0 : index;
 }
-
-async function loadNotes() {
-  ui.notesStatus.textContent = "Cargando notas…";
-  try {
-    const loaded = [];
-    let hasMore = true;
-    while (hasMore) {
-      const response = await fetch(`${notesApi}?offset=${loaded.length}`, { cache: "no-store" });
-      if (!response.ok) throw new Error();
-      const data = await response.json();
-      if (!Array.isArray(data.notes)) throw new Error();
-      loaded.push(...data.notes);
-      hasMore = data.hasMore === true && data.notes.length > 0;
-    }
-    notes = loaded;
-    ui.notesStatus.textContent = "";
-    renderNotes();
-  } catch {
-    ui.notesStatus.textContent = "No se pudieron cargar las notas. Pulsa «Ver todas» para reintentarlo.";
-  }
+function setSidebar(open) {
+  document.querySelector(".app").classList.toggle("sidebar-hidden",!open);
+  ui.toggleSidebar.setAttribute("aria-expanded",String(open));
+  ui.scrim.hidden = !open || innerWidth > 900;
+  localStorage.setItem("royal.sidebar",open ? "open" : "closed");
 }
-
-function setNoteMode(enabled) {
-  noteMode = enabled;
-  ui.addNote.classList.toggle("is-active", enabled);
-  ui.addNote.textContent = enabled ? "Cancelar nota" : "Añadir nota";
-  ui.openZoom.classList.toggle("is-note-mode", enabled);
-  ui.notesHelp.textContent = enabled
-    ? "Toca la imagen en el punto que quieras comentar."
-    : "Pulsa «Añadir nota» y después toca el punto de la imagen que quieras comentar. No hace falta registrarse.";
-}
-
-function startNote(event, image) {
-  if (!noteMode) return false;
-  const point = pointOnImage(event, image);
-  if (!point) return true;
-  notePosition = point;
-  ui.noteFormStatus.textContent = "";
-  if (ui.zoomDialog.open) ui.zoomDialog.close();
-  ui.noteDialog.showModal();
-  ui.noteBody.focus();
-  return true;
-}
-
-function navigateToNote(note) {
-  for (const chapter of catalog.chapters) {
-    for (const section of chapter.sections) {
-      for (const version of section.versions) {
-        const pageIndex = version.pages.findIndex((page) => page.image.replace(/^\.\.\//, "") === note.image);
-        if (pageIndex < 0) continue;
-        if (version.id === section.currentVersion) delete selectedVersions[section.id];
-        else selectedVersions[section.id] = version.id;
-        rebuildReadingPages();
-        showPage(findSectionPage(chapter.id, section.id, pageIndex));
-        ui.allNotesDialog.close();
-        window.scrollTo({ top: 0, behavior: "smooth" });
-        return;
-      }
-    }
-  }
-}
-
-function renderAllNotes() {
-  ui.allNotesList.replaceChildren();
-  if (!notes.length) {
-    const empty = document.createElement("p");
-    empty.className = "notes-empty";
-    empty.textContent = "Todavía no hay notas.";
-    ui.allNotesList.append(empty);
-  }
-  for (const note of notes) {
-    const button = document.createElement("button");
-    button.type = "button";
-    button.className = "all-note";
-    const name = document.createElement("strong");
-    name.textContent = `${note.image.split("/").pop()} · ${note.author}`;
-    const body = document.createElement("span");
-    body.textContent = note.body;
-    const date = document.createElement("small");
-    date.textContent = noteDate(note);
-    button.append(name, body, date);
-    button.addEventListener("click", () => navigateToNote(note));
-    ui.allNotesList.append(button);
-  }
-}
-
-let catalog;
-let readingPages = [];
-let currentIndex = 0;
-let selectedVersions = {};
-let imageRequest = 0;
-let zoomScale = 1;
-let zoomBaseWidth = 900;
-let swipeStart = null;
-
-function selectedVersion(section) {
-  const id = selectedVersions[section.id] || section.currentVersion;
-  return section.versions.find((version) => version.id === id);
-}
-
-function rebuildReadingPages() {
-  readingPages = [];
-  for (const chapter of catalog.chapters) {
-    for (const section of chapter.sections) {
-      const version = selectedVersion(section);
-      version.pages.forEach((page, pageIndex) => {
-        readingPages.push({ chapter, section, version, page, pageIndex });
-      });
-    }
-  }
-}
-
-function findSectionPage(chapterId, sectionId, pageIndex = 0) {
-  const matches = readingPages
-    .map((entry, index) => ({ entry, index }))
-    .filter(({ entry }) => entry.chapter.id === chapterId && entry.section.id === sectionId);
-  if (!matches.length) return 0;
-  return matches[Math.min(pageIndex, matches.length - 1)].index;
-}
-
-function chapterTitle(chapter) {
-  return `Capítulo ${chapter.number} · ${chapter.title}`;
-}
+setSidebar(localStorage.getItem("royal.sidebar") !== "closed" && innerWidth > 900);
 
 function renderContents() {
   ui.contents.replaceChildren();
-  const active = readingPages[currentIndex];
-
   for (const chapter of catalog.chapters) {
-    const group = document.createElement("div");
-    group.className = "chapter-group";
-
-    const number = document.createElement("p");
-    number.className = "chapter-heading";
-    number.textContent = `Capítulo ${chapter.number}`;
-    group.append(number);
-
-    const title = document.createElement("p");
-    title.className = "chapter-name";
-    title.textContent = chapter.title;
-    group.append(title);
-
-    chapter.sections.forEach((section, position) => {
-      const version = selectedVersion(section);
-      const button = document.createElement("button");
-      button.type = "button";
-      button.className = "toc-section";
-      button.setAttribute("aria-current", String(active?.section.id === section.id));
-
-      const order = document.createElement("span");
-      order.className = "toc-number";
-      order.textContent = String(position + 1).padStart(2, "0");
-      const text = document.createElement("span");
-      text.className = "toc-text";
-      text.textContent = section.title;
-      const count = document.createElement("span");
-      count.className = "toc-count";
-      count.textContent = String(version.pages.length);
-
-      button.append(order, text, count);
-      button.addEventListener("click", () => {
-        showPage(findSectionPage(chapter.id, section.id));
-        setSidebarOpen(false);
-      });
-      group.append(button);
+    const label = document.createElement("p"); label.className="chapter-label"; label.textContent=`Capítulo ${chapter.number} · ${chapter.title}`; ui.contents.append(label);
+    chapter.sections.forEach((section,i) => {
+      const button=document.createElement("button"); button.type="button"; button.className=`toc${pages[currentPage]?.section.id===section.id ? " active" : ""}`;
+      const number=document.createElement("span"); number.textContent=String(i+1).padStart(2,"0");
+      const title=document.createElement("span"); title.textContent=section.title;
+      const count=document.createElement("small"); count.textContent=String(selectedVersion(section).panels.length);
+      button.append(number,title,count); button.addEventListener("click",()=>{showPage(findPage(section.id));if(innerWidth<=900)setSidebar(false);}); ui.contents.append(button);
     });
-
-    ui.contents.append(group);
   }
+  ui.resetVersions.disabled=Object.keys(selectedVersions).length===0;
 }
-
-function renderVersionSelector(entry) {
-  const { section, version } = entry;
+function renderVersion(page) {
   ui.versionSelect.replaceChildren();
-
-  for (const optionVersion of section.versions) {
-    const option = document.createElement("option");
-    option.value = optionVersion.id;
-    const suffix = optionVersion.id === section.currentVersion ? " · Actual" : "";
-    option.textContent = `${optionVersion.id}${optionVersion.label ? ` · ${optionVersion.label}` : ""}${suffix}`;
-    ui.versionSelect.append(option);
-  }
-
-  ui.versionSelect.value = version.id;
-  ui.versionSelect.disabled = section.versions.length < 2;
-  ui.versionNote.hidden = version.id === section.currentVersion;
-  if (!ui.versionNote.hidden) {
-    ui.versionNote.textContent = version.note
-      ? `Versión anterior. ${version.note}`
-      : "Estás viendo una versión anterior de esta secuencia.";
-  }
-  ui.resetVersions.disabled = Object.keys(selectedVersions).length === 0;
+  for(const version of page.section.versions){const option=document.createElement("option");option.value=version.id;option.textContent=`${version.id}${version.id===page.section.currentVersion ? " · Actual" : version.label ? ` · ${version.label}` : ""}`;ui.versionSelect.append(option);}
+  ui.versionSelect.value=page.version.id;ui.versionSelect.disabled=page.section.versions.length<2;
+  ui.versionNote.hidden=page.version.id===page.section.currentVersion;
+  ui.versionNote.textContent=page.version.note || "Estás viendo una versión anterior de esta secuencia.";
 }
-
-function showError(message) {
-  ui.errorNote.textContent = message;
-  ui.errorNote.hidden = false;
+function mappedNote(note) {
+  const direct=entries.find((entry)=>entry.panel.id===note.image);
+  if(direct)return {...direct,note,x:note.x,y:note.y};
+  for(const entry of entries){const source=entry.panel.source;if(!source||source.sheet!==note.image)continue;
+    const [left,top,width,height]=source.rect,[sheetWidth,sheetHeight]=source.size;
+    const px=note.x*sheetWidth/10000,py=note.y*sheetHeight/10000;
+    if(px>=left&&px<=left+width&&py>=top&&py<=top+height)return {...entry,note,x:Math.round((px-left)/width*10000),y:Math.round((py-top)/height*10000)};
+  }
+  return null;
 }
-
-function showPage(index, animate = true) {
-  if (!readingPages.length) return;
-  currentIndex = Math.max(0, Math.min(index, readingPages.length - 1));
-  const entry = readingPages[currentIndex];
-  const { chapter, section, version, page, pageIndex } = entry;
-
-  ui.errorNote.hidden = true;
-  ui.topChapter.textContent = chapterTitle(chapter);
-  ui.sectionType.textContent = section.kind === "transition" ? "Transición" : "Secuencia";
-  ui.sectionTitle.textContent = section.title;
-  ui.sectionSubtitle.textContent = `${chapterTitle(chapter)} · ${version.pages.length} ${version.pages.length === 1 ? "lámina" : "láminas"}`;
-  ui.sheetLabel.textContent = `${page.label} · ${version.id}`;
-  ui.sectionPosition.textContent = `Lámina ${pageIndex + 1} de ${version.pages.length}`;
-  ui.overallPosition.textContent = `Página ${currentIndex + 1} de ${readingPages.length}`;
-  ui.progressFill.style.width = `${((currentIndex + 1) / readingPages.length) * 100}%`;
-  ui.previous.disabled = currentIndex === 0;
-  ui.next.disabled = currentIndex === readingPages.length - 1;
-  renderVersionSelector(entry);
-  renderContents();
-
-  if (ui.zoomDialog.open) ui.zoomDialog.close();
-  const request = ++imageRequest;
-  ui.imageLoading.hidden = false;
-  ui.image.style.visibility = "hidden";
-  ui.image.alt = `${chapterTitle(chapter)}, ${section.title}, ${page.label}, versión ${version.id}`;
-  ui.image.onload = () => {
-    if (request !== imageRequest) return;
-    ui.imageLoading.hidden = true;
-    ui.image.style.visibility = "visible";
-    renderPins();
-  };
-  ui.image.onerror = () => {
-    if (request !== imageRequest) return;
-    ui.imageLoading.hidden = true;
-    showError(`No se pudo abrir ${page.label}. Comprueba la ruta de la imagen en el catálogo.`);
-  };
-  ui.image.src = new URL(page.image, document.baseURI).href;
-  ui.sheetPins.replaceChildren();
-  renderNotes();
-  setNoteMode(false);
-
-  if (animate) {
-    ui.book.classList.remove("page-turn");
-    void ui.book.offsetWidth;
-    ui.book.classList.add("page-turn");
+function notesFor(panel) {return notes.map(mappedNote).filter((mapped)=>mapped?.panel.id===panel.id);}
+function imageArea(image){const rect=image.getBoundingClientRect();const ratio=image.naturalWidth/image.naturalHeight;if(!ratio)return null;const width=Math.min(rect.width,rect.height*ratio),height=width/ratio;return {left:rect.left+(rect.width-width)/2,top:rect.top+(rect.height-height)/2,width,height};}
+function pointOnImage(event,image){const area=imageArea(image);if(!area)return null;const x=(event.clientX-area.left)/area.width,y=(event.clientY-area.top)/area.height;return x<0||x>1||y<0||y>1?null:{x:Math.round(x*10000),y:Math.round(y*10000)};}
+function drawPins(container,image,panel){container.replaceChildren();const area=imageArea(image);if(!area)return;const parent=container.getBoundingClientRect();for(const [index,mapped] of notesFor(panel).entries()){const pin=document.createElement("button");pin.type="button";pin.className="pin";pin.textContent=String(index+1);pin.title=`${mapped.note.author}: ${mapped.note.body}`;pin.style.left=`${area.left-parent.left+mapped.x/10000*area.width}px`;pin.style.top=`${area.top-parent.top+mapped.y/10000*area.height}px`;pin.addEventListener("click",(event)=>{event.stopPropagation();ui.allNotes.checked=false;renderNotes(panel.id);ui.notesDialog.showModal();});container.append(pin);}}
+function renderVisiblePins(){for(const art of ui.panelGrid.querySelectorAll(".panel-art")){const panel=entries.find((entry)=>entry.panel.id===art.dataset.panelId)?.panel;if(panel)drawPins(art.querySelector(".pin-layer"),art.querySelector("img"),panel);}if(ui.zoomDialog.open&&zoomPanel)drawPins(ui.zoomPins,ui.zoomImage,zoomPanel);}
+function renderPanels(page){ui.panelGrid.replaceChildren();ui.panelGrid.dataset.count=String(panelCount);ui.panelGrid.style.setProperty("--rows",String(Math.ceil(page.panels.length/(panelCount<=2?panelCount:2))));
+  for(const panel of page.panels){const figure=document.createElement("figure");figure.className="panel";const art=document.createElement("div");art.className=`panel-art${noteMode?" note-mode":""}`;art.dataset.panelId=panel.id;
+    const image=document.createElement("img");image.src=asset(panel.image);image.alt=`${panel.shotId}: ${panel.title}`;image.loading="eager";image.decoding="async";image.addEventListener("load",renderVisiblePins);image.addEventListener("error",()=>{ui.errorNote.hidden=false;ui.errorNote.textContent=`No se pudo abrir ${panel.shotId}.`;});
+    const pins=document.createElement("div");pins.className="pin-layer";art.append(image,pins);
+    art.addEventListener("click",(event)=>{if(noteMode){const point=pointOnImage(event,image);if(point)beginNote(panel,point);}else openZoom(panel,image);});
+    const caption=document.createElement("figcaption");caption.className="panel-meta";const id=document.createElement("strong");id.textContent=panel.shotId;const title=document.createElement("span");title.textContent=panel.title;caption.append(id,title);figure.append(art,caption);ui.panelGrid.append(figure);
   }
 }
-
-function changeVersion(versionId) {
-  const entry = readingPages[currentIndex];
-  if (!entry) return;
-  if (versionId === entry.section.currentVersion) {
-    delete selectedVersions[entry.section.id];
-  } else {
-    selectedVersions[entry.section.id] = versionId;
-  }
-  rebuildReadingPages();
-  showPage(findSectionPage(entry.chapter.id, entry.section.id, entry.pageIndex));
+function showPage(index){if(!pages.length)return;currentPage=Math.max(0,Math.min(index,pages.length-1));const page=pages[currentPage];ui.chapterTitle.textContent=`Capítulo ${page.chapter.number} · ${page.chapter.title}`;ui.sectionTitle.textContent=page.section.title;ui.pagePosition.textContent=`Página ${currentPage+1} de ${pages.length} · ${page.start+1}–${page.start+page.panels.length} de ${page.version.panels.length}`;ui.previousPage.disabled=currentPage===0;ui.nextPage.disabled=currentPage===pages.length-1;renderVersion(page);renderContents();renderPanels(page);ui.noteCount.textContent=String(page.panels.reduce((sum,panel)=>sum+notesFor(panel).length,0));ui.readingArea.scrollIntoView({block:"start"});}
+function setNoteMode(enabled){noteMode=enabled;ui.addNote.classList.toggle("active",enabled);ui.addNote.textContent=enabled?"Cancelar nota":"Añadir nota";for(const art of ui.panelGrid.querySelectorAll(".panel-art"))art.classList.toggle("note-mode",enabled);}
+function beginNote(panel,point){noteTarget={panel,point};ui.noteTitle.textContent=`Nueva nota · ${panel.shotId}`;ui.noteFormStatus.textContent="";if(ui.zoomDialog.open)ui.zoomDialog.close();if(ui.notesDialog.open)ui.notesDialog.close();ui.noteDialog.showModal();ui.noteBody.focus();}
+function openZoom(panel,image){zoomPanel=panel;zoomScale=1;ui.zoomTitle.textContent=`${panel.shotId} · ${panel.title}`;ui.zoomImage.src=image.src;ui.zoomImage.alt=image.alt;ui.sourceLink.href=asset(panel.source.sheet);ui.sourceLink.hidden=!panel.source;ui.zoomDialog.showModal();ui.zoomImage.onload=()=>{updateZoom();renderVisiblePins();};if(ui.zoomImage.complete)updateZoom();}
+function updateZoom(){if(!zoomPanel)return;const width=zoomPanel.source?.rect[2]||ui.zoomImage.naturalWidth||800;ui.zoomCanvas.style.width=`${Math.max(200,Math.min(width,innerWidth*.88))*zoomScale}px`;ui.zoomLevel.textContent=`${Math.round(zoomScale*100)} %`;ui.zoomOut.disabled=zoomScale<=.75;ui.zoomIn.disabled=zoomScale>=3;requestAnimationFrame(renderVisiblePins);}
+function noteDate(note){return new Intl.DateTimeFormat("es-ES",{dateStyle:"medium",timeStyle:"short"}).format(note.created_at);}
+function navigateToNote(mapped){if(!mapped)return;selectedVersions[mapped.section.id]=mapped.version.id===mapped.section.currentVersion?undefined:mapped.version.id;if(!selectedVersions[mapped.section.id])delete selectedVersions[mapped.section.id];rebuildPages();showPage(findPage(mapped.section.id,mapped.index));ui.notesDialog.close();}
+function renderNotes(panelId=null){ui.notesList.replaceChildren();const visibleIds=new Set(pages[currentPage]?.panels.map((panel)=>panel.id)||[]);const mapped=notes.map(mappedNote).filter((item)=>item&&(ui.allNotes.checked||(panelId?item.panel.id===panelId:visibleIds.has(item.panel.id))));ui.notesTitle.textContent=ui.allNotes.checked?`Todas las notas (${mapped.length})`:panelId?`Notas de ${entries.find((entry)=>entry.panel.id===panelId)?.panel.shotId||"viñeta"}`:`Notas de esta página`;
+  if(!mapped.length){const empty=document.createElement("p");empty.className="status";empty.textContent="Todavía no hay notas aquí.";ui.notesList.append(empty);return;}
+  for(const item of mapped){const button=document.createElement("button");button.className="note-item";button.type="button";const head=document.createElement("strong");head.textContent=`${item.panel.shotId} · ${item.note.author}`;const body=document.createElement("p");body.textContent=item.note.body;const date=document.createElement("small");date.textContent=noteDate(item.note);button.append(head,body,date);button.addEventListener("click",()=>navigateToNote(item));ui.notesList.append(button);}
 }
+async function loadNotes(){ui.notesStatus.textContent="Cargando notas…";try{const loaded=[];let more=true;while(more){const response=await fetch(`${notesApi}?offset=${loaded.length}`,{cache:"no-store"});if(!response.ok)throw Error();const data=await response.json();loaded.push(...data.notes);more=data.hasMore===true&&data.notes.length>0;}notes=loaded;ui.notesStatus.textContent="";renderVisiblePins();if(pages.length)showPage(currentPage);if(ui.notesDialog.open)renderNotes();}catch{ui.notesStatus.textContent="No se pudieron cargar las notas. Inténtalo de nuevo.";}}
+async function loadCatalog(){try{const response=await fetch("./catalogo.json",{cache:"no-store"});if(!response.ok)throw Error(`Catálogo: ${response.status}`);catalog=await response.json();if(catalog.schemaVersion!==2)throw Error("Versión de catálogo incompatible.");
+    for(const chapter of catalog.chapters)for(const section of chapter.sections)for(const version of section.versions){const file=await fetch(asset(version.manifest),{cache:"no-store"});if(!file.ok)throw Error(`Falta ${version.manifest}`);const manifest=await file.json();version.panels=manifest.panels;version.panels.forEach((panel,index)=>entries.push({chapter,section,version,panel,index}));}
+    rebuildPages();showPage(0);loadNotes();
+  }catch(error){ui.sectionTitle.textContent="No se pudo abrir el lector";ui.errorNote.hidden=false;ui.errorNote.textContent=`${error.message} Abre Abrir_Lector_Royal.cmd desde la carpeta del proyecto.`;}}
 
-function resetVersions() {
-  const entry = readingPages[currentIndex];
-  selectedVersions = {};
-  rebuildReadingPages();
-  showPage(findSectionPage(entry.chapter.id, entry.section.id, entry.pageIndex));
-}
-
-function setSidebarOpen(open) {
-  ui.sidebar.classList.toggle("is-open", open);
-  ui.sidebarScrim.hidden = !open;
-  ui.openSidebar.setAttribute("aria-expanded", String(open));
-}
-
-function updateZoom() {
-  ui.zoomImage.style.width = `${Math.round(zoomBaseWidth * zoomScale)}px`;
-  ui.zoomCanvas.style.width = ui.zoomImage.style.width;
-  ui.zoomLevel.textContent = `${Math.round(zoomScale * 100)} %`;
-  ui.zoomOut.disabled = zoomScale <= 0.75;
-  ui.zoomIn.disabled = zoomScale >= 3;
-}
-
-function openZoom() {
-  if (!ui.image.complete || !ui.image.naturalWidth) return;
-  const entry = readingPages[currentIndex];
-  zoomScale = 1;
-  ui.zoomTitle.textContent = `${entry.section.title} · ${entry.page.label} · ${entry.version.id}`;
-  ui.zoomImage.src = ui.image.src;
-  ui.zoomImage.alt = ui.image.alt;
-  const availableWidth = Math.max(300, window.innerWidth * 0.96 - 65);
-  const availableHeight = Math.max(220, window.innerHeight * 0.96 - 105);
-  zoomBaseWidth = Math.min(ui.image.naturalWidth, availableWidth, availableHeight * ui.image.naturalWidth / ui.image.naturalHeight);
-  updateZoom();
-  ui.zoomDialog.showModal();
-  renderPins();
-}
-
-async function loadCatalog() {
-  try {
-    const response = await fetch("./catalogo.json", { cache: "no-store" });
-    if (!response.ok) throw new Error(`El catálogo devolvió ${response.status}.`);
-    catalog = await response.json();
-    if (!Array.isArray(catalog.chapters) || !catalog.chapters.length) {
-      throw new Error("El catálogo no contiene capítulos.");
-    }
-    rebuildReadingPages();
-    if (!readingPages.length) throw new Error("El catálogo no contiene láminas.");
-    showPage(0, false);
-    loadNotes();
-  } catch (error) {
-    ui.sectionTitle.textContent = "No se pudo abrir el lector";
-    ui.imageLoading.hidden = true;
-    showError(`${error.message} Abre el archivo Abrir_Lector_Royal.cmd desde la carpeta del proyecto.`);
-  }
-}
-
-ui.previous.addEventListener("click", () => showPage(currentIndex - 1));
-ui.next.addEventListener("click", () => showPage(currentIndex + 1));
-ui.versionSelect.addEventListener("change", (event) => changeVersion(event.target.value));
-ui.resetVersions.addEventListener("click", resetVersions);
-ui.openSidebar.addEventListener("click", () => setSidebarOpen(true));
-ui.closeSidebar.addEventListener("click", () => setSidebarOpen(false));
-ui.sidebarScrim.addEventListener("click", () => setSidebarOpen(false));
-ui.openZoom.addEventListener("click", (event) => {
-  if (startNote(event, ui.image)) return;
-  openZoom();
-});
-ui.zoomCanvas.addEventListener("click", (event) => startNote(event, ui.zoomImage));
-ui.addNote.addEventListener("click", () => setNoteMode(!noteMode));
-ui.viewAllNotes.addEventListener("click", async () => {
-  await loadNotes();
-  renderAllNotes();
-  ui.allNotesDialog.showModal();
-});
-ui.closeAllNotes.addEventListener("click", () => ui.allNotesDialog.close());
-ui.cancelNote.addEventListener("click", () => ui.noteDialog.close());
-ui.cancelNoteBottom.addEventListener("click", () => ui.noteDialog.close());
-ui.noteForm.addEventListener("submit", async (event) => {
-  event.preventDefault();
-  const entry = readingPages[currentIndex];
-  if (!entry || !notePosition) return;
-  ui.saveNote.disabled = true;
-  ui.noteFormStatus.textContent = "Guardando…";
-  try {
-    const response = await fetch(notesApi, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ image: imageKey(entry), ...notePosition, author: ui.noteAuthor.value, body: ui.noteBody.value, website: ui.noteWebsite.value })
-    });
-    const data = await response.json();
-    if (!response.ok) throw new Error(data.error || "No se pudo guardar la nota.");
-    notes.unshift(data.note);
-    ui.noteBody.value = "";
-    ui.noteDialog.close();
-    ui.notesStatus.textContent = "Nota guardada. Ya se puede ver desde otros dispositivos.";
-    setNoteMode(false);
-    renderNotes();
-  } catch (error) {
-    ui.noteFormStatus.textContent = error.message || "No se pudo guardar. Vuelve a intentarlo.";
-  } finally {
-    ui.saveNote.disabled = false;
-  }
-});
-window.addEventListener("resize", () => renderPins());
-ui.closeZoom.addEventListener("click", () => ui.zoomDialog.close());
-ui.zoomDialog.addEventListener("click", (event) => {
-  if (event.target === ui.zoomDialog) ui.zoomDialog.close();
-});
-ui.zoomIn.addEventListener("click", () => { zoomScale = Math.min(3, Math.round((zoomScale + 0.25) * 100) / 100); updateZoom(); });
-ui.zoomOut.addEventListener("click", () => { zoomScale = Math.max(0.75, Math.round((zoomScale - 0.25) * 100) / 100); updateZoom(); });
-ui.fullscreen.addEventListener("click", async () => {
-  try {
-    if (document.fullscreenElement) await document.exitFullscreen();
-    else await document.documentElement.requestFullscreen();
-  } catch {
-    showError("Este navegador no permite activar la pantalla completa aquí.");
-  }
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape") setSidebarOpen(false);
-  if (ui.zoomDialog.open || ui.noteDialog.open || ui.allNotesDialog.open || !catalog ||
-      event.target instanceof HTMLSelectElement || event.target instanceof HTMLInputElement ||
-      event.target instanceof HTMLTextAreaElement) return;
-  if (event.key === "ArrowRight") { event.preventDefault(); showPage(currentIndex + 1); }
-  if (event.key === "ArrowLeft") { event.preventDefault(); showPage(currentIndex - 1); }
-  if (event.key === "Home") { event.preventDefault(); showPage(0); }
-  if (event.key === "End") { event.preventDefault(); showPage(readingPages.length - 1); }
-});
-
-ui.book.addEventListener("touchstart", (event) => {
-  const touch = event.changedTouches[0];
-  swipeStart = { x: touch.clientX, y: touch.clientY };
-}, { passive: true });
-ui.book.addEventListener("touchend", (event) => {
-  if (!swipeStart || !catalog) return;
-  const touch = event.changedTouches[0];
-  const dx = touch.clientX - swipeStart.x;
-  const dy = touch.clientY - swipeStart.y;
-  swipeStart = null;
-  if (Math.abs(dx) < 65 || Math.abs(dx) < Math.abs(dy) * 1.5) return;
-  showPage(currentIndex + (dx < 0 ? 1 : -1));
-}, { passive: true });
-
+ui.toggleSidebar.addEventListener("click",()=>setSidebar(document.querySelector(".app").classList.contains("sidebar-hidden")));ui.closeSidebar.addEventListener("click",()=>setSidebar(false));ui.scrim.addEventListener("click",()=>setSidebar(false));
+ui.previousPage.addEventListener("click",()=>showPage(currentPage-1));ui.nextPage.addEventListener("click",()=>showPage(currentPage+1));
+ui.panelCount.addEventListener("change",()=>{const page=pages[currentPage];panelCount=Number(ui.panelCount.value);localStorage.setItem("royal.panelCount",String(panelCount));rebuildPages();showPage(findPage(page.section.id,page.start));});
+ui.versionSelect.addEventListener("change",()=>{const page=pages[currentPage];selectedVersions[page.section.id]=ui.versionSelect.value===page.section.currentVersion?undefined:ui.versionSelect.value;if(!selectedVersions[page.section.id])delete selectedVersions[page.section.id];rebuildPages();showPage(findPage(page.section.id,Math.min(page.start,selectedVersion(page.section).panels.length-1)));});
+ui.resetVersions.addEventListener("click",()=>{const page=pages[currentPage];selectedVersions={};rebuildPages();showPage(findPage(page.section.id,Math.min(page.start,selectedVersion(page.section).panels.length-1)));});
+ui.themeToggle.addEventListener("click",()=>setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark"));
+ui.fullscreen.addEventListener("click",async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await document.documentElement.requestFullscreen();}catch{ui.errorNote.hidden=false;ui.errorNote.textContent="No se pudo activar la pantalla completa.";}});
+ui.openNotes.addEventListener("click",()=>{ui.allNotes.checked=false;renderNotes();ui.notesDialog.showModal();loadNotes();});ui.closeNotes.addEventListener("click",()=>ui.notesDialog.close());ui.allNotes.addEventListener("change",()=>renderNotes());
+ui.addNote.addEventListener("click",()=>{setNoteMode(!noteMode);ui.notesDialog.close();});
+ui.closeZoom.addEventListener("click",()=>ui.zoomDialog.close());ui.zoomDialog.addEventListener("click",(event)=>{if(event.target===ui.zoomDialog)ui.zoomDialog.close();});
+ui.zoomIn.addEventListener("click",()=>{zoomScale=Math.min(3,zoomScale+.25);updateZoom();});ui.zoomOut.addEventListener("click",()=>{zoomScale=Math.max(.75,zoomScale-.25);updateZoom();});
+ui.zoomCanvas.addEventListener("click",(event)=>{if(!noteMode||!zoomPanel)return;const point=pointOnImage(event,ui.zoomImage);if(point)beginNote(zoomPanel,point);});
+ui.cancelNote.addEventListener("click",()=>ui.noteDialog.close());ui.cancelNoteBottom.addEventListener("click",()=>ui.noteDialog.close());
+ui.noteForm.addEventListener("submit",async(event)=>{event.preventDefault();if(!noteTarget)return;ui.saveNote.disabled=true;ui.noteFormStatus.textContent="Guardando…";try{const response=await fetch(notesApi,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({image:noteTarget.panel.id,...noteTarget.point,author:ui.noteAuthor.value,body:ui.noteBody.value,website:ui.noteWebsite.value})});const data=await response.json();if(!response.ok)throw Error(data.error||"No se pudo guardar.");notes.unshift(data.note);ui.noteBody.value="";ui.noteDialog.close();setNoteMode(false);showPage(currentPage);}catch(error){ui.noteFormStatus.textContent=error.message;}finally{ui.saveNote.disabled=false;}});
+window.addEventListener("resize",()=>{if(innerWidth>900)ui.scrim.hidden=true;renderVisiblePins();});
+document.addEventListener("keydown",(event)=>{if(event.key==="Escape")setSidebar(false);if(!catalog||ui.zoomDialog.open||ui.notesDialog.open||ui.noteDialog.open||/^(INPUT|TEXTAREA|SELECT)$/.test(event.target.tagName))return;if(event.key==="ArrowRight"){event.preventDefault();showPage(currentPage+1);}if(event.key==="ArrowLeft"){event.preventDefault();showPage(currentPage-1);}});
+let swipe=null;ui.readingArea.addEventListener("touchstart",(event)=>{const touch=event.changedTouches[0];swipe={x:touch.clientX,y:touch.clientY};},{passive:true});ui.readingArea.addEventListener("touchend",(event)=>{if(!swipe)return;const touch=event.changedTouches[0],dx=touch.clientX-swipe.x,dy=touch.clientY-swipe.y;swipe=null;if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5)showPage(currentPage+(dx<0?1:-1));},{passive:true});
 loadCatalog();

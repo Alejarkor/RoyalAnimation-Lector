@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S2",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S2_v1_001",
+      "shotId": "S2-01",
+      "title": "Oscuridad",
+      "description": "Negro sostenido después de Valdés derrumbado. No vemos todavía al abuelo.",
+      "image": "Capitulo_1/storyboards/E1_S2/v1/paneles/S2-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_La_Idea_Peligrosa_Storyboard_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          13,
+          57,
+          497,
+          200
+        ]
+      }
+    },
+    {
+      "id": "E1_S2_v1_002",
+      "shotId": "S2-02",
+      "title": "En el laboratorio de análisis",
+      "description": "Plano general de una sala de análisis contigua, más tarde. El abuelo entra solo, cierra la puerta y se sienta ante la mesa. La corbata está floja; sigue sin bata.",
+      "image": "Capitulo_1/storyboards/E1_S2/v1/paneles/S2-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_La_Idea_Peligrosa_Storyboard_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          520,
+          57,
+          497,
+          200
+        ]
+      }
+    },
+    {
+      "id": "E1_S2_v1_003",
+      "shotId": "S2-03",
+      "title": "La mano",
+      "description": "Primer plano de la mano con la que golpeó a Valdés. Tiembla ligeramente. El abuelo la mira un instante, la aparta y acerca los datos.",
+      "image": "Capitulo_1/storyboards/E1_S2/v1/paneles/S2-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_La_Idea_Peligrosa_Storyboard_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1028,
+          57,
+          495,
+          200
+        ]
+      }
+    },
+    {
+      "id": "E1_S2_v1_004",
+      "shotId": "S2-04",
+      "title": "Tres series de tejido",
+      "description": "Plano del monitor: tres series preparadas, A, B y M-7. A prolifera pronto y muere; B resiste más y también se degrada; M-7 conserva la arquitectura del tejido.",
+      "image": "Capitulo_1/storyboards/E1_S2/v1/paneles/S2-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_La_Idea_Peligrosa_Storyboard_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          13,
+          341,
+          497,
+          227
+        ]
+      }
+    },
+    {
+      "id": "E1_S2_v1_005",
+      "shotId": "S2-05",
+      "title": "Las notas",
+      "description": "Plano detalle de las notas sobre dosis, concentración y tiempos del fármaco. El abuelo sigue una línea, la tacha y se detiene.",
+      "image": "Capitulo_1/storyboards/E1_S2/v1/paneles/S2-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_La_Idea_Peligrosa_Storyboard_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          520,
+          341,
+          497,
+          227
+        ]
+      }
+    },
+    {
+      "id": "E1_S2_v1_006",
+      "shotId": "S2-06",
+      "title": "La diferencia clave",
+      "description": "En la ficha de M-7 aísla el dato decisivo: tejido huésped modificado antes del tratamiento. Su ritmo nervioso se frena; observa la pantalla con una atención nueva.",
+      "image": "Capitulo_1/storyboards/E1_S2/v1/paneles/S2-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_La_Idea_Peligrosa_Storyboard_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1028,
+          341,
+          495,
+          227
+        ]
+      }
+    },
+    {
+      "id": "E1_S2_v1_007",
+      "shotId": "S2-07",
+      "title": "La idea",
+      "description": "Abre un cuaderno privado, distinto de la carpeta de la empresa. Dibuja una progresión simple: célula → tejido → organismo. La mano vacila antes de completar la última palabra.",
+      "image": "Capitulo_1/storyboards/E1_S2/v1/paneles/S2-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_La_Idea_Peligrosa_Storyboard_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          13,
+          670,
+          497,
+          225
+        ]
+      }
+    },
+    {
+      "id": "E1_S2_v1_008",
+      "shotId": "S2-08",
+      "title": "Pasos en el pasillo",
+      "description": "Oye pasos fuera. Cierra el cuaderno por reflejo. Los pasos se alejan; vuelve a abrirlo y rodea «organismo» con un círculo.",
+      "image": "Capitulo_1/storyboards/E1_S2/v1/paneles/S2-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_La_Idea_Peligrosa_Storyboard_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          520,
+          670,
+          497,
+          225
+        ]
+      }
+    },
+    {
+      "id": "E1_S2_v1_009",
+      "shotId": "S2-09",
+      "title": "El abuelo, solo",
+      "description": "Plano medio corto, frontal y fijo. El abuelo permanece sentado ante la mesa, hombros caídos, una mano inmóvil sobre ella, cabeza ligeramente inclinada y mirada triste, perdida bajo los ojos enrojecidos. El monitor ya no domina la imagen. Mantener la pose unos segundos.",
+      "image": "Capitulo_1/storyboards/E1_S2/v1/paneles/S2-09.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S2_La_Idea_Peligrosa_Storyboard_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1028,
+          670,
+          495,
+          225
+        ]
+      }
+    }
+  ]
+}

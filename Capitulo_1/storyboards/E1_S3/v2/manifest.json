@@ -1,0 +1,327 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S3",
+  "versionId": "v2",
+  "panels": [
+    {
+      "id": "E1_S3_v2_001",
+      "shotId": "S3-01",
+      "title": "Fundido",
+      "description": "Primerísimo primer plano cenital. El rostro de Royal, tumbado boca arriba, sustituye en un fundido al rostro del abuelo de S2-09. Sus ojos quedan en la misma zona de la imagen. Ojeras enormes, tristeza y apatía; mira al techo, sin mover la cabeza.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_A_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          10,
+          75,
+          438,
+          326
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_002",
+      "shotId": "S3-02",
+      "title": "En la cama",
+      "description": "La cámara sube recta hacia arriba, sin girar ni abandonar el eje cenital. Aparecen la cama, la ropa gastada de Royal, el suelo y los muebles viejos.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_A_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          458,
+          75,
+          423,
+          326
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_003",
+      "shotId": "S3-03",
+      "title": "Habitación",
+      "description": "El movimiento continúa hasta un plano general cenital de todo el dormitorio. Royal sigue inmóvil en el centro o ligeramente desplazado por la composición; el cuarto revela estrechez, humedad y desgaste.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_A_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          892,
+          75,
+          426,
+          326
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_004",
+      "shotId": "S3-04",
+      "title": "Ruido de vidrio",
+      "description": "Primer plano lateral de Royal todavía en la cama. Apenas parpadea mientras suena un golpe de vidrio o vajilla que se rompe fuera del cuarto.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_A_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          1329,
+          75,
+          435,
+          326
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_005",
+      "shotId": "S3-05",
+      "title": "Silencio",
+      "description": "Plano fijo de la puerta cerrada vista desde el dormitorio. Tras otro movimiento torpe en el salón, se oye a la madre desplomarse sobre el sofá. Royal escucha.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_A_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          10,
+          452,
+          438,
+          375
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_006",
+      "shotId": "S3-06",
+      "title": "Hacia el salón",
+      "description": "Royal se incorpora, abre con cuidado la puerta y atraviesa un pasillo oscuro.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_A_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          458,
+          452,
+          423,
+          375
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_007",
+      "shotId": "S3-07",
+      "title": "La madre duerme",
+      "description": "Desde el umbral del salón, se ve a su madre dormida en el sofá, ebria, desaliñada y sucia. Hay colillas, cenicero y recipientes vacíos; algún objeto yace roto en el suelo.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_A_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          892,
+          452,
+          426,
+          375
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_008",
+      "shotId": "S3-08",
+      "title": "La cubre",
+      "description": "Plano medio cercano. Royal recoge una manta o la toma del respaldo y cubre a su madre con cuidado. Ella no despierta.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_A_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          1329,
+          452,
+          435,
+          375
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_009",
+      "shotId": "S3-09",
+      "title": "La madre duerme",
+      "description": "Royal se queda un instante mirándola, se asegura de que respira y va hacia la cocina. La cámara permanece con la madre un segundo después de que él salga.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-09.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_B_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          10,
+          75,
+          438,
+          326
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_010",
+      "shotId": "S3-10",
+      "title": "En la nevera",
+      "description": "Punto de vista desde dentro de la nevera. Royal abre la puerta; su cara cansada aparece enmarcada por estantes casi vacíos y la luz fría del frigorífico. Solo quedan unas pocas latas de comida de perro, sin marca reconocible.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-10.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_B_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          458,
+          75,
+          423,
+          326
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_011",
+      "shotId": "S3-11",
+      "title": "La lata",
+      "description": "Mismo eje interior. La mano de Royal coge una lata; luego la cámara pasa a un plano medio corto de él mirando el envase. No hay sorpresa, solo aceptación cansada.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-11.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_B_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          892,
+          75,
+          426,
+          326
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_012",
+      "shotId": "S3-12",
+      "title": "Abre la lata",
+      "description": "Plano detalle de sus manos al abrir la lata sobre la mesa de la cocina. La tapa ofrece algo de resistencia.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-12.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_B_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          1329,
+          75,
+          435,
+          326
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_013",
+      "shotId": "S3-13",
+      "title": "Come de la lata",
+      "description": "Plano medio fijo. Royal come de la lata con una cuchara. Tiene la mirada perdida, no hacia la madre ni hacia la cámara. Su cuerpo vuelve a la quietud inicial.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-13.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_B_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          10,
+          452,
+          438,
+          375
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_014",
+      "shotId": "S3-14",
+      "title": "Mirada ausente",
+      "description": "Primer plano de su rostro mientras mastica mecánicamente. Las ojeras siguen siendo visibles. Deja la cuchara un momento y continúa sin cambiar de expresión.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-14.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_B_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          458,
+          452,
+          423,
+          375
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_015",
+      "shotId": "S3-15",
+      "title": "Apaga la lámpara",
+      "description": "Royal vuelve a su dormitorio. Un plano breve muestra que se tumba de nuevo y apaga la luz. La casa queda en silencio salvo por la lluvia.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-15.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_B_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          892,
+          452,
+          426,
+          375
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v2_016",
+      "shotId": "S3-16",
+      "title": "La casa en la lluvia",
+      "description": "Exterior general continuo. Empezamos relativamente cerca de la casa bajo la lluvia. La cámara retrocede y se eleva, revelando caminos, otras construcciones dispersas y, finalmente, toda la comarca de noche. La casa de Royal queda pequeña en el paisaje.",
+      "image": "Capitulo_1/storyboards/E1_S3/v2/paneles/S3-16.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_La_Noche_B_v2.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          1329,
+          452,
+          435,
+          375
+        ]
+      }
+    }
+  ]
+}

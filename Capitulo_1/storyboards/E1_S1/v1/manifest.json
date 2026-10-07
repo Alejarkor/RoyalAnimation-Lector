@@ -1,0 +1,691 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S1",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S1_v1_001",
+      "shotId": "S1-01",
+      "title": "Plano 1",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          12,
+          53,
+          366,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_002",
+      "shotId": "S1-02",
+      "title": "Plano 2",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          389,
+          53,
+          369,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_003",
+      "shotId": "S1-03",
+      "title": "Plano 3",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          767,
+          53,
+          383,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_004",
+      "shotId": "S1-04",
+      "title": "Plano 4",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1159,
+          53,
+          366,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_005",
+      "shotId": "S1-05",
+      "title": "Plano 5",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          12,
+          375,
+          366,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_006",
+      "shotId": "S1-06",
+      "title": "Plano 6",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          389,
+          375,
+          369,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_007",
+      "shotId": "S1-07",
+      "title": "Plano 7",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          767,
+          375,
+          383,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_008",
+      "shotId": "S1-08",
+      "title": "Plano 8",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1159,
+          375,
+          366,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_009",
+      "shotId": "S1-09",
+      "title": "Plano 9",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-09.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          12,
+          689,
+          366,
+          208
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_010",
+      "shotId": "S1-10",
+      "title": "Plano 10",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-10.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          389,
+          689,
+          369,
+          208
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_011",
+      "shotId": "S1-11",
+      "title": "Plano 11",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-11.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          767,
+          689,
+          383,
+          208
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_012",
+      "shotId": "S1-12",
+      "title": "Plano 12",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-12.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1159,
+          689,
+          366,
+          208
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_013",
+      "shotId": "S1-13",
+      "title": "Plano 13",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-13.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          55,
+          372,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_014",
+      "shotId": "S1-14",
+      "title": "Plano 14",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-14.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          391,
+          55,
+          400,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_015",
+      "shotId": "S1-15",
+      "title": "Plano 15",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-15.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          800,
+          55,
+          345,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_016",
+      "shotId": "S1-16",
+      "title": "Plano 16",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-16.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          55,
+          373,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_017",
+      "shotId": "S1-17",
+      "title": "Plano 17",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-17.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          376,
+          372,
+          183
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_018",
+      "shotId": "S1-18",
+      "title": "Plano 18",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-18.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          391,
+          376,
+          400,
+          183
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_019",
+      "shotId": "S1-19",
+      "title": "Plano 19",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-19.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          800,
+          376,
+          345,
+          183
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_020",
+      "shotId": "S1-20",
+      "title": "Plano 20",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-20.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          376,
+          373,
+          183
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_021",
+      "shotId": "S1-21",
+      "title": "Plano 21",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-21.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          666,
+          372,
+          205
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_022",
+      "shotId": "S1-22",
+      "title": "Plano 22",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-22.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          391,
+          666,
+          400,
+          205
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_023",
+      "shotId": "S1-23",
+      "title": "Plano 23",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-23.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          800,
+          666,
+          345,
+          205
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_024",
+      "shotId": "S1-24",
+      "title": "Plano 24",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-24.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          666,
+          373,
+          205
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_025",
+      "shotId": "S1-25",
+      "title": "Plano 25",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-25.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          14,
+          51,
+          369,
+          207
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_026",
+      "shotId": "S1-26",
+      "title": "Plano 26",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-26.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          393,
+          51,
+          370,
+          207
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_027",
+      "shotId": "S1-27",
+      "title": "Plano 27",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-27.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          773,
+          51,
+          370,
+          207
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_028",
+      "shotId": "S1-28",
+      "title": "Plano 28",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-28.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          51,
+          369,
+          207
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_029",
+      "shotId": "S1-29",
+      "title": "Plano 29",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-29.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          14,
+          359,
+          369,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_030",
+      "shotId": "S1-30",
+      "title": "Plano 30",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-30.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          393,
+          359,
+          370,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_031",
+      "shotId": "S1-31",
+      "title": "Plano 31",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-31.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          773,
+          359,
+          370,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_032",
+      "shotId": "S1-32",
+      "title": "Plano 32",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-32.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          359,
+          369,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_033",
+      "shotId": "S1-33",
+      "title": "Plano 33",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-33.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          14,
+          668,
+          369,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_034",
+      "shotId": "S1-34",
+      "title": "Plano 34",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-34.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          393,
+          668,
+          370,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_035",
+      "shotId": "S1-35",
+      "title": "Plano 35",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-35.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          773,
+          668,
+          370,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v1_036",
+      "shotId": "S1-36",
+      "title": "Plano 36",
+      "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-36.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          668,
+          369,
+          214
+        ]
+      }
+    }
+  ]
+}

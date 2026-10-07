@@ -1,0 +1,167 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S3",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S3_v1_001",
+      "shotId": "S3-01",
+      "title": "Plano 1",
+      "description": "Fundido encadenado desde S2-09. Primer plano medio corto, frontal, cámara fija: Royal ya está sentado ante la mesa, con los mismos hombros vencidos, la misma inclinación de cabeza, una mano en el mismo lugar y una expresión triste de mirada perdida. Su cara sustituye gradualmente a la del abuelo. Al asentarse la imagen aparecen la penumbra y la suciedad de la cocina.",
+      "image": "Capitulo_1/storyboards/E1_S3/v1/paneles/S3-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_Desayuno_Storyboard_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          10,
+          73,
+          438,
+          355
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v1_002",
+      "shotId": "S3-02",
+      "title": "Plano 2",
+      "description": "La cámara se abre lentamente sin cambiar de eje. Royal permanece quieto. Se ve la mesa manchada, una ventana casi tapada y el salón al fondo, fuera de foco.",
+      "image": "Capitulo_1/storyboards/E1_S3/v1/paneles/S3-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_Desayuno_Storyboard_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          458,
+          73,
+          423,
+          355
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v1_003",
+      "shotId": "S3-03",
+      "title": "Plano 3",
+      "description": "Plano detalle de las manos de Royal y el plato delante de él. Con la cuchara aparta sin ganas el contenido. Una lata o envase con una silueta de perro, sin marca reconocible, queda a un lado.",
+      "image": "Capitulo_1/storyboards/E1_S3/v1/paneles/S3-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_Desayuno_Storyboard_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          892,
+          73,
+          426,
+          355
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v1_004",
+      "shotId": "S3-04",
+      "title": "Plano 4",
+      "description": "Plano medio lateral. Royal toma un bocado mecánicamente, sin gesto exagerado de asco ni lágrimas. Sigue mirando hacia un punto indeterminado.",
+      "image": "Capitulo_1/storyboards/E1_S3/v1/paneles/S3-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_Desayuno_Storyboard_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          1329,
+          73,
+          435,
+          355
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v1_005",
+      "shotId": "S3-05",
+      "title": "Plano 5",
+      "description": "Plano desde el umbral hacia el salón. Su madre duerme casi inconsciente en el sofá, con botellas y ceniceros cerca y la televisión encendida. No ocupará el centro heroico de la imagen; es parte de la vida que Royal vigila de reojo.",
+      "image": "Capitulo_1/storyboards/E1_S3/v1/paneles/S3-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_Desayuno_Storyboard_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          10,
+          476,
+          438,
+          351
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v1_006",
+      "shotId": "S3-06",
+      "title": "Plano 6",
+      "description": "Contraplano de Royal en la cocina. Mira brevemente hacia su madre, atento a si se mueve o respira, y vuelve al plato. Su expresión apenas cambia.",
+      "image": "Capitulo_1/storyboards/E1_S3/v1/paneles/S3-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_Desayuno_Storyboard_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          458,
+          476,
+          423,
+          351
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v1_007",
+      "shotId": "S3-07",
+      "title": "Plano 7",
+      "description": "Plano fijo de la mesa. Royal sigue comiendo en silencio mientras una gota cae de un grifo fuera de cuadro. La madre se remueve en el sofá, pero no despierta.",
+      "image": "Capitulo_1/storyboards/E1_S3/v1/paneles/S3-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_Desayuno_Storyboard_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          892,
+          476,
+          426,
+          351
+        ]
+      }
+    },
+    {
+      "id": "E1_S3_v1_008",
+      "shotId": "S3-08",
+      "title": "Plano 8",
+      "description": "Primer plano de Royal al dejar la cuchara. Su mirada se posa en un objeto fuera de campo sobre la mesa o entre sus cosas. La cámara no revela aún qué es.",
+      "image": "Capitulo_1/storyboards/E1_S3/v1/paneles/S3-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S3_Desayuno_Storyboard_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          1329,
+          476,
+          435,
+          351
+        ]
+      }
+    }
+  ]
+}

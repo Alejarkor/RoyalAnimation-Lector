@@ -1,0 +1,727 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S1",
+  "versionId": "v2",
+  "panels": [
+    {
+      "id": "E1_S1_v2_001",
+      "shotId": "S1-01",
+      "title": "Plano 1",
+      "description": "Macroscopía de una lesión que se cierra y, en la misma serie temporal, empieza a engrosarse de forma irregular.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          12,
+          53,
+          366,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_002",
+      "shotId": "S1-02",
+      "title": "Plano 2",
+      "description": "Reflejo del abuelo en el monitor; ojos rojos de cansancio. Retrocede la grabación para comprobar cuándo comienza la proliferación.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          389,
+          53,
+          369,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_003",
+      "shotId": "S1-03",
+      "title": "Plano 3",
+      "description": "Cruza el laboratorio a toda velocidad, con hojas y notas en la mano; da dos instrucciones a la vez.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          767,
+          53,
+          383,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_004",
+      "shotId": "S1-04",
+      "title": "Plano 4",
+      "description": "Valdés carga las carpetas del ensayo A y B, procurando seguir el ritmo.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1159,
+          53,
+          366,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_005",
+      "shotId": "S1-05",
+      "title": "Plano 5",
+      "description": "Frigorífico de extractos de mandrágora y cultivos. Los materiales de A y B llevan etiquetas grandes.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          12,
+          375,
+          366,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_006",
+      "shotId": "S1-06",
+      "title": "Plano 6",
+      "description": "Montaje de preparaciones y lecturas: A mejora primero; B aguanta más, pero ambas curvas acaban desviándose.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          389,
+          375,
+          369,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_007",
+      "shotId": "S1-07",
+      "title": "Plano 7",
+      "description": "Mesa con bandejas oficiales A y B. Algo más atrás, una pequeña gradilla de pruebas con un vial muy parecido a B y un código lateral M-7.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          767,
+          375,
+          383,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_008",
+      "shotId": "S1-08",
+      "title": "Plano 8",
+      "description": "A solas, el abuelo consulta la serie M-7 y la vuelve a apartar antes de que entre nadie.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1159,
+          375,
+          366,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_009",
+      "shotId": "S1-09",
+      "title": "Plano 9",
+      "description": "Comparativa en pantalla, 0/24/72 h: A = reparación seguida de tumor y necrosis; B = reparación mejor y más duradera, seguida del mismo desenlace.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-09.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          12,
+          689,
+          366,
+          208
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_010",
+      "shotId": "S1-10",
+      "title": "Plano 10",
+      "description": "Primer plano del abuelo ante otra pantalla: M-7 conserva la estructura normal a las 72 h. Sonríe, fascinado y asustado a la vez.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-10.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          389,
+          689,
+          369,
+          208
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_011",
+      "shotId": "S1-11",
+      "title": "Plano 11",
+      "description": "Llegan los zapatos y carpetas del comité.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-11.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          767,
+          689,
+          383,
+          208
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_012",
+      "shotId": "S1-12",
+      "title": "Plano 12",
+      "description": "El abuelo se abrocha la bata y ensaya una sonrisa demasiado rápida; Valdés observa su agotamiento.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-12.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1159,
+          689,
+          366,
+          208
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_013",
+      "shotId": "S1-13",
+      "title": "Plano 13",
+      "description": "Entran científicos y directivos. El abuelo los recibe hablando antes de que terminen de acomodarse; Valdés queda detrás.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-13.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          55,
+          372,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_014",
+      "shotId": "S1-14",
+      "title": "Plano 14",
+      "description": "Presenta el derivado de mandrágora y anuncia dos formulaciones, A y B.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-14.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          391,
+          55,
+          400,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_015",
+      "shotId": "S1-15",
+      "title": "Plano 15",
+      "description": "Valdés prepara las muestras según el orden del protocolo y mira al abuelo con admiración y nerviosismo.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-15.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          800,
+          55,
+          345,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_016",
+      "shotId": "S1-16",
+      "title": "Plano 16",
+      "description": "Pantalla del tejido lesionado antes del tratamiento.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-16.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          55,
+          373,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_017",
+      "shotId": "S1-17",
+      "title": "Plano 17",
+      "description": "Serie A a 0/24/72 h: cierre inicial, crecimiento caótico, necrosis.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-17.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          376,
+          372,
+          183
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_018",
+      "shotId": "S1-18",
+      "title": "Plano 18",
+      "description": "Serie B a 0/24/72 h: cierre más limpio y persistente, pero al final aparecen masas y muerte del tejido.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-18.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          391,
+          376,
+          400,
+          183
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_019",
+      "shotId": "S1-19",
+      "title": "Plano 19",
+      "description": "El comité toma notas sin entusiasmo. El abuelo interpreta la falta de reacción como un reto.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-19.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          800,
+          376,
+          345,
+          183
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_020",
+      "shotId": "S1-20",
+      "title": "Plano 20",
+      "description": "Impulsivamente pide a Valdés la última tanda de B, fuera del orden previsto, y vuelve a mirar al comité.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-20.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          376,
+          373,
+          183
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_021",
+      "shotId": "S1-21",
+      "title": "Plano 21",
+      "description": "Valdés busca entre carpetas y bandejas. B y M-7 tienen viales del mismo tamaño y tapa; el código M-7 está pequeño en un lateral. Su mano coge M-7.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-21.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          666,
+          372,
+          205
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_022",
+      "shotId": "S1-22",
+      "title": "Plano 22",
+      "description": "Entrega el vial; el abuelo lo toma sin leerlo porque ya está retomando la explicación.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-22.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          391,
+          666,
+          400,
+          205
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_023",
+      "shotId": "S1-23",
+      "title": "Plano 23",
+      "description": "El abuelo carga la serie preparada en el microscopio. Valdés vuelve a las bandejas.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-23.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          800,
+          666,
+          345,
+          205
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_024",
+      "shotId": "S1-24",
+      "title": "Plano 24",
+      "description": "Pantalla M-7 a 0/24/72 h: la lesión cierra y la arquitectura del tejido permanece normal, sin masas ni necrosis.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-24.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          666,
+          373,
+          205
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_025",
+      "shotId": "S1-25",
+      "title": "Plano 25",
+      "description": "El comité se inclina hacia la pantalla: asombro súbito.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-25.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          14,
+          51,
+          369,
+          207
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_026",
+      "shotId": "S1-26",
+      "title": "Plano 26",
+      "description": "Valdés ve el hueco en la gradilla M-7 y encuentra B aún en su sitio. Baja la vista al registro; comprende su error.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-26.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          393,
+          51,
+          370,
+          207
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_027",
+      "shotId": "S1-27",
+      "title": "Plano 27",
+      "description": "Intenta avisar discretamente al abuelo. Este sigue hablando, cada vez más deprisa, y al principio no escucha.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-27.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          773,
+          51,
+          370,
+          207
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_028",
+      "shotId": "S1-28",
+      "title": "Plano 28",
+      "description": "El abuelo gira el vial y lee M-7. Silencio breve; mira a Valdés.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-28.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          51,
+          369,
+          207
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_029",
+      "shotId": "S1-29",
+      "title": "Plano 29",
+      "description": "Un evaluador pide el protocolo de ese resultado. La documentación de A y B no coincide con M-7.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-29.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          14,
+          359,
+          369,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_030",
+      "shotId": "S1-30",
+      "title": "Plano 30",
+      "description": "El abuelo explica, agitado pero convencido, que modificó genéticamente el tejido huésped para hacerlo compatible con el fármaco. Defiende el hallazgo en vez de ocultarlo.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-30.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          393,
+          359,
+          370,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_031",
+      "shotId": "S1-31",
+      "title": "Plano 31",
+      "description": "El director cierra su carpeta y cancela la financiación de esa línea; los demás lo imitan.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-31.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          773,
+          359,
+          370,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_032",
+      "shotId": "S1-32",
+      "title": "Plano 32",
+      "description": "El comité sale. Valdés se retira con ellos, incapaz de afrontar al abuelo. La sala queda en silencio.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-32.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          359,
+          369,
+          211
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_033",
+      "shotId": "S1-33",
+      "title": "Plano 33",
+      "description": "El abuelo, completamente solo, se deja caer en la mesa. Los ojos enrojecidos ya no expresan euforia sino agotamiento y derrota.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-33.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          14,
+          668,
+          369,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_034",
+      "shotId": "S1-34",
+      "title": "Plano 34",
+      "description": "Valdés vuelve solo, cabizbajo, y admite que confundió los viales. Se disculpa sin excusas.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-34.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          393,
+          668,
+          370,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_035",
+      "shotId": "S1-35",
+      "title": "Plano 35",
+      "description": "El abuelo lo abofetea de improviso y con una fuerza desproporcionada. Sin música ni gesto triunfal.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-35.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          773,
+          668,
+          370,
+          214
+        ]
+      }
+    },
+    {
+      "id": "E1_S1_v2_036",
+      "shotId": "S1-36",
+      "title": "Plano 36",
+      "description": "Valdés queda en el suelo, con la mano en la mejilla y los ojos húmedos. El abuelo se aleja fuera de foco. El dolor de Valdés se transforma en rencor. Corte a negro.",
+      "image": "Capitulo_1/storyboards/E1_S1/v2/paneles/S1-36.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S1_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1153,
+          668,
+          369,
+          214
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,207 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S4",
+  "versionId": "v2",
+  "panels": [
+    {
+      "id": "E1_S4_v2_001",
+      "shotId": "S4-01",
+      "title": "Suena la alarma",
+      "description": "Amanecer. Primer plano del despertador de Royal en su cuarto. Empieza a sonar música de El Señor de los Anillos, elegida por él como alarma. La habitación conserva el desorden de la noche anterior.",
+      "image": "Capitulo_1/storyboards/E1_S4/v2/paneles/S4-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          78,
+          500,
+          363
+        ]
+      }
+    },
+    {
+      "id": "E1_S4_v2_002",
+      "shotId": "S4-02",
+      "title": "Despierta y sonríe un poco",
+      "description": "Royal abre los ojos. Tiene todavía ojeras, pero reconoce la música; asoma una reacción pequeña, casi a su pesar. Se sienta en la cama siguiendo el pulso con los dedos.",
+      "image": "Capitulo_1/storyboards/E1_S4/v2/paneles/S4-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          521,
+          78,
+          495,
+          363
+        ]
+      }
+    },
+    {
+      "id": "E1_S4_v2_003",
+      "shotId": "S4-03",
+      "title": "Baila su música",
+      "description": "Plano general del dormitorio. Royal se levanta y empieza a bailar de verdad: primero torpe y contenido, luego con un poco más de energía. La habitación sigue vieja y pobre.",
+      "image": "Capitulo_1/storyboards/E1_S4/v2/paneles/S4-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1027,
+          78,
+          501,
+          363
+        ]
+      }
+    },
+    {
+      "id": "E1_S4_v2_004",
+      "shotId": "S4-04",
+      "title": "Apaga la alarma",
+      "description": "Un movimiento breve acompaña el final del baile. Al parar la alarma, el gesto alegre se extingue poco a poco, pero no se convierte de inmediato en el rostro totalmente vacío de la noche.",
+      "image": "Capitulo_1/storyboards/E1_S4/v2/paneles/S4-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          500,
+          500,
+          453
+        ]
+      }
+    },
+    {
+      "id": "E1_S4_v2_005",
+      "shotId": "S4-05",
+      "title": "Se prepara para el colegio",
+      "description": "Montaje corto y claro: Royal se lava, se viste con la ropa de su diseño de 12–13 años, coge la mochila y se pone la gorra verde oliva. Se prepara sin ayuda.",
+      "image": "Capitulo_1/storyboards/E1_S4/v2/paneles/S4-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          521,
+          500,
+          495,
+          453
+        ]
+      }
+    },
+    {
+      "id": "E1_S4_v2_006",
+      "shotId": "S4-06",
+      "title": "La madre sigue durmiendo",
+      "description": "Desde el pasillo, Royal mira hacia el salón: su madre sigue dormida y tapada con la manta que él le puso. Royal comprueba que no se ha despertado y sale sin hacer ruido.",
+      "image": "Capitulo_1/storyboards/E1_S4/v2/paneles/S4-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1027,
+          500,
+          501,
+          453
+        ]
+      }
+    },
+    {
+      "id": "E1_S4_v2_007",
+      "shotId": "S4-07",
+      "title": "Cierra la puerta",
+      "description": "Exterior de la casa al amanecer. Royal cierra la puerta, ajusta la mochila y emprende el camino hacia el colegio. El suelo sigue húmedo; la casa queda detrás.",
+      "image": "Capitulo_1/storyboards/E1_S4/v2/paneles/S4-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          78,
+          755,
+          396
+        ]
+      }
+    },
+    {
+      "id": "E1_S4_v2_008",
+      "shotId": "S4-08",
+      "title": "Largo camino",
+      "description": "Plano muy abierto del camino. Royal avanza a pie entre campos o construcciones dispersas. El colegio no está cerca de la casa.",
+      "image": "Capitulo_1/storyboards/E1_S4/v2/paneles/S4-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          776,
+          78,
+          751,
+          396
+        ]
+      }
+    },
+    {
+      "id": "E1_S4_v2_009",
+      "shotId": "S4-09",
+      "title": "Avanza entre charcos",
+      "description": "Nuevo lugar del trayecto: Royal cruza un tramo distinto, con las zapatillas salpicadas por charcos. La luz cambia y el ritmo de sus pasos permite sentir el tiempo recorrido.",
+      "image": "Capitulo_1/storyboards/E1_S4/v2/paneles/S4-09.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          534,
+          755,
+          420
+        ]
+      }
+    },
+    {
+      "id": "E1_S4_v2_010",
+      "shotId": "S4-10",
+      "title": "Se acerca al colegio",
+      "description": "Plano general desde una elevación o un cruce. Royal continúa hacia la zona del colegio, todavía pequeño en el encuadre. Otros niños pueden aparecer cerca del destino, algunos acompañados, sin desviar el foco de él.",
+      "image": "Capitulo_1/storyboards/E1_S4/v2/paneles/S4-10.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          776,
+          534,
+          751,
+          420
+        ]
+      }
+    }
+  ]
+}
