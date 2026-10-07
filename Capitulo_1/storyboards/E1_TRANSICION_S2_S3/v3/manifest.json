@@ -20,7 +20,10 @@
           748,
           394
         ]
-      }
+      },
+      "description": "El abuelo queda solo ante la mesa del laboratorio, con el traje desarreglado y la mirada vacía. Alza lentamente la cara hacia el techo.",
+      "context": "El zumbido del laboratorio continúa; no hay diálogo.",
+      "contextLabel": "Sonido y enlace"
     },
     {
       "id": "E1_TRANSICION_S2_S3_v3_002",
@@ -39,7 +42,10 @@
           748,
           394
         ]
-      }
+      },
+      "description": "La cámara se eleva a un primer plano cenital de su rostro. Los ojos cansados y enrojecidos quedan centrados para empalmar con los de Royal.",
+      "context": "La voz de la madre de Royal empieza a entrar desde la escena siguiente.",
+      "contextLabel": "Sonido y enlace"
     },
     {
       "id": "E1_TRANSICION_S2_S3_v3_003",
@@ -58,7 +64,10 @@
           748,
           433
         ]
-      }
+      },
+      "description": "Fundido encadenado, sin pasar por negro: el rostro del abuelo se desvanece sobre el de Royal tumbado. Ojos, gesto y posición coinciden.",
+      "context": "La voz de la madre reemplaza el sonido del laboratorio.",
+      "contextLabel": "Sonido y enlace"
     },
     {
       "id": "E1_TRANSICION_S2_S3_v3_004",
@@ -77,7 +86,10 @@
           748,
           433
         ]
-      }
+      },
+      "description": "Solo queda Royal, visto desde arriba en su cama, triste y ausente. Después del fundido la cámara podrá alejarse para revelar su dormitorio.",
+      "context": "Da paso al inicio de la noche de Royal.",
+      "contextLabel": "Sonido y enlace"
     }
   ]
 }

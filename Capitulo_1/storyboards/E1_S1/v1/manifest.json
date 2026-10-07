@@ -6,7 +6,7 @@
     {
       "id": "E1_S1_v1_001",
       "shotId": "S1-01",
-      "title": "Plano 1",
+      "title": "Algo está vivo",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-01.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -20,12 +20,13 @@
           366,
           214
         ]
-      }
+      },
+      "description": "Macro/microscópico. Tejido celular con una lesión que se va cerrando. Las células migran y se dividen. Grabación científica con contador."
     },
     {
       "id": "E1_S1_v1_002",
       "shotId": "S1-02",
-      "title": "Plano 2",
+      "title": "El monitor",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-02.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -39,12 +40,13 @@
           369,
           214
         ]
-      }
+      },
+      "description": "Primerísimo primer plano. Nos alejamos un poco y vemos el reflejo del abuelo joven en la pantalla. No sonríe. Mira obsesivo. Consulta un reloj y se gira."
     },
     {
       "id": "E1_S1_v1_003",
       "shotId": "S1-03",
-      "title": "Plano 3",
+      "title": "El laboratorio",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-03.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -58,12 +60,13 @@
           383,
           214
         ]
-      }
+      },
+      "description": "Plano general en travelling lateral. El abuelo cruza el laboratorio a toda velocidad comprobando equipos. Ambiente equipado con microscopios, incubadoras, centrífugas, ordenadores y personal trabajando."
     },
     {
       "id": "E1_S1_v1_004",
       "shotId": "S1-04",
-      "title": "Plano 4",
+      "title": "Valdés",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-04.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -77,12 +80,13 @@
           366,
           214
         ]
-      }
+      },
+      "description": "Plano medio corto. Valdés lleva carpetas, bandeja con muestras y papeles. Una carpeta se desliza; la salva. El abuelo le coloca otra encima y se va. Valdés mira hacia donde se marchó y continúa."
     },
     {
       "id": "E1_S1_v1_005",
       "shotId": "S1-05",
-      "title": "Plano 5",
+      "title": "La mandrágora",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-05.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -96,12 +100,13 @@
           366,
           211
         ]
-      }
+      },
+      "description": "Detalle. Valdés abre el frigorífico del laboratorio. La raíz de mandrágora destaca entre muestras clínicas. Toma varios viales de extracto procesado y cierra."
     },
     {
       "id": "E1_S1_v1_006",
       "shotId": "S1-06",
-      "title": "Plano 6",
+      "title": "Cadena de órdenes",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-06.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -115,12 +120,13 @@
           369,
           211
         ]
-      }
+      },
+      "description": "Montaje dinámico de planos cortos. El abuelo da instrucciones sin parar. Valdés lleva muestras, imprime resultados, cambia de mesa e intenta preguntar; el ritmo es frenético."
     },
     {
       "id": "E1_S1_v1_007",
       "shotId": "S1-07",
-      "title": "Plano 7",
+      "title": "A y B",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-07.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -134,12 +140,13 @@
           383,
           211
         ]
-      }
+      },
+      "description": "Cenital sobre la mesa. Dos grupos de muestras claramente separados. El abuelo coloca B en una caja distinta, la cierra y entrega A a Valdés. A queda claro; B no."
     },
     {
       "id": "E1_S1_v1_008",
       "shotId": "S1-08",
-      "title": "Plano 8",
+      "title": "El resultado B",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-08.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -153,12 +160,13 @@
           366,
           211
         ]
-      }
+      },
+      "description": "Valdés se va con A. El abuelo se queda solo unos segundos, mira la caja B, duda y la abre."
     },
     {
       "id": "E1_S1_v1_009",
       "shotId": "S1-09",
-      "title": "Plano 9",
+      "title": "Regeneración",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-09.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -172,12 +180,13 @@
           366,
           208
         ]
-      }
+      },
+      "description": "Monitor CRT. Comparación lado a lado: A muestra regeneración parcial con proliferación descontrolada; B muestra tejido prácticamente reconstruido. El abuelo se acerca a la pantalla."
     },
     {
       "id": "E1_S1_v1_010",
       "shotId": "S1-10",
-      "title": "Plano 10",
+      "title": "El abuelo lo sabe",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-10.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -191,12 +200,13 @@
           369,
           208
         ]
-      }
+      },
+      "description": "Primer plano. Toda la agitación desaparece. Observa los datos fascinado. Confirma algo extraordinario, pero también parece asustado. Ya reacciona."
     },
     {
       "id": "E1_S1_v1_011",
       "shotId": "S1-11",
-      "title": "Plano 11",
+      "title": "Llega el comité",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-11.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -210,12 +220,13 @@
           383,
           208
         ]
-      }
+      },
+      "description": "Plano bajo. Se abren las puertas del ascensor. Zapatos caros, maletines y trajes. El sonido del laboratorio se amortigua; aún no se muestran las caras."
     },
     {
       "id": "E1_S1_v1_012",
       "shotId": "S1-12",
-      "title": "Plano 12",
+      "title": "Transformación",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-12.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_A.png",
@@ -229,12 +240,13 @@
           366,
           208
         ]
-      }
+      },
+      "description": "Una técnica le avisa de que han llegado. El abuelo se mira, se pone la bata, se arregla el pelo y respira. Adopta una actitud segura y carismática y se gira hacia la entrada."
     },
     {
       "id": "E1_S1_v1_013",
       "shotId": "S1-13",
-      "title": "Plano 13",
+      "title": "Entran",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-13.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -248,12 +260,13 @@
           372,
           214
         ]
-      }
+      },
+      "description": "El comité entra en el laboratorio: científicos, ejecutivos e inversores. Entre ellos está el jefe del abuelo. El abuelo los recibe; Valdés queda detrás, nervioso."
     },
     {
       "id": "E1_S1_v1_014",
       "shotId": "S1-14",
-      "title": "Plano 14",
+      "title": "Presentación",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-14.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -267,12 +280,13 @@
           400,
           214
         ]
-      }
+      },
+      "description": "Plano general desde detrás del público. El abuelo presenta con seguridad y carisma diapositivas sobre la mandrágora, esquemas celulares y datos. La sala escucha atenta."
     },
     {
       "id": "E1_S1_v1_015",
       "shotId": "S1-15",
-      "title": "Plano 15",
+      "title": "Valdés observa",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-15.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -286,12 +300,13 @@
           345,
           214
         ]
-      }
+      },
+      "description": "Primer plano de Valdés. Mientras prepara las siguientes muestras, mira al abuelo con admiración. Quiere ser como él algún día; está nervioso, pero orgulloso."
     },
     {
       "id": "E1_S1_v1_016",
       "shotId": "S1-16",
-      "title": "Plano 16",
+      "title": "Tejido dañado",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-16.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -305,12 +320,13 @@
           373,
           214
         ]
-      }
+      },
+      "description": "En pantalla se muestra tejido lesionado. El abuelo explica la situación inicial con una imagen de microscopía y una gran lesión central."
     },
     {
       "id": "E1_S1_v1_017",
       "shotId": "S1-17",
-      "title": "Plano 17",
+      "title": "Control",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-17.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -324,12 +340,13 @@
           372,
           183
         ]
-      }
+      },
+      "description": "La muestra de control no se regenera correctamente. Las células se degradan y la lesión permanece. El comité observa sin especial emoción."
     },
     {
       "id": "E1_S1_v1_018",
       "shotId": "S1-18",
-      "title": "Plano 18",
+      "title": "Mandrágora (A)",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-18.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -343,12 +360,13 @@
           400,
           183
         ]
-      }
+      },
+      "description": "Tejido tratado con el derivado de mandrágora, muestra A. La lesión comienza a cerrarse, pero aparece proliferación irregular. El resultado es interesante y peligroso."
     },
     {
       "id": "E1_S1_v1_019",
       "shotId": "S1-19",
-      "title": "Plano 19",
+      "title": "Reacción del comité",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-19.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -362,12 +380,13 @@
           345,
           183
         ]
-      }
+      },
+      "description": "Un científico toma notas, otro frunce el ceño y un ejecutivo pierde interés. El entusiasmo disminuye; el abuelo lo percibe."
     },
     {
       "id": "E1_S1_v1_020",
       "shotId": "S1-20",
-      "title": "Plano 20",
+      "title": "El abuelo cambia de plan",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-20.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -381,12 +400,13 @@
           373,
           183
         ]
-      }
+      },
+      "description": "El abuelo decide mostrar otra muestra. Mira al comité y luego a Valdés. Le pide una muestra adicional con un gesto rápido pero claro."
     },
     {
       "id": "E1_S1_v1_021",
       "shotId": "S1-21",
-      "title": "Plano 21",
+      "title": "La mesa de Valdés",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-21.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -400,12 +420,13 @@
           372,
           205
         ]
-      }
+      },
+      "description": "Cenital de la mesa de Valdés, llena de muestras y papeles. Busca deprisa y coge un vial sin fijarse bien entre los materiales de A y B."
     },
     {
       "id": "E1_S1_v1_022",
       "shotId": "S1-22",
-      "title": "Plano 22",
+      "title": "Entrega",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-22.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -419,12 +440,13 @@
           400,
           205
         ]
-      }
+      },
+      "description": "Plano detalle. Valdés entrega el vial al abuelo, que lo recoge sin mirar la etiqueta. Un gesto pequeño cambia todo."
     },
     {
       "id": "E1_S1_v1_023",
       "shotId": "S1-23",
-      "title": "Plano 23",
+      "title": "La muestra",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-23.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -438,12 +460,13 @@
           345,
           205
         ]
-      }
+      },
+      "description": "El abuelo prepara la demostración con la nueva muestra. Valdés observa desde atrás, nervioso. La imagen aparece en pantalla."
     },
     {
       "id": "E1_S1_v1_024",
       "shotId": "S1-24",
-      "title": "Plano 24",
+      "title": "Funciona",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-24.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_B.png",
@@ -457,12 +480,13 @@
           373,
           205
         ]
-      }
+      },
+      "description": "La regeneración es extraordinaria. La lesión se cierra completamente y el tejido recupera una arquitectura normal. El comité se queda en silencio y presta toda su atención."
     },
     {
       "id": "E1_S1_v1_025",
       "shotId": "S1-25",
-      "title": "Plano 25",
+      "title": "La sala",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-25.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -476,12 +500,13 @@
           369,
           207
         ]
-      }
+      },
+      "description": "El comité observa el resultado. Algunos se inclinan hacia delante y toman notas. La imagen en pantalla es impresionante."
     },
     {
       "id": "E1_S1_v1_026",
       "shotId": "S1-26",
-      "title": "Plano 26",
+      "title": "Valdés descubre el error",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-26.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -495,12 +520,13 @@
           370,
           207
         ]
-      }
+      },
+      "description": "Valdés mira la mesa y ve un vial etiquetado A. Luego ve la caja B abierta y medio vacía. Se da cuenta de que ha entregado la muestra equivocada."
     },
     {
       "id": "E1_S1_v1_027",
       "shotId": "S1-27",
-      "title": "Plano 27",
+      "title": "Valdés intenta avisar",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-27.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -514,12 +540,13 @@
           370,
           207
         ]
-      }
+      },
+      "description": "Valdés se acerca discretamente e intenta avisar. El abuelo está en plena presentación y lo ignora al principio. Valdés insiste y señala la etiqueta."
     },
     {
       "id": "E1_S1_v1_028",
       "shotId": "S1-28",
-      "title": "Plano 28",
+      "title": "El abuelo comprende",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-28.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -533,12 +560,13 @@
           369,
           207
         ]
-      }
+      },
+      "description": "Primerísimo primer plano. El abuelo mira la etiqueta B (M-7). El sonido desaparece un instante. Mira a Valdés; ambos saben lo que acaba de pasar."
     },
     {
       "id": "E1_S1_v1_029",
       "shotId": "S1-29",
-      "title": "Plano 29",
+      "title": "La pregunta",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-29.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -552,12 +580,13 @@
           369,
           211
         ]
-      }
+      },
+      "description": "Un científico del comité detecta la discrepancia. Compara la documentación, levanta la mirada y pregunta por la diferencia entre esta muestra y las anteriores."
     },
     {
       "id": "E1_S1_v1_030",
       "shotId": "S1-30",
-      "title": "Plano 30",
+      "title": "El jefe",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-30.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -571,12 +600,13 @@
           370,
           211
         ]
-      }
+      },
+      "description": "El jefe del abuelo levanta lentamente la mirada y lo observa con desaprobación. No interviene; su expresión lo dice todo."
     },
     {
       "id": "E1_S1_v1_031",
       "shotId": "S1-31",
-      "title": "Plano 31",
+      "title": "La verdad",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-31.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -590,12 +620,13 @@
           370,
           211
         ]
-      }
+      },
+      "description": "El abuelo explica qué diferencia esta muestra. Aparecen imágenes de edición genética, células modificadas, secuencias genéticas y tejido regenerado."
     },
     {
       "id": "E1_S1_v1_032",
       "shotId": "S1-32",
-      "title": "Plano 32",
+      "title": "Cambia la atmósfera",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-32.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -609,12 +640,13 @@
           369,
           211
         ]
-      }
+      },
+      "description": "El comité comprende que el resultado requiere modificar genéticamente al paciente. El entusiasmo desaparece; para ellos es inviable."
     },
     {
       "id": "E1_S1_v1_033",
       "shotId": "S1-33",
-      "title": "Plano 33",
+      "title": "El abuelo defiende el hallazgo",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-33.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -628,12 +660,13 @@
           369,
           214
         ]
-      }
+      },
+      "description": "El abuelo insiste y señala los resultados. Intenta hacerles entender que lo importante es que el tejido se regenera. Considera la modificación un problema técnico solucionable."
     },
     {
       "id": "E1_S1_v1_034",
       "shotId": "S1-34",
-      "title": "Plano 34",
+      "title": "El jefe no lo salva",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-34.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -647,12 +680,13 @@
           370,
           214
         ]
-      }
+      },
+      "description": "El abuelo busca al jefe. Este niega ligeramente con la cabeza. No va a salvarlo: entiende la perspectiva de los evaluadores."
     },
     {
       "id": "E1_S1_v1_035",
       "shotId": "S1-35",
-      "title": "Plano 35",
+      "title": "Fin de la financiación",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-35.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -666,12 +700,13 @@
           370,
           214
         ]
-      }
+      },
+      "description": "Los miembros del comité empiezan a cerrar carpetas. Uno apaga el proyector. La imagen del tejido regenerado desaparece de la pared. Se acabó."
     },
     {
       "id": "E1_S1_v1_036",
       "shotId": "S1-36",
-      "title": "Plano 36",
+      "title": "La mirada",
       "image": "Capitulo_1/storyboards/E1_S1/v1/paneles/S1-36.png",
       "source": {
         "sheet": "Capitulo_1/E1_S1_C.png",
@@ -685,7 +720,8 @@
           369,
           214
         ]
-      }
+      },
+      "description": "El abuelo se acerca a Valdés, lo mira seco y le indica que se marche. Valdés intenta decir algo, pero se va. Ha decepcionado al abuelo."
     }
   ]
 }

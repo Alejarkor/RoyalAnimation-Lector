@@ -21,7 +21,9 @@
           438,
           355
         ]
-      }
+      },
+      "context": "El zumbido del laboratorio se convierte en el del frigorífico. Sin música ni diálogo. El parecido es emocional y de puesta en escena; no debe sugerir todavía una revelación genética explícita.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v1_002",
@@ -41,7 +43,9 @@
           423,
           355
         ]
-      }
+      },
+      "context": "El espectador comprende que no está en otro laboratorio, sino en una casa donde nadie ha preparado el desayuno.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v1_003",
@@ -61,7 +65,9 @@
           426,
           355
         ]
-      }
+      },
+      "context": "La comida de perro se revela como un hecho cotidiano y triste, no como remate cómico.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v1_004",
@@ -81,7 +87,9 @@
           435,
           355
         ]
-      }
+      },
+      "context": "No es una travesura ni un reto: está resolviendo una necesidad básica.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v1_005",
@@ -101,7 +109,9 @@
           438,
           351
         ]
-      }
+      },
+      "context": "Sonido apagado de televisión. Se establece el abandono sin convertir a la madre en una figura grotesca.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v1_006",
@@ -121,7 +131,9 @@
           423,
           351
         ]
-      }
+      },
+      "context": "Muestra que lleva tiempo pendiente de un adulto cuando debería ocurrir al revés.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v1_007",
@@ -141,7 +153,9 @@
           426,
           351
         ]
-      }
+      },
+      "context": "La espera y la rutina pesan más que cualquier diálogo.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v1_008",
@@ -161,7 +175,9 @@
           435,
           351
         ]
-      }
+      },
+      "context": "Cierra el desayuno y prepara la siguiente secuencia de la escaleta, «El regalo del abuelo», donde se presentará la brújula.",
+      "contextLabel": "Sonido y función"
     }
   ]
 }

@@ -21,7 +21,9 @@
           438,
           326
         ]
-      }
+      },
+      "context": "El zumbido del laboratorio se apaga bajo el primer grito lejano de su madre. Sin diálogo de Royal.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_002",
@@ -41,7 +43,9 @@
           423,
           326
         ]
-      }
+      },
+      "context": "La madre, fuera de campo, registra el salón. Sus pasos y objetos movidos se acercan y alejan.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_003",
@@ -61,7 +65,9 @@
           426,
           326
         ]
-      }
+      },
+      "context": "La madre maldice porque no queda nada de beber. Una frase breve e inteligible basta; no hace falta sostener un monólogo.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_004",
@@ -81,7 +87,9 @@
           435,
           326
         ]
-      }
+      },
+      "context": "El estruendo interrumpe el silencio, pero Royal no salta. La falta de reacción cuenta que esto es habitual.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_005",
@@ -101,7 +109,9 @@
           438,
           375
         ]
-      }
+      },
+      "context": "Pasamos del ruido al silencio. Dejar unos segundos para que Royal espere y compruebe que el episodio ha terminado.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_006",
@@ -121,7 +131,9 @@
           423,
           375
         ]
-      }
+      },
+      "context": "Solo crujen el suelo y la lluvia que empieza fuera. No debe parecer una incursión de suspense sobrenatural.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_007",
@@ -141,7 +153,9 @@
           426,
           375
         ]
-      }
+      },
+      "context": "Respiración pesada de la madre. Mostrar el daño doméstico sin convertirla en caricatura.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_008",
@@ -161,7 +175,9 @@
           435,
           375
         ]
-      }
+      },
+      "context": "El gesto es pequeño y automático; revela que Royal ejerce un cuidado que debería recibir.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_009",
@@ -181,7 +197,9 @@
           438,
           326
         ]
-      }
+      },
+      "context": "La lluvia y el zumbido viejo de la nevera sustituyen los gritos.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_010",
@@ -201,7 +219,9 @@
           423,
           326
         ]
-      }
+      },
+      "context": "El motor de la nevera domina la banda sonora. La imagen comunica la falta de comida antes de que Royal reaccione.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_011",
@@ -221,7 +241,9 @@
           426,
           326
         ]
-      }
+      },
+      "context": "Un leve roce metálico. No añadir comentario, música irónica ni gesto de asco exagerado.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_012",
@@ -241,7 +263,9 @@
           435,
           326
         ]
-      }
+      },
+      "context": "Chasquido seco del metal. Corte directo al acto de comer.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_013",
@@ -261,7 +285,9 @@
           438,
           375
         ]
-      }
+      },
+      "context": "Cuchara contra metal, lluvia y respiración. La comida de perro es un hecho cotidiano y triste.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_014",
@@ -281,7 +307,9 @@
           423,
           375
         ]
-      }
+      },
+      "context": "Sostener el plano sin buscar lástima mediante música.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_015",
@@ -301,7 +329,9 @@
           426,
           375
         ]
-      }
+      },
+      "context": "Cierra la jornada y prepara el salto temporal al amanecer.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S3_v3_016",
@@ -321,7 +351,9 @@
           435,
           375
         ]
-      }
+      },
+      "context": "Lluvia como sonido dominante; fundir al silencio previo al despertador de S4-01.",
+      "contextLabel": "Sonido y función"
     }
   ]
 }

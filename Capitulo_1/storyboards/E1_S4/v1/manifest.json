@@ -21,7 +21,9 @@
           500,
           363
         ]
-      }
+      },
+      "context": "La melodía rompe el silencio de la lluvia, ya más débil o terminada. La pieza exacta se concretará al preparar el sonido.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S4_v1_002",
@@ -41,7 +43,9 @@
           495,
           363
         ]
-      }
+      },
+      "context": "La música sigue saliendo del despertador, dentro de la escena.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S4_v1_003",
@@ -61,7 +65,9 @@
           501,
           363
         ]
-      }
+      },
+      "context": "El contraste emocional nace de su baile, no de un montaje burlón de su miseria.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S4_v1_004",
@@ -81,7 +87,9 @@
           500,
           453
         ]
-      }
+      },
+      "context": "La casa vuelve a sonar: tuberías, pájaros, suelo húmedo. Ese instante de alegría le pertenece.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S4_v1_005",
@@ -101,7 +109,9 @@
           495,
           453
         ]
-      }
+      },
+      "context": "Sonidos domésticos discretos. Evitar presentar esta rutina como una gran transformación heroica.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S4_v1_006",
@@ -121,7 +131,9 @@
           501,
           453
         ]
-      }
+      },
+      "context": "No hay encuentro ni discusión matinal. La relación con la madre y el conflicto sobre el abuelo quedan para más adelante.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S4_v1_007",
@@ -141,7 +153,9 @@
           755,
           396
         ]
-      }
+      },
+      "context": "El último rastro de la música puede quedar en su tarareo, pero se impone el ambiente de la comarca.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S4_v1_008",
@@ -161,7 +175,9 @@
           751,
           396
         ]
-      }
+      },
+      "context": "Dejar respirar la distancia; ningún vehículo lo recoge.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S4_v1_009",
@@ -181,7 +197,9 @@
           755,
           420
         ]
-      }
+      },
+      "context": "Ambiente rural y pasos. El viaje no debe parecer un corte instantáneo de puerta a escuela.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S4_v1_010",
@@ -201,7 +219,9 @@
           751,
           420
         ]
-      }
+      },
+      "context": "Cierra el trayecto de apertura y deja preparado el siguiente bloque del día escolar.",
+      "contextLabel": "Sonido y función"
     }
   ]
 }

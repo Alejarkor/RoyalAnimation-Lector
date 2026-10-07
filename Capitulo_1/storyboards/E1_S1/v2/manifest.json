@@ -21,7 +21,9 @@
           366,
           214
         ]
-      }
+      },
+      "context": "Regenerar no equivale todavía a curar.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_002",
@@ -41,7 +43,9 @@
           369,
           214
         ]
-      }
+      },
+      "context": "Conoce el problema y no ha dormido tratando de resolverlo.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_003",
@@ -61,7 +65,9 @@
           383,
           214
         ]
-      }
+      },
+      "context": "Inteligencia e impulsividad.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_004",
@@ -81,7 +87,9 @@
           366,
           214
         ]
-      }
+      },
+      "context": "Son las dos versiones oficiales.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_005",
@@ -101,7 +109,9 @@
           366,
           211
         ]
-      }
+      },
+      "context": "Un mismo origen farmacológico, dos formulaciones.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_006",
@@ -121,7 +131,9 @@
           369,
           211
         ]
-      }
+      },
+      "context": "B supera a A sin resolver el problema.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_007",
@@ -141,7 +153,9 @@
           383,
           211
         ]
-      }
+      },
+      "context": "Existe una tercera prueba fuera del protocolo público.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_008",
@@ -161,7 +175,9 @@
           366,
           211
         ]
-      }
+      },
+      "context": "Sabe que no puede presentarla.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_009",
@@ -181,7 +197,9 @@
           366,
           208
         ]
-      }
+      },
+      "context": "Las dos formulaciones autorizadas fracasan a distinto ritmo.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_010",
@@ -201,7 +219,9 @@
           369,
           208
         ]
-      }
+      },
+      "context": "La solución exige algo que está ocultando.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_011",
@@ -221,7 +241,9 @@
           383,
           208
         ]
-      }
+      },
+      "context": "Comienza el examen público.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_012",
@@ -241,7 +263,9 @@
           366,
           208
         ]
-      }
+      },
+      "context": "La seguridad pública es una máscara.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_013",
@@ -261,7 +285,9 @@
           372,
           214
         ]
-      }
+      },
+      "context": "El abuelo domina la sala, pero va acelerado.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_014",
@@ -281,7 +307,9 @@
           400,
           214
         ]
-      }
+      },
+      "context": "M-7 no figura en el programa.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_015",
@@ -301,7 +329,9 @@
           345,
           214
         ]
-      }
+      },
+      "context": "La relación de mentor y discípulo importa.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_016",
@@ -321,7 +351,9 @@
           373,
           214
         ]
-      }
+      },
+      "context": "Punto de partida común.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_017",
@@ -341,7 +373,9 @@
           372,
           183
         ]
-      }
+      },
+      "context": "A es inviable.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_018",
@@ -361,7 +395,9 @@
           400,
           183
         ]
-      }
+      },
+      "context": "B es mejor que A, muy lejos de M-7.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_019",
@@ -381,7 +417,9 @@
           345,
           183
         ]
-      }
+      },
+      "context": "La financiación peligra.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_020",
@@ -401,7 +439,9 @@
           373,
           183
         ]
-      }
+      },
+      "context": "Su prisa prepara el error.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_021",
@@ -421,7 +461,9 @@
           372,
           205
         ]
-      }
+      },
+      "context": "El espectador puede ver la confusión sin que parezca torpeza absurda.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_022",
@@ -441,7 +483,9 @@
           400,
           205
         ]
-      }
+      },
+      "context": "Ambos contribuyen al accidente.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_023",
@@ -461,7 +505,9 @@
           345,
           205
         ]
-      }
+      },
+      "context": "Todavía creen que es B.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_024",
@@ -481,7 +527,9 @@
           373,
           205
         ]
-      }
+      },
+      "context": "Un salto cualitativo imposible para B.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_025",
@@ -501,7 +549,9 @@
           369,
           207
         ]
-      }
+      },
+      "context": "El resultado podría cambiarlo todo.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_026",
@@ -521,7 +571,9 @@
           370,
           207
         ]
-      }
+      },
+      "context": "No entregó B.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_027",
@@ -541,7 +593,9 @@
           370,
           207
         ]
-      }
+      },
+      "context": "La impulsividad del abuelo agrava la exposición.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_028",
@@ -561,7 +615,9 @@
           369,
           207
         ]
-      }
+      },
+      "context": "Ambos saben qué se ha mostrado.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_029",
@@ -581,7 +637,9 @@
           369,
           211
         ]
-      }
+      },
+      "context": "El comité descubre que hay una prueba no declarada.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_030",
@@ -601,7 +659,9 @@
           370,
           211
         ]
-      }
+      },
+      "context": "La eficacia y la transgresión son inseparables.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_031",
@@ -621,7 +681,9 @@
           370,
           211
         ]
-      }
+      },
+      "context": "El descubrimiento no salva su carrera.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_032",
@@ -641,7 +703,9 @@
           369,
           211
         ]
-      }
+      },
+      "context": "Termina la actuación pública.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_033",
@@ -661,7 +725,9 @@
           369,
           214
         ]
-      }
+      },
+      "context": "Ha perdido el futuro que imaginaba.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_034",
@@ -681,7 +747,9 @@
           370,
           214
         ]
-      }
+      },
+      "context": "Llega buscando reparar el daño.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_035",
@@ -701,7 +769,9 @@
           370,
           214
         ]
-      }
+      },
+      "context": "Abusa del poder que tiene sobre su discípulo.",
+      "contextLabel": "Información"
     },
     {
       "id": "E1_S1_v2_036",
@@ -721,7 +791,9 @@
           369,
           214
         ]
-      }
+      },
+      "context": "Nace una herida que marcará su relación futura.",
+      "contextLabel": "Información"
     }
   ]
 }

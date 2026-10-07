@@ -21,7 +21,9 @@
           497,
           200
         ]
-      }
+      },
+      "context": "Dos o tres segundos de silencio, luego regresa el zumbido del laboratorio. El golpe conserva su peso.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S2_v1_002",
@@ -41,7 +43,9 @@
           497,
           200
         ]
-      }
+      },
+      "context": "La empresa se ha vaciado. No parece victorioso ni libre.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S2_v1_003",
@@ -61,7 +65,9 @@
           495,
           200
         ]
-      }
+      },
+      "context": "No se justifica ni se disculpa. Escoge refugiarse en el trabajo.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S2_v1_004",
@@ -81,7 +87,9 @@
           497,
           227
         ]
-      }
+      },
+      "context": "Bastan imágenes conocidas y una diferencia nítida. No repetimos la explicación del comité.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S2_v1_005",
@@ -101,7 +109,9 @@
           497,
           227
         ]
-      }
+      },
+      "context": "Las variaciones del compuesto no explican por qué M-7 se estabiliza.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S2_v1_006",
@@ -121,7 +131,9 @@
           495,
           227
         ]
-      }
+      },
+      "context": "Pasa de defender un resultado a imaginar una dirección de investigación.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S2_v1_007",
@@ -141,7 +153,9 @@
           497,
           225
         ]
-      }
+      },
+      "context": "La idea crece de un cultivo a un ser vivo completo, sin revelar aún cómo intentará conseguirlo.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S2_v1_008",
@@ -161,7 +175,9 @@
           497,
           225
         ]
-      }
+      },
+      "context": "Sabe que esta investigación no será aceptada y decide continuar.",
+      "contextLabel": "Sonido y función"
     },
     {
       "id": "E1_S2_v1_009",
@@ -181,7 +197,9 @@
           495,
           225
         ]
-      }
+      },
+      "context": "Comienza un fundido encadenado sin pasar por negro. El rostro, tamaño de plano, inclinación de cabeza, altura de cámara y posición de la mano deben coincidir con S3-01. El zumbido fluorescente se transforma gradualmente en el del frigorífico de la casa de Royal.",
+      "contextLabel": "Sonido y función"
     }
   ]
 }

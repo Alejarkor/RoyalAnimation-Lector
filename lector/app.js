@@ -4,9 +4,8 @@ const $ = (id) => document.getElementById(id);
 const ui = Object.fromEntries(["sidebar","scrim","contents","resetVersions","toggleSidebar","closeSidebar","chapterTitle","sectionTitle","versionSelect","panelCount","themeToggle","openNotes","noteCount","fullscreen","versionNote","errorNote","readingArea","panelGrid","previousPage","nextPage","pagePosition","zoomDialog","zoomTitle","sourceLink","zoomOut","zoomLevel","zoomIn","closeZoom","zoomScroll","zoomCanvas","zoomImage","zoomPins","notesDialog","closeNotes","notesTitle","addNote","allNotes","notesStatus","notesList","noteDialog","noteTitle","noteForm","noteAuthor","noteBody","noteWebsite","noteFormStatus","cancelNote","cancelNoteBottom","saveNote"].map((id) => [id,$(id)]));
 const notesApi = "https://royal-notas-storyboard.alejarkor.chatgpt.site/api/notes";
 const asset = (path) => new URL(`../${path}`, document.baseURI).href;
-const validCount = [1,2,4,6];
 const storedCount = Number(localStorage.getItem("royal.panelCount"));
-let panelCount = validCount.includes(storedCount) ? storedCount : 2;
+let panelCount = Number.isInteger(storedCount) && storedCount >= 1 && storedCount <= 24 ? storedCount : 2;
 let catalog, pages = [], currentPage = 0, notes = [], entries = [], selectedVersions = {}, noteMode = false, noteTarget = null, zoomPanel = null, zoomScale = 1;
 
 function setTheme(theme) {
@@ -77,15 +76,19 @@ function imageArea(image){const rect=image.getBoundingClientRect();const ratio=i
 function pointOnImage(event,image){const area=imageArea(image);if(!area)return null;const x=(event.clientX-area.left)/area.width,y=(event.clientY-area.top)/area.height;return x<0||x>1||y<0||y>1?null:{x:Math.round(x*10000),y:Math.round(y*10000)};}
 function drawPins(container,image,panel){container.replaceChildren();const area=imageArea(image);if(!area)return;const parent=container.getBoundingClientRect();for(const [index,mapped] of notesFor(panel).entries()){const pin=document.createElement("button");pin.type="button";pin.className="pin";pin.textContent=String(index+1);pin.title=`${mapped.note.author}: ${mapped.note.body}`;pin.style.left=`${area.left-parent.left+mapped.x/10000*area.width}px`;pin.style.top=`${area.top-parent.top+mapped.y/10000*area.height}px`;pin.addEventListener("click",(event)=>{event.stopPropagation();ui.allNotes.checked=false;renderNotes(panel.id);ui.notesDialog.showModal();});container.append(pin);}}
 function renderVisiblePins(){for(const art of ui.panelGrid.querySelectorAll(".panel-art")){const panel=entries.find((entry)=>entry.panel.id===art.dataset.panelId)?.panel;if(panel)drawPins(art.querySelector(".pin-layer"),art.querySelector("img"),panel);}if(ui.zoomDialog.open&&zoomPanel)drawPins(ui.zoomPins,ui.zoomImage,zoomPanel);}
-function renderPanels(page){ui.panelGrid.replaceChildren();ui.panelGrid.dataset.count=String(panelCount);ui.panelGrid.style.setProperty("--rows",String(Math.ceil(page.panels.length/(panelCount<=2?panelCount:2))));
+function renderPanels(page){ui.panelGrid.replaceChildren();ui.panelGrid.dataset.count=String(panelCount);ui.panelGrid.style.setProperty("--columns",String(panelCount===1?1:panelCount<=4?2:panelCount<=12?3:4));
   for(const panel of page.panels){const figure=document.createElement("figure");figure.className="panel";const art=document.createElement("div");art.className=`panel-art${noteMode?" note-mode":""}`;art.dataset.panelId=panel.id;
     const image=document.createElement("img");image.src=asset(panel.image);image.alt=`${panel.shotId}: ${panel.title}`;image.loading="eager";image.decoding="async";image.addEventListener("load",renderVisiblePins);image.addEventListener("error",()=>{ui.errorNote.hidden=false;ui.errorNote.textContent=`No se pudo abrir ${panel.shotId}.`;});
     const pins=document.createElement("div");pins.className="pin-layer";art.append(image,pins);
     art.addEventListener("click",(event)=>{if(noteMode){const point=pointOnImage(event,image);if(point)beginNote(panel,point);}else openZoom(panel,image);});
-    const caption=document.createElement("figcaption");caption.className="panel-meta";const id=document.createElement("strong");id.textContent=panel.shotId;const title=document.createElement("span");title.textContent=panel.title;caption.append(id,title);figure.append(art,caption);ui.panelGrid.append(figure);
+    const caption=document.createElement("figcaption");caption.className="panel-meta";
+    const heading=document.createElement("div");heading.className="panel-heading";const id=document.createElement("strong");id.textContent=panel.shotId;const title=document.createElement("span");title.textContent=panel.title;heading.append(id,title);caption.append(heading);
+    const description=document.createElement("p");description.className="panel-description";description.textContent=panel.description||"Descripción pendiente de transcripción.";caption.append(description);
+    if(panel.context){const context=document.createElement("p");context.className="panel-context";const label=document.createElement("strong");label.textContent=`${panel.contextLabel||"Función"}: `;context.append(label,document.createTextNode(panel.context));caption.append(context);}
+    figure.append(art,caption);ui.panelGrid.append(figure);
   }
 }
-function showPage(index){if(!pages.length)return;currentPage=Math.max(0,Math.min(index,pages.length-1));const page=pages[currentPage];ui.chapterTitle.textContent=`Capítulo ${page.chapter.number} · ${page.chapter.title}`;ui.sectionTitle.textContent=page.section.title;ui.pagePosition.textContent=`Página ${currentPage+1} de ${pages.length} · ${page.start+1}–${page.start+page.panels.length} de ${page.version.panels.length}`;ui.previousPage.disabled=currentPage===0;ui.nextPage.disabled=currentPage===pages.length-1;renderVersion(page);renderContents();renderPanels(page);ui.noteCount.textContent=String(page.panels.reduce((sum,panel)=>sum+notesFor(panel).length,0));ui.readingArea.scrollIntoView({block:"start"});}
+function showPage(index){if(!pages.length)return;currentPage=Math.max(0,Math.min(index,pages.length-1));const page=pages[currentPage];ui.chapterTitle.textContent=`Capítulo ${page.chapter.number} · ${page.chapter.title}`;ui.sectionTitle.textContent=page.section.title;ui.pagePosition.textContent=`Página ${currentPage+1} de ${pages.length} · ${page.start+1}–${page.start+page.panels.length} de ${page.version.panels.length}`;ui.previousPage.disabled=currentPage===0;ui.nextPage.disabled=currentPage===pages.length-1;renderVersion(page);renderContents();renderPanels(page);ui.noteCount.textContent=String(page.panels.reduce((sum,panel)=>sum+notesFor(panel).length,0));window.scrollTo({top:0});}
 function setNoteMode(enabled){noteMode=enabled;ui.addNote.classList.toggle("active",enabled);ui.addNote.textContent=enabled?"Cancelar nota":"Añadir nota";for(const art of ui.panelGrid.querySelectorAll(".panel-art"))art.classList.toggle("note-mode",enabled);}
 function beginNote(panel,point){noteTarget={panel,point};ui.noteTitle.textContent=`Nueva nota · ${panel.shotId}`;ui.noteFormStatus.textContent="";if(ui.zoomDialog.open)ui.zoomDialog.close();if(ui.notesDialog.open)ui.notesDialog.close();ui.noteDialog.showModal();ui.noteBody.focus();}
 function openZoom(panel,image){zoomPanel=panel;zoomScale=1;ui.zoomTitle.textContent=`${panel.shotId} · ${panel.title}`;ui.zoomImage.src=image.src;ui.zoomImage.alt=image.alt;ui.sourceLink.href=asset(panel.source.sheet);ui.sourceLink.hidden=!panel.source;ui.zoomDialog.showModal();ui.zoomImage.onload=()=>{updateZoom();renderVisiblePins();};if(ui.zoomImage.complete)updateZoom();}
@@ -104,7 +107,17 @@ async function loadCatalog(){try{const response=await fetch("./catalogo.json",{c
 
 ui.toggleSidebar.addEventListener("click",()=>setSidebar(document.querySelector(".app").classList.contains("sidebar-hidden")));ui.closeSidebar.addEventListener("click",()=>setSidebar(false));ui.scrim.addEventListener("click",()=>setSidebar(false));
 ui.previousPage.addEventListener("click",()=>showPage(currentPage-1));ui.nextPage.addEventListener("click",()=>showPage(currentPage+1));
-ui.panelCount.addEventListener("change",()=>{const page=pages[currentPage];panelCount=Number(ui.panelCount.value);localStorage.setItem("royal.panelCount",String(panelCount));rebuildPages();showPage(findPage(page.section.id,page.start));});
+function updatePanelCount(normalize=false){
+  if(ui.panelCount.value===""){if(normalize)ui.panelCount.value=String(panelCount);return;}
+  const requested=Number(ui.panelCount.value);
+  if(!Number.isFinite(requested)){if(normalize)ui.panelCount.value=String(panelCount);return;}
+  const next=Math.max(1,Math.min(24,Math.round(requested)));
+  if(normalize)ui.panelCount.value=String(next);
+  if(next===panelCount)return;
+  const page=pages[currentPage];panelCount=next;localStorage.setItem("royal.panelCount",String(panelCount));rebuildPages();showPage(findPage(page.section.id,page.start));
+}
+ui.panelCount.addEventListener("input",()=>updatePanelCount());
+ui.panelCount.addEventListener("change",()=>updatePanelCount(true));
 ui.versionSelect.addEventListener("change",()=>{const page=pages[currentPage];selectedVersions[page.section.id]=ui.versionSelect.value===page.section.currentVersion?undefined:ui.versionSelect.value;if(!selectedVersions[page.section.id])delete selectedVersions[page.section.id];rebuildPages();showPage(findPage(page.section.id,Math.min(page.start,selectedVersion(page.section).panels.length-1)));});
 ui.resetVersions.addEventListener("click",()=>{const page=pages[currentPage];selectedVersions={};rebuildPages();showPage(findPage(page.section.id,Math.min(page.start,selectedVersion(page.section).panels.length-1)));});
 ui.themeToggle.addEventListener("click",()=>setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark"));
@@ -116,7 +129,7 @@ ui.zoomIn.addEventListener("click",()=>{zoomScale=Math.min(3,zoomScale+.25);upda
 ui.zoomCanvas.addEventListener("click",(event)=>{if(!noteMode||!zoomPanel)return;const point=pointOnImage(event,ui.zoomImage);if(point)beginNote(zoomPanel,point);});
 ui.cancelNote.addEventListener("click",()=>ui.noteDialog.close());ui.cancelNoteBottom.addEventListener("click",()=>ui.noteDialog.close());
 ui.noteForm.addEventListener("submit",async(event)=>{event.preventDefault();if(!noteTarget)return;ui.saveNote.disabled=true;ui.noteFormStatus.textContent="Guardando…";try{const response=await fetch(notesApi,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({image:noteTarget.panel.id,...noteTarget.point,author:ui.noteAuthor.value,body:ui.noteBody.value,website:ui.noteWebsite.value})});const data=await response.json();if(!response.ok)throw Error(data.error||"No se pudo guardar.");notes.unshift(data.note);ui.noteBody.value="";ui.noteDialog.close();setNoteMode(false);showPage(currentPage);}catch(error){ui.noteFormStatus.textContent=error.message;}finally{ui.saveNote.disabled=false;}});
-window.addEventListener("resize",()=>{if(innerWidth>900)ui.scrim.hidden=true;renderVisiblePins();});
+window.addEventListener("resize",()=>{if(innerWidth<=900&&!document.querySelector(".app").classList.contains("sidebar-hidden"))setSidebar(false);if(innerWidth>900)ui.scrim.hidden=true;renderVisiblePins();});
 document.addEventListener("keydown",(event)=>{if(event.key==="Escape")setSidebar(false);if(!catalog||ui.zoomDialog.open||ui.notesDialog.open||ui.noteDialog.open||/^(INPUT|TEXTAREA|SELECT)$/.test(event.target.tagName))return;if(event.key==="ArrowRight"){event.preventDefault();showPage(currentPage+1);}if(event.key==="ArrowLeft"){event.preventDefault();showPage(currentPage-1);}});
 let swipe=null;ui.readingArea.addEventListener("touchstart",(event)=>{const touch=event.changedTouches[0];swipe={x:touch.clientX,y:touch.clientY};},{passive:true});ui.readingArea.addEventListener("touchend",(event)=>{if(!swipe)return;const touch=event.changedTouches[0],dx=touch.clientX-swipe.x,dy=touch.clientY-swipe.y;swipe=null;if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5)showPage(currentPage+(dx<0?1:-1));},{passive:true});
 loadCatalog();
