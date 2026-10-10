@@ -127,6 +127,28 @@
               "manifest": "Capitulo_1/storyboards/E1_S7/v1/manifest.json"
             }
           ]
+        },
+        {
+          "id": "E1_S8",
+          "title": "El aceite en las escaleras",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S8/v1/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "E1_S9",
+          "title": "El simulacro",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S9/v1/manifest.json"
+            }
+          ]
         }
       ]
     }
