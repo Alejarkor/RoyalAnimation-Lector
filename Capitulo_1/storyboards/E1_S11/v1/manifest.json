@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S11",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S11_v1_001",
+      "shotId": "S11-01",
+      "title": "La casa aislada",
+      "description": "Gran plano general fijo desde la ladera, evocando S4-07. El coche oficial deja la carretera y llega a la casa separada del pueblo. Royal se apea detrás de los dos adultos.",
+      "image": "Capitulo_1/storyboards/E1_S11/v1/paneles/S11-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S11_La_Visita_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          760,
+          504
+        ]
+      },
+      "context": "Motor que se apaga, viento, ausencia de vecinos próximos.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S11_v1_002",
+      "shotId": "S11-02",
+      "title": "Un regreso inesperado",
+      "description": "Plano medio desde el umbral, cámara fija. Royal abre con su llave. Su madre sigue dentro, despeinada y aún afectada por la bebida; la manta de la noche anterior ha caído a un lado.",
+      "image": "Capitulo_1/storyboards/E1_S11/v1/paneles/S11-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S11_La_Visita_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          776,
+          0,
+          760,
+          504
+        ]
+      },
+      "context": "Madre: «¿Qué haces aquí a estas horas?». Ve a los adultos. «¿Quiénes son?».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S11_v1_003",
+      "shotId": "S11-03",
+      "title": "El estado del salón",
+      "description": "Plano general interior, panorámica lenta. Se revela el salón con colillas, envases, cristales sin recoger y suciedad ya vistos la noche anterior. Los profesionales intercambian una mirada de preocupación.",
+      "image": "Capitulo_1/storyboards/E1_S11/v1/paneles/S11-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S11_La_Visita_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          518,
+          760,
+          506
+        ]
+      },
+      "context": "Trabajadora: «Necesitamos hablar sobre Royal y comprobar que está bien».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S11_v1_004",
+      "shotId": "S11-04",
+      "title": "La nevera casi vacía",
+      "description": "Plano detalle de la nevera abierta, cámara quieta. El otro profesional comprueba que casi no hay comida. Quedan las latas de perro y restos escasos. Royal ve la inspección desde la puerta.",
+      "image": "Capitulo_1/storyboards/E1_S11/v1/paneles/S11-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S11_La_Visita_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          776,
+          518,
+          760,
+          506
+        ]
+      },
+      "context": "Bisagra y motor del frigorífico; ninguna acusación verbal inmediata.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S11_v1_005",
+      "shotId": "S11-05",
+      "title": "La madre se defiende",
+      "description": "Plano medio de la madre, acercamiento corto. Comprende que han visto la casa y pasa del desconcierto a la defensa furiosa.",
+      "image": "Capitulo_1/storyboards/E1_S11/v1/paneles/S11-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S11_La_Visita_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          505
+        ]
+      },
+      "context": "Madre: «Mi hijo come. No vais a venir aquí a juzgarme».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S11_v1_006",
+      "shotId": "S11-06",
+      "title": "La custodia en cuestión",
+      "description": "Plano conjunto a la altura de Royal, cámara fija. La trabajadora intenta hablar despacio; la madre la interrumpe. Royal queda entre ellas, sin poder reparar ninguna de las dos situaciones.",
+      "image": "Capitulo_1/storyboards/E1_S11/v1/paneles/S11-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S11_La_Visita_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          776,
+          0,
+          760,
+          505
+        ]
+      },
+      "context": "Trabajadora: «Hoy no puede quedarse aquí sin más. Tendremos que buscar un lugar seguro y revisar la custodia». Madre: «No me lo vais a quitar».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S11_v1_007",
+      "shotId": "S11-07",
+      "title": "La palabra que hiere",
+      "description": "Primer plano de Royal, cámara inmóvil. La palabra «quitar» lo alcanza. Mira a su madre esperando que baje el tono; ella sigue gritando.",
+      "image": "Capitulo_1/storyboards/E1_S11/v1/paneles/S11-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S11_La_Visita_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          518,
+          759,
+          506
+        ]
+      },
+      "context": "Madre, fuera de campo: «¡Fuera de mi casa!».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S11_v1_008",
+      "shotId": "S11-08",
+      "title": "Royal se encierra",
+      "description": "Plano general del pasillo, travelling rápido detrás de Royal. Royal retrocede, luego corre a su dormitorio y cierra la puerta con llave. La trabajadora va tras él sin correrle encima.",
+      "image": "Capitulo_1/storyboards/E1_S11/v1/paneles/S11-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S11_La_Visita_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          776,
+          518,
+          760,
+          506
+        ]
+      },
+      "context": "Royal: «No me voy con vosotros». Portazo.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}

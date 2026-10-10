@@ -149,6 +149,28 @@
               "manifest": "Capitulo_1/storyboards/E1_S9/v1/manifest.json"
             }
           ]
+        },
+        {
+          "id": "E1_S10",
+          "title": "En dirección",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S10/v1/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "E1_S11",
+          "title": "La visita a casa",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S11/v1/manifest.json"
+            }
+          ]
         }
       ]
     }
