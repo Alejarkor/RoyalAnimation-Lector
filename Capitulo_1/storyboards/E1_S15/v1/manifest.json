@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S15",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S15_v1_001",
+      "shotId": "S15-01",
+      "title": "Un lugar peligroso",
+      "description": "Gran plano general fijo de la ladera y una pendiente muy inclinada. Royal llega exhausto cuando ya casi no hay luz. Ignora un claro más seguro y deja la mochila junto a un borde inclinado.",
+      "image": "Capitulo_1/storyboards/E1_S15/v1/paneles/S15-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S15_Tienda_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          892,
+          482
+        ]
+      },
+      "context": "Viento suave, pasos torpes.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S15_v1_002",
+      "shotId": "S15-02",
+      "title": "Aguanta una noche",
+      "description": "Plano medio con leve cámara en mano. Intenta montar la tienda pequeña; una varilla se resiste y clava mal uno de los anclajes. Sabe que la ubicación no es buena, pero no tiene fuerzas para buscar otra.",
+      "image": "Capitulo_1/storyboards/E1_S15/v1/paneles/S15-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S15_Tienda_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          913,
+          0,
+          623,
+          482
+        ]
+      },
+      "context": "Royal: «Aguanta una noche». Lona crujiendo.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S15_v1_003",
+      "shotId": "S15-03",
+      "title": "Demasiado cerca",
+      "description": "Plano general lateral fijo que muestra tienda, terreno y caída en una sola composición. Royal se mete dentro; la tienda queda apenas separada del inicio de la pendiente. Una silueta pálida observa desde lejos entre troncos.",
+      "image": "Capitulo_1/storyboards/E1_S15/v1/paneles/S15-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S15_Tienda_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          493,
+          892,
+          531
+        ]
+      },
+      "context": "Cierre de la cremallera, primeras ráfagas.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S15_v1_004",
+      "shotId": "S15-04",
+      "title": "Sueño profundo",
+      "description": "Plano interior cerrado, cámara quieta. Royal se duerme vestido y con la brújula cerca de la mano. No oye el viento que empieza a crecer.",
+      "image": "Capitulo_1/storyboards/E1_S15/v1/paneles/S15-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S15_Tienda_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          913,
+          493,
+          623,
+          531
+        ]
+      },
+      "context": "Respiración cada vez más lenta, lona golpeando.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S15_v1_005",
+      "shotId": "S15-05",
+      "title": "El anclaje cede",
+      "description": "Plano general exterior fijo, sostenido. Una ráfaga levanta el anclaje flojo. La base de la tienda se desplaza varios centímetros hacia la pendiente.",
+      "image": "Capitulo_1/storyboards/E1_S15/v1/paneles/S15-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S15_Tienda_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          502
+        ]
+      },
+      "context": "Viento fuerte, metal del anclaje saltando.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S15_v1_006",
+      "shotId": "S15-06",
+      "title": "Flemugo la detiene",
+      "description": "Plano medio bajo con seguimiento corto. Flemugo emerge de la sombra. Apoya el peso contra la tienda para detenerla y distingue la silueta dormida de Royal a contraluz sobre la lona.",
+      "image": "Capitulo_1/storyboards/E1_S15/v1/paneles/S15-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S15_Tienda_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          502
+        ]
+      },
+      "context": "Esfuerzo de Flemugo, tela tensándose.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S15_v1_007",
+      "shotId": "S15-07",
+      "title": "Rama y piedra",
+      "description": "Plano detalle fijo de sus manos. Clava oblicuamente una rama resistente en tierra firme junto al lado que resbala y calza la base con una piedra grande. Ambos topes frenan el desplazamiento.",
+      "image": "Capitulo_1/storyboards/E1_S15/v1/paneles/S15-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S15_Tienda_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          518,
+          759,
+          506
+        ]
+      },
+      "context": "Tierra removida, golpe de piedra, viento.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S15_v1_008",
+      "shotId": "S15-08",
+      "title": "La tienda resiste",
+      "description": "Plano general desde la pendiente, cámara inmóvil. La tienda deja de avanzar. Flemugo comprueba la estabilidad, recoge la mano y retrocede antes de que Royal despierte.",
+      "image": "Capitulo_1/storyboards/E1_S15/v1/paneles/S15-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S15_Tienda_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          518,
+          759,
+          506
+        ]
+      },
+      "context": "Las ráfagas continúan, pero la lona ya no se desplaza.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S15_v1_009",
+      "shotId": "S15-09",
+      "title": "Una sombra sobre la lona",
+      "description": "Plano interior de Royal dormido, muy lento acercamiento. Una sombra pasa sobre la tela y desaparece. Royal se mueve, pero sigue dormido.",
+      "image": "Capitulo_1/storyboards/E1_S15/v1/paneles/S15-09.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S15_Tienda_C_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          1536,
+          1024
+        ]
+      },
+      "context": "Viento descendiendo gradualmente. Corte al amanecer.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}

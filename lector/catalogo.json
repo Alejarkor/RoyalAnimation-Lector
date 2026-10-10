@@ -213,6 +213,28 @@
               "manifest": "Capitulo_1/storyboards/E1_S13/v1/manifest.json"
             }
           ]
+        },
+        {
+          "id": "E1_S14",
+          "title": "El pescador entre los juncos",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S14/v1/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "E1_S15",
+          "title": "La tienda en la pendiente",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S15/v1/manifest.json"
+            }
+          ]
         }
       ]
     }

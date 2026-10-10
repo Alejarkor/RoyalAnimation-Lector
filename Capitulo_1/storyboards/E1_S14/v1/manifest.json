@@ -1,0 +1,227 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S14",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S14_v1_001",
+      "shotId": "S14-01",
+      "title": "El claro",
+      "description": "Plano general fijo del claro entre árboles y agua. Royal sale del bosque, comprueba que nadie lo persigue y se sienta en la orilla.",
+      "image": "Capitulo_1/storyboards/E1_S14/v1/paneles/S14-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S14_Arroyo_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          761,
+          501
+        ]
+      },
+      "context": "Agua corriente, respiración fatigada.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S14_v1_002",
+      "shotId": "S14-02",
+      "title": "Agua y descanso",
+      "description": "Plano medio bajo, cámara quieta. Llena la cantimplora, bebe y se moja la cara. El cansancio sustituye al pánico de la persecución.",
+      "image": "Capitulo_1/storyboards/E1_S14/v1/paneles/S14-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S14_Arroyo_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          501
+        ]
+      },
+      "context": "Chapoteo, tapón al cerrarse.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S14_v1_003",
+      "shotId": "S14-03",
+      "title": "El rumbo",
+      "description": "Plano detalle fijo de la brújula sobre su rodilla. Alinea la aguja con las montañas y calcula el rumbo hacia la casa del abuelo.",
+      "image": "Capitulo_1/storyboards/E1_S14/v1/paneles/S14-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S14_Arroyo_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          515,
+          761,
+          509
+        ]
+      },
+      "context": "Royal, en voz muy baja: «Por ahí».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S14_v1_004",
+      "shotId": "S14-04",
+      "title": "Algo en los juncos",
+      "description": "Plano general desde atrás de Royal, acercamiento lento a una mata alta de juncos en la orilla opuesta. Algo se mueve dentro. Royal cree que es un animal pequeño; desde su posición no ve a Flemugo pescando con las manos.",
+      "image": "Capitulo_1/storyboards/E1_S14/v1/paneles/S14-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S14_Arroyo_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          515,
+          759,
+          509
+        ]
+      },
+      "context": "Agua removida, un chapoteo.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S14_v1_005",
+      "shotId": "S14-05",
+      "title": "El palo",
+      "description": "Plano medio fijo de Royal. Toma un palo caído y lo lanza distraídamente hacia los juncos para comprobar qué hay. No pretende herir a nadie.",
+      "image": "Capitulo_1/storyboards/E1_S14/v1/paneles/S14-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S14_Arroyo_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          501
+        ]
+      },
+      "context": "Palo cortando el aire.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S14_v1_006",
+      "shotId": "S14-06",
+      "title": "El golpe",
+      "description": "Plano parcial entre juncos, cámara sacudida por el impacto. El palo golpea de lleno la cabeza de Flemugo mientras sujetaba un pez pequeño. Deja escapar un grito extraño y pierde el pez; el golpe lo asusta más de lo que lo lastima.",
+      "image": "Capitulo_1/storyboards/E1_S14/v1/paneles/S14-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S14_Arroyo_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          778,
+          0,
+          758,
+          501
+        ]
+      },
+      "context": "Golpe sordo, grito inarticulado, agua agitada.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S14_v1_007",
+      "shotId": "S14-07",
+      "title": "La figura pálida",
+      "description": "Plano subjetivo de Royal, panorámica brusca. Solo ve tallos abrirse, una figura grande y pálida que se agacha y corre por el margen del río. Retrocede un paso.",
+      "image": "Capitulo_1/storyboards/E1_S14/v1/paneles/S14-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S14_Arroyo_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          516,
+          759,
+          508
+        ]
+      },
+      "context": "Royal: «¿Qué…?». Ramas rompiéndose.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S14_v1_008",
+      "shotId": "S14-08",
+      "title": "Nadie ataca",
+      "description": "Plano medio de Royal, fijo. Espera un ataque que no llega. Mira su palo en el agua, recoge la mochila y decide marcharse.",
+      "image": "Capitulo_1/storyboards/E1_S14/v1/paneles/S14-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S14_Arroyo_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          778,
+          516,
+          758,
+          508
+        ]
+      },
+      "context": "El agua recupera su sonido regular.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S14_v1_009",
+      "shotId": "S14-09",
+      "title": "Flemugo observa",
+      "description": "Plano general desde la otra orilla, cámara fija. Royal se aleja por el sendero. Detrás de unas raíces aparece Flemugo adolescente, frotándose la cabeza, con la postura y los bultos de su ficha de personaje. Lo observa con curiosidad más que con odio.",
+      "image": "Capitulo_1/storyboards/E1_S14/v1/paneles/S14-09.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S14_Arroyo_C_v1.png",
+        "size": [
+          2172,
+          724
+        ],
+        "rect": [
+          0,
+          0,
+          1066,
+          724
+        ]
+      },
+      "context": "Respiración húmeda de Flemugo; no habla.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S14_v1_010",
+      "shotId": "S14-10",
+      "title": "El seguimiento",
+      "description": "Plano abierto con lento retroceso que deja a Royal pequeño camino del monte y a Flemugo escondido en el margen. Flemugo lo sigue con la mirada y luego toma el mismo rumbo a distancia. Royal no se da cuenta.",
+      "image": "Capitulo_1/storyboards/E1_S14/v1/paneles/S14-10.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S14_Arroyo_C_v1.png",
+        "size": [
+          2172,
+          724
+        ],
+        "rect": [
+          1106,
+          0,
+          1066,
+          724
+        ]
+      },
+      "context": "El río une esta escena con la noche del campamento.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}
