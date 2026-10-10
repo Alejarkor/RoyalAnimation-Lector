@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S16",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S16_v1_001",
+      "shotId": "S16-01",
+      "title": "El campamento al amanecer",
+      "description": "Plano general fijo del campamento a primera luz. La tienda sigue en pie junto a la pendiente y se ve lo cerca que estuvo de deslizarse.",
+      "image": "Capitulo_1/storyboards/E1_S16/v1/paneles/S16-01.png",
+      "source": { "sheet": "Capitulo_1/E1_S16_Amanecer_A_v1.png", "size": [1536, 1024], "rect": [0, 0, 759, 502] },
+      "context": "Viento ya suave, pájaros.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S16_v1_002",
+      "shotId": "S16-02",
+      "title": "Despertar rígido",
+      "description": "Plano medio desde dentro, cámara quieta. Royal despierta rígido, sale del saco y comprueba la hora por la luz.",
+      "image": "Capitulo_1/storyboards/E1_S16/v1/paneles/S16-02.png",
+      "source": { "sheet": "Capitulo_1/E1_S16_Amanecer_A_v1.png", "size": [1536, 1024], "rect": [778, 0, 758, 502] },
+      "context": "Bostezo contenido, cremallera.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S16_v1_003",
+      "shotId": "S16-03",
+      "title": "Los topes",
+      "description": "Plano detalle fijo de la rama clavada y la piedra calzando la base. Royal tira de la tienda para recogerla y descubre que no puede moverla por los topes.",
+      "image": "Capitulo_1/storyboards/E1_S16/v1/paneles/S16-03.png",
+      "source": { "sheet": "Capitulo_1/E1_S16_Amanecer_A_v1.png", "size": [1536, 1024], "rect": [0, 516, 759, 508] },
+      "context": "La lona tensa contra la rama.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S16_v1_004",
+      "shotId": "S16-04",
+      "title": "¿Y esto?",
+      "description": "Plano medio con panorámica corta de su cara a los árboles vacíos. Toca los topes, mira alrededor y al barranco. No recuerda haberlos colocado.",
+      "image": "Capitulo_1/storyboards/E1_S16/v1/paneles/S16-04.png",
+      "source": { "sheet": "Capitulo_1/E1_S16_Amanecer_A_v1.png", "size": [1536, 1024], "rect": [778, 516, 758, 508] },
+      "context": "Royal: «¿Y esto?». Ninguna respuesta.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S16_v1_005",
+      "shotId": "S16-05",
+      "title": "Recoger el campamento",
+      "description": "Plano general lateral fijo. Aparta la piedra, desmonta la tienda y guarda el saco. Deja la rama en el suelo, sin concluir quién estuvo allí.",
+      "image": "Capitulo_1/storyboards/E1_S16/v1/paneles/S16-05.png",
+      "source": { "sheet": "Capitulo_1/E1_S16_Amanecer_B_v1.png", "size": [2172, 724], "rect": [0, 0, 1073, 724] },
+      "context": "Objetos guardándose, arroyo lejano.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S16_v1_006",
+      "shotId": "S16-06",
+      "title": "Hacia las montañas",
+      "description": "Gran plano general, seguimiento muy lento desde atrás. Consulta la brújula y retoma el camino hacia las montañas de la casa del abuelo. Flemugo no aparece en su campo de visión.",
+      "image": "Capitulo_1/storyboards/E1_S16/v1/paneles/S16-06.png",
+      "source": { "sheet": "Capitulo_1/E1_S16_Amanecer_B_v1.png", "size": [2172, 724], "rect": [1100, 0, 1072, 724] },
+      "context": "Pasos sobre hojas húmedas. Empalme con un sendero más estrecho.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}

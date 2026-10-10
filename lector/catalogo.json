@@ -235,6 +235,28 @@
               "manifest": "Capitulo_1/storyboards/E1_S15/v1/manifest.json"
             }
           ]
+        },
+        {
+          "id": "E1_S16",
+          "title": "Lo que quedó junto a la tienda",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S16/v1/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "E1_S17",
+          "title": "El cepo",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S17/v1/manifest.json"
+            }
+          ]
         }
       ]
     }

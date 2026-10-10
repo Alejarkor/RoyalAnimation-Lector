@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S17",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S17_v1_001",
+      "shotId": "S17-01",
+      "title": "El sendero temprano",
+      "description": "Plano general fijo del sendero entre raíces y hojas. Royal avanza solo, pequeño bajo los árboles. La luz del amanecer no alcanza el suelo por completo.",
+      "image": "Capitulo_1/storyboards/E1_S17/v1/paneles/S17-01.png",
+      "source": { "sheet": "Capitulo_1/E1_S17_Cepo_A_v1.png", "size": [1536, 1024], "rect": [0, 0, 761, 505] },
+      "context": "Pasos, pájaros y agua lejana.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S17_v1_002",
+      "shotId": "S17-02",
+      "title": "Ya falta menos",
+      "description": "Plano medio de seguimiento a su altura. Mira la brújula y luego una elevación que cree reconocer. Da un paso fuera del centro del sendero para esquivar un charco.",
+      "image": "Capitulo_1/storyboards/E1_S17/v1/paneles/S17-02.png",
+      "source": { "sheet": "Capitulo_1/E1_S17_Cepo_A_v1.png", "size": [1536, 1024], "rect": [774, 0, 762, 505] },
+      "context": "Royal, para sí: «Ya falta menos».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S17_v1_003",
+      "shotId": "S17-03",
+      "title": "El cepo oculto",
+      "description": "Plano detalle fijo de la bota entrando entre hojas. Debajo hay un cepo de oso oculto; la presión activa el resorte antes de que Royal pueda apartarse.",
+      "image": "Capitulo_1/storyboards/E1_S17/v1/paneles/S17-03.png",
+      "source": { "sheet": "Capitulo_1/E1_S17_Cepo_A_v1.png", "size": [1536, 1024], "rect": [0, 518, 761, 506] },
+      "context": "Chasquido metálico violentísimo.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S17_v1_004",
+      "shotId": "S17-04",
+      "title": "El impacto",
+      "description": "Plano general corto, cámara sacudida por el impacto. Royal cae. El cepo le destroza la parte inferior de la pierna, que queda casi amputada. La escala del daño se entiende en un solo vistazo.",
+      "image": "Capitulo_1/storyboards/E1_S17/v1/paneles/S17-04.png",
+      "source": { "sheet": "Capitulo_1/E1_S17_Cepo_A_v1.png", "size": [1536, 1024], "rect": [774, 518, 762, 506] },
+      "context": "Grito de Royal que corta de golpe el ambiente del bosque.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S17_v1_005",
+      "shotId": "S17-05",
+      "title": "Lo imposible",
+      "description": "Primer plano subjetivo hacia la pierna, foco inestable. Royal ve sangre, metal y su extremidad en una posición imposible. Trata de respirar y no puede ordenar lo que ve.",
+      "image": "Capitulo_1/storyboards/E1_S17/v1/paneles/S17-05.png",
+      "source": { "sheet": "Capitulo_1/E1_S17_Cepo_B_v1.png", "size": [1536, 1024], "rect": [0, 0, 761, 505] },
+      "context": "Latido amortiguado, respiración rota.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S17_v1_006",
+      "shotId": "S17-06",
+      "title": "¡Ayuda!",
+      "description": "Primer plano fijo sobre el rostro de Royal. Grita otra vez, intenta alcanzar el cepo y se queda sin fuerza. Su visión empieza a apagarse por la pérdida de sangre y el shock.",
+      "image": "Capitulo_1/storyboards/E1_S17/v1/paneles/S17-06.png",
+      "source": { "sheet": "Capitulo_1/E1_S17_Cepo_B_v1.png", "size": [1536, 1024], "rect": [775, 0, 761, 505] },
+      "context": "Royal: «¡Ayuda!». La voz se le rompe.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S17_v1_007",
+      "shotId": "S17-07",
+      "title": "Algo desciende",
+      "description": "Punto de vista de Royal hacia las copas, imagen doble y desenfocada. Una figura humanoide grande desciende de una rama elevada. La contraluz impide reconocer edad y rostro.",
+      "image": "Capitulo_1/storyboards/E1_S17/v1/paneles/S17-07.png",
+      "source": { "sheet": "Capitulo_1/E1_S17_Cepo_B_v1.png", "size": [1536, 1024], "rect": [0, 517, 761, 507] },
+      "context": "Corte brusco de los pájaros; crujido de madera.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S17_v1_008",
+      "shotId": "S17-08",
+      "title": "La figura se acerca",
+      "description": "Mismo punto de vista, cámara ladeada a ras de suelo. La figura aterriza y avanza hacia él. A través del desenfoque parece una amenaza, no un rescate.",
+      "image": "Capitulo_1/storyboards/E1_S17/v1/paneles/S17-08.png",
+      "source": { "sheet": "Capitulo_1/E1_S17_Cepo_B_v1.png", "size": [1536, 1024], "rect": [775, 517, 761, 507] },
+      "context": "Pisadas pesadas; el sonido se vuelve hueco.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S17_v1_009",
+      "shotId": "S17-09",
+      "title": "La sombra",
+      "description": "Primerísimo plano subjetivo, foco que entra y sale. La sombra tapa la luz sobre Royal. Él solo distingue un cuerpo grande inclinándose. Ningún plano objetivo confirma todavía que sea el abuelo.",
+      "image": "Capitulo_1/storyboards/E1_S17/v1/paneles/S17-09.png",
+      "source": { "sheet": "Capitulo_1/E1_S17_Cepo_C_v1.png", "size": [1536, 1024], "rect": [11, 11, 749, 1001] },
+      "context": "Royal deja de gritar; una inhalación débil.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S17_v1_010",
+      "shotId": "S17-10",
+      "title": "Negro",
+      "description": "Fundido desde el punto de vista de Royal a negro completo. Pierde el conocimiento antes de que la figura lo toque o hable. Fin del capítulo.",
+      "image": "Capitulo_1/storyboards/E1_S17/v1/paneles/S17-10.png",
+      "source": { "sheet": "Capitulo_1/E1_S17_Cepo_C_v1.png", "size": [1536, 1024], "rect": [776, 11, 749, 1001] },
+      "context": "Se apagan el viento y las pisadas. Silencio antes de los créditos.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}
