@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S7",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S7_v1_001",
+      "shotId": "S7-01",
+      "title": "Mesas separadas",
+      "description": "Plano general fijo del comedor, mesas ruidosas y zona de servicio. Los tres agresores comen con otros chicos al fondo. Royal se sienta con sus dos amigos en una mesa lateral.",
+      "image": "Capitulo_1/storyboards/E1_S7/v1/paneles/S7-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S7_El_Comedor_A_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          0,
+          0,
+          882,
+          440
+        ]
+      },
+      "context": "Cubiertos, bandejas y conversación superpuesta.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S7_v1_002",
+      "shotId": "S7-02",
+      "title": "La revista de fantasía",
+      "description": "Plano medio de los tres, cámara quieta. El amigo muestra una revista de fantasía doblada; la amiga señala una ilustración. Royal apenas mira.",
+      "image": "Capitulo_1/storyboards/E1_S7/v1/paneles/S7-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S7_El_Comedor_A_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          895,
+          0,
+          879,
+          440
+        ]
+      },
+      "context": "Amigo: «Han sacado otro número». Amiga: «¿Después de ese final?».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S7_v1_003",
+      "shotId": "S7-03",
+      "title": "Royal no escucha",
+      "description": "Primer plano de Royal, acercamiento suave. Sigue mirando hacia la mesa de los agresores, que se ríen por algo propio.",
+      "image": "Capitulo_1/storyboards/E1_S7/v1/paneles/S7-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S7_El_Comedor_A_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          0,
+          447,
+          882,
+          440
+        ]
+      },
+      "context": "Amiga, fuera de campo: «Royal, ¿me estás oyendo?». Royal: «Sí… perdona».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S7_v1_004",
+      "shotId": "S7-04",
+      "title": "Sus amigos lo comprenden",
+      "description": "Plano medio del amigo y la amiga, fijo. Se cruzan una mirada; no insisten y vuelven a la revista. Su compañía es real aunque Royal esté ausente.",
+      "image": "Capitulo_1/storyboards/E1_S7/v1/paneles/S7-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S7_El_Comedor_A_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          895,
+          447,
+          879,
+          440
+        ]
+      },
+      "context": "Amigo: «Te lo dejo luego». Royal: «Vale».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S7_v1_005",
+      "shotId": "S7-05",
+      "title": "El bote de aceite",
+      "description": "Plano detalle fijo de un bote grande de aceite en la zona de servicio, junto a los condimentos y los carros. Un trabajador lo usa y lo deja al alcance mientras retira bandejas. El bote tiene una tapa reconocible que reaparecerá en dirección.",
+      "image": "Capitulo_1/storyboards/E1_S7/v1/paneles/S7-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S7_El_Comedor_B_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          0,
+          0,
+          882,
+          438
+        ]
+      },
+      "context": "Golpe hueco del envase contra la mesa.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S7_v1_006",
+      "shotId": "S7-06",
+      "title": "Une las piezas",
+      "description": "Plano subjetivo desde Royal, cambio de foco de los agresores al bote y a la puerta que lleva a las escaleras. La asociación entre humillación y resbalón se forma en silencio. Royal no verbaliza un plan.",
+      "image": "Capitulo_1/storyboards/E1_S7/v1/paneles/S7-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S7_El_Comedor_B_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          895,
+          0,
+          879,
+          438
+        ]
+      },
+      "context": "El estruendo del comedor se atenúa un momento.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S7_v1_007",
+      "shotId": "S7-07",
+      "title": "Se levanta con la bandeja",
+      "description": "Plano medio fijo de Royal levantándose con su bandeja. Devuelve una respuesta mínima a sus amigos, espera a que ellos sigan comiendo y se aleja hacia el carro de servicio.",
+      "image": "Capitulo_1/storyboards/E1_S7/v1/paneles/S7-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S7_El_Comedor_B_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          0,
+          449,
+          882,
+          438
+        ]
+      },
+      "context": "Amiga: «Nos vemos en clase». Royal: «Ahora voy».",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}

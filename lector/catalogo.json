@@ -105,6 +105,28 @@
               "manifest": "Capitulo_1/storyboards/E1_S5/v1/manifest.json"
             }
           ]
+        },
+        {
+          "id": "E1_S6",
+          "title": "Una idea que crece en clase",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S6/v1/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "E1_S7",
+          "title": "El comedor",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S7/v1/manifest.json"
+            }
+          ]
         }
       ]
     }

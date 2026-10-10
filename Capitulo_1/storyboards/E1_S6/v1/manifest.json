@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S6",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S6_v1_001",
+      "shotId": "S6-01",
+      "title": "Comienza la clase",
+      "description": "Plano general fijo desde el fondo del aula: pizarra de tiza, pupitres, mochilas gastadas. El profesor desarrolla la clase. Royal está junto a una ventana; los chicos de la entrada ocupan otra fila.",
+      "image": "Capitulo_1/storyboards/E1_S6/v1/paneles/S6-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S6_Una_Idea_en_Clase_A_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          9,
+          8,
+          664,
+          427
+        ]
+      },
+      "context": "Profesor, de fondo: explicación de la materia, sin información de trama. Tiza contra pizarra.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S6_v1_002",
+      "shotId": "S6-02",
+      "title": "Ellos ya bromean",
+      "description": "Plano medio fijo de los agresores. Intercambian un dibujo y bromean entre ellos; no miran a Royal ni hablan de su madre.",
+      "image": "Capitulo_1/storyboards/E1_S6/v1/paneles/S6-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S6_Una_Idea_en_Clase_A_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          683,
+          8,
+          569,
+          427
+        ]
+      },
+      "context": "Susurros y una risa ahogada. El profesor pide silencio sin girarse.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S6_v1_003",
+      "shotId": "S6-03",
+      "title": "Royal observa",
+      "description": "Primer plano lento hacia Royal. Los observa por encima de su cuaderno. El resentimiento persiste aunque ellos ya estén distraídos.",
+      "image": "Capitulo_1/storyboards/E1_S6/v1/paneles/S6-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S6_Una_Idea_en_Clase_A_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          1262,
+          8,
+          504,
+          427
+        ]
+      },
+      "context": "La voz del profesor se vuelve lejana en la mezcla; Royal no habla.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S6_v1_004",
+      "shotId": "S6-04",
+      "title": "Se rompe la punta",
+      "description": "Plano detalle fijo del lápiz de Royal marcando demasiado fuerte el papel hasta romper la punta. Se detiene, deja el lápiz y mira hacia la puerta del aula.",
+      "image": "Capitulo_1/storyboards/E1_S6/v1/paneles/S6-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S6_Una_Idea_en_Clase_A_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          9,
+          444,
+          555,
+          434
+        ]
+      },
+      "context": "Chasquido del grafito; murmullo de clase.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S6_v1_005",
+      "shotId": "S6-05",
+      "title": "Una caída de broma",
+      "description": "Plano subjetivo breve, cámara fija hacia los chicos. Uno finge caer de la silla para hacer reír al otro. Royal imagina durante un segundo la vergüenza de una caída pública. No hay imagen de fantasía ni gesto de triunfo.",
+      "image": "Capitulo_1/storyboards/E1_S6/v1/paneles/S6-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S6_Una_Idea_en_Clase_A_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          574,
+          444,
+          599,
+          434
+        ]
+      },
+      "context": "Risa apagada; silencio de Royal.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S6_v1_006",
+      "shotId": "S6-06",
+      "title": "Royal espera",
+      "description": "Plano medio lateral, leve travelling de salida que deja a Royal aislado entre otros alumnos que atienden. Baja la vista al cuaderno y espera. La idea aún no tiene forma concreta.",
+      "image": "Capitulo_1/storyboards/E1_S6/v1/paneles/S6-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S6_Una_Idea_en_Clase_A_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          1183,
+          444,
+          583,
+          434
+        ]
+      },
+      "context": "Campana de fin de clase; empalme con el comedor.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}
