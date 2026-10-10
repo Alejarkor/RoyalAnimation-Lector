@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S13",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S13_v1_001",
+      "shotId": "S13-01",
+      "title": "Lo ven desde la ventana",
+      "description": "Plano general desde la ventana, panorámica rápida. Uno de los adultos ve a Royal ya a unos cien metros de la casa, pequeño entre los campos.",
+      "image": "Capitulo_1/storyboards/E1_S13/v1/paneles/S13-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S13_Bosque_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Trabajador: «¡Está fuera! ¡Royal, espera!».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S13_v1_002",
+      "shotId": "S13-02",
+      "title": "Hacia el coche",
+      "description": "Plano general exterior fijo. Los dos salen. La madre aparece en la puerta, aturdida, mientras ellos corren hacia el coche.",
+      "image": "Capitulo_1/storyboards/E1_S13/v1/paneles/S13-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S13_Bosque_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Madre: «¡Royal!». Portazos del vehículo.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S13_v1_003",
+      "shotId": "S13-03",
+      "title": "Royal corre",
+      "description": "Travelling lateral abierto siguiendo a Royal a distancia. Corre por el camino, con la mochila golpeándole la espalda. Consulta de reojo el borde del bosque, no la carretera.",
+      "image": "Capitulo_1/storyboards/E1_S13/v1/paneles/S13-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S13_Bosque_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Jadeo, gravilla, motor que arranca detrás.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S13_v1_004",
+      "shotId": "S13-04",
+      "title": "La cerca y la acequia",
+      "description": "Plano general desde el coche, cámara baja en avance. El vehículo lo sigue por la pista paralela, pero una cerca y una acequia impiden cortar en línea recta.",
+      "image": "Capitulo_1/storyboards/E1_S13/v1/paneles/S13-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S13_Bosque_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Trabajadora, desde el coche: «Solo queremos que estés a salvo».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S13_v1_005",
+      "shotId": "S13-05",
+      "title": "El resbalón",
+      "description": "Plano medio corto en movimiento junto a Royal. Oye el coche y acelera. Resbala, se levanta sin detenerse y cambia hacia un sendero peatonal.",
+      "image": "Capitulo_1/storyboards/E1_S13/v1/paneles/S13-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S13_Bosque_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Neumáticos frenando a lo lejos.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S13_v1_006",
+      "shotId": "S13-06",
+      "title": "El límite del bosque",
+      "description": "Gran plano general fijo del borde del bosque. Royal abandona la pista y desaparece entre árboles donde el coche no puede entrar. Los adultos frenan al otro lado del vallado.",
+      "image": "Capitulo_1/storyboards/E1_S13/v1/paneles/S13-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S13_Bosque_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Motor al ralentí; pájaros sobresaltados.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S13_v1_007",
+      "shotId": "S13-07",
+      "title": "El motor se aleja",
+      "description": "Plano general interior del bosque, travelling de seguimiento que acaba quieto. Royal zigzaguea hasta perder de vista la carretera. Se detiene a escuchar; no oye ya el coche.",
+      "image": "Capitulo_1/storyboards/E1_S13/v1/paneles/S13-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S13_Bosque_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Su respiración domina; el motor se extingue.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S13_v1_008",
+      "shotId": "S13-08",
+      "title": "Fuera de su alcance",
+      "description": "Plano elevado fijo del coche diminuto fuera del bosque y Royal fuera de su vista bajo la copa de los árboles. La persecución inmediata termina. Royal se interna hacia el sonido del agua.",
+      "image": "Capitulo_1/storyboards/E1_S13/v1/paneles/S13-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S13_Bosque_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Corriente del arroyo como puente a S14.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}

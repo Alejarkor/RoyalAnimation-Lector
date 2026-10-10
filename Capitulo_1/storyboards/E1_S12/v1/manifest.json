@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S12",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S12_v1_001",
+      "shotId": "S12-01",
+      "title": "La madre contra la puerta",
+      "description": "Plano fijo del pasillo, lateral a la puerta. La madre corre hacia el dormitorio, choca de hombro y cabeza con la puerta cerrada y cae al suelo. Los dos profesionales se agachan, la apartan con cuidado y evitan que vuelva a golpearse.",
+      "image": "Capitulo_1/storyboards/E1_S12/v1/paneles/S12-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S12_La_Ventana_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Golpe seco. Madre: «¡Abre, Royal!». Trabajadora: «Déjenos hablar con él».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S12_v1_002",
+      "shotId": "S12-02",
+      "title": "El sobresalto",
+      "description": "Plano medio desde dentro, cámara quieta. Royal retrocede asustado por el golpe. Mira la puerta, la ventana y la mochila vacía. Se decide de inmediato.",
+      "image": "Capitulo_1/storyboards/E1_S12/v1/paneles/S12-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S12_La_Ventana_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Trabajador, tras la puerta: «Royal, nadie va a entrar a la fuerza. Dinos si estás bien».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S12_v1_003",
+      "shotId": "S12-03",
+      "title": "La tienda",
+      "description": "Plano cenital fijo de la cama. Extiende la mochila y mete una tienda pequeña y gastada, doblándola a presión.",
+      "image": "Capitulo_1/storyboards/E1_S12/v1/paneles/S12-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S12_La_Ventana_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Cremallera, lona; las voces del pasillo continúan amortiguadas.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S12_v1_004",
+      "shotId": "S12-04",
+      "title": "El saco y la cantimplora",
+      "description": "Plano detalle con seguimiento corto de sus manos. Añade el saco de dormir y una cantimplora; comprueba que el tapón esté cerrado.",
+      "image": "Capitulo_1/storyboards/E1_S12/v1/paneles/S12-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S12_La_Ventana_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Trabajadora: «Podemos hablar de lo que ha pasado. Abre la puerta, por favor».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S12_v1_005",
+      "shotId": "S12-05",
+      "title": "La brújula del abuelo",
+      "description": "Primer plano fijo de una brújula vieja guardada entre sus cosas. Royal la toma, reconoce el objeto del abuelo y lo mete en un bolsillo al que podrá acceder mientras corre.",
+      "image": "Capitulo_1/storyboards/E1_S12/v1/paneles/S12-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S12_La_Ventana_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Royal, para sí: «Por favor…». No explica el regalo.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S12_v1_006",
+      "shotId": "S12-06",
+      "title": "No te vayas",
+      "description": "Plano medio de la puerta desde dentro, sin movimiento. La madre ha dejado de forcejear y se oye llorar o maldecir desde el suelo; Royal aprieta la mandíbula, pero no vuelve.",
+      "image": "Capitulo_1/storyboards/E1_S12/v1/paneles/S12-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S12_La_Ventana_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Madre: «No te vayas». El trabajador pide que mantengan la calma.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S12_v1_007",
+      "shotId": "S12-07",
+      "title": "La ventana",
+      "description": "Plano general lateral, travelling breve hacia la ventana. Royal se echa la mochila al hombro, abre la ventana de la planta baja y calcula la caída.",
+      "image": "Capitulo_1/storyboards/E1_S12/v1/paneles/S12-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S12_La_Ventana_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "La conversación del pasillo tapa el ruido del pestillo.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S12_v1_008",
+      "shotId": "S12-08",
+      "title": "El salto",
+      "description": "Exterior medio fijo bajo la ventana. Salta, aterriza mal, recupera el equilibrio y corre campo a través sin volver a entrar en casa.",
+      "image": "Capitulo_1/storyboards/E1_S12/v1/paneles/S12-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S12_La_Ventana_B_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Crujido de hierba y respiración acelerada.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S12_v1_009",
+      "shotId": "S12-09",
+      "title": "El dormitorio vacío",
+      "description": "Plano desde el dormitorio vacío, cámara fija. La ventana queda abierta y la cortina se mueve. Del otro lado los adultos aún creen que sigue dentro.",
+      "image": "Capitulo_1/storyboards/E1_S12/v1/paneles/S12-09.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S12_La_Ventana_C_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          1536,
+          1024
+        ]
+      },
+      "context": "Trabajadora: «Royal, contesta». Corte al exterior.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S9",
+  "versionId": "v2",
+  "panels": [
+    {
+      "id": "E1_S9_v2_001",
+      "shotId": "S9-01",
+      "title": "Anuncio del simulacro",
+      "description": "Plano general fijo del aula. Royal está sentado; observa a los agresores por última vez. El profesor deja la tiza y consulta una nota.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Profesor: «Hoy haremos un simulacro de incendio».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S9_v2_002",
+      "shotId": "S9-02",
+      "title": "La salida ordenada",
+      "description": "Plano medio del profesor, cámara quieta. Señala la puerta y la ruta de salida dibujada en la pared.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Profesor: «Esperad a la alarma. Salimos en fila y sin correr. ¿Entendido?». Respuestas dispersas.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S9_v2_003",
+      "shotId": "S9-03",
+      "title": "Royal comprende el peligro",
+      "description": "Primer plano de Royal, lento acercamiento. Mira la puerta y recuerda el aceite. La sorpresa desplaza al rencor: comprende el peligro antes de que nadie se mueva.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Empieza la alarma, estridente; Royal intenta decir «Espere…», apenas audible.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S9_v2_004",
+      "shotId": "S9-04",
+      "title": "Se abren las aulas",
+      "description": "Plano general del pasillo, cámara fija. Las puertas de varias aulas se abren casi a la vez. Los alumnos salen deprisa pese a las instrucciones. Royal queda unos pasos detrás, en la cabecera del corredor.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Alarmas, voces: «¡Vamos!», «¡Corre!». Profesores piden orden.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S9_v2_005",
+      "shotId": "S9-05",
+      "title": "El primer resbalón",
+      "description": "Plano alto de la escalera, panorámica de arriba abajo. La primera oleada baja; uno de los chicos que insultó a Royal pisa el aceite y pierde el equilibrio.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Chirrido del zapato, golpe contra el peldaño.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S9_v2_006",
+      "shotId": "S9-06",
+      "title": "La ayuda se convierte en caída",
+      "description": "Plano medio desde el lateral, cámara fija. Su compañero intenta sujetarlo, resbala también y atraviesa el paso de los que vienen detrás. Nadie puede detener la inercia del grupo.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Gritos breves; choque de cuerpos y barandilla.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S9_v2_007",
+      "shotId": "S9-07",
+      "title": "Avalancha por la escalera",
+      "description": "Gran plano general vertical, travelling de descenso. Alumnos de otras aulas desembocan en el tramo superior y caen por oleadas. En segundos la escalera se convierte en una avalancha de decenas de niños, hasta rondar el centenar.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "La alarma sigue sonando; los golpes tapan las órdenes de los adultos.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S9_v2_008",
+      "shotId": "S9-08",
+      "title": "Impacto en el vestíbulo",
+      "description": "Plano fijo desde el vestíbulo inferior. La masa de alumnos impacta en el rellano; varios quedan inmóviles debajo mientras otros intentan levantarse o apartarse. Las fracturas se perciben por el sonido y la imposibilidad de moverse, sin insistir en detalles anatómicos.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Un profesor grita que detengan a los que vienen. Otro pide una ambulancia.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S9_v2_009",
+      "shotId": "S9-09",
+      "title": "Royal, inmóvil arriba",
+      "description": "Plano general superior, cámara quieta. Royal permanece en la parte alta, agarrado a la barandilla. Ve a los chicos que quería humillar desaparecer bajo los demás y comprende que ya no controla nada.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-09.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Alarma, llantos, llamadas de auxilio. Royal no habla.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S9_v2_010",
+      "shotId": "S9-10",
+      "title": "Detener a los demás",
+      "description": "Plano medio de un adulto en el descansillo, leve cámara en mano. Intenta despejar el paso, mira hacia abajo y queda paralizado al ver cuerpos sin respuesta y sangre extendiéndose en el suelo.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-10.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Adulto: «¡No bajéis más! ¡Hay niños ahí abajo!».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S9_v2_011",
+      "shotId": "S9-11",
+      "title": "El daño en el vestíbulo",
+      "description": "Plano general sostenido del vestíbulo al pie de las escaleras. Los heridos ocupan todo el espacio. Algunos alumnos de abajo han muerto en un charco de sangre; los adultos empiezan a separar a los que todavía respiran. No se fija aún una cifra exacta de fallecidos.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-11.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "La alarma se apaga por fin; quedan respiraciones, llantos y sirenas que se aproximan.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S9_v2_012",
+      "shotId": "S9-12",
+      "title": "El peso de lo ocurrido",
+      "description": "Primer plano fijo de Royal desde el borde de la escalera; corte a un plano amplio detrás de él. La vista de la catástrofe lo deja inmóvil. No parece satisfecho ni absuelto: el alcance de su decisión lo desborda.",
+      "image": "Capitulo_1/storyboards/E1_S9/v2/paneles/S9-12.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S9_El_Simulacro_C_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Solo las sirenas y el murmullo de rescate. Corte temporal a dirección.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}

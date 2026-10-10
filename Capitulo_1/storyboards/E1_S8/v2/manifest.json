@@ -1,0 +1,183 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S8",
+  "versionId": "v2",
+  "panels": [
+    {
+      "id": "E1_S8_v2_001",
+      "shotId": "S8-01",
+      "title": "Royal toma el bote",
+      "description": "Plano medio desde el carro de servicio, cámara fija. Royal deja su bandeja y toma el bote de aceite cuando el trabajador gira la espalda. Lo oculta en la mochila.",
+      "image": "Capitulo_1/storyboards/E1_S8/v2/paneles/S8-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S8_El_Aceite_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Vajilla y pasos; nadie lo llama.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S8_v2_002",
+      "shotId": "S8-02",
+      "title": "La tapa a la vista",
+      "description": "Plano general de pasillo, travelling corto detrás de Royal. Pasa junto a alumnos que aún se dirigen a las aulas. Una auxiliar ve sobresalir la tapa del bote de su mochila, sin saber qué hará con él. Royal se detiene al ver la escalera ocupada.",
+      "image": "Capitulo_1/storyboards/E1_S8/v2/paneles/S8-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S8_El_Aceite_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Timbre de fin del recreo. Profesor lejano: «Entrad ya».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S8_v2_003",
+      "shotId": "S8-03",
+      "title": "La escalera central",
+      "description": "Plano alto fijo de la escalera central de varios tramos. Los últimos alumnos suben hacia las clases; se entiende que este paso reúne a gran parte del colegio y desemboca en un vestíbulo estrecho.",
+      "image": "Capitulo_1/storyboards/E1_S8/v2/paneles/S8-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S8_El_Aceite_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Pasos que se alejan; puertas que se cierran.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S8_v2_004",
+      "shotId": "S8-04",
+      "title": "Espera a solas",
+      "description": "Plano general estático, sostenido. Royal espera oculto en el recodo hasta que el pasillo queda vacío. Mira hacia el aula de los agresores y comprueba que está cerrada.",
+      "image": "Capitulo_1/storyboards/E1_S8/v2/paneles/S8-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S8_El_Aceite_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Silencio escolar después del timbre, un carrito distante.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S8_v2_005",
+      "shotId": "S8-05",
+      "title": "Aceite en los escalones",
+      "description": "Plano medio bajo, leve seguimiento lateral. Sale, destapa el bote y rocía aceite sobre los escalones superiores y el primer descansillo. No vierte todo: bastan superficies brillantes y peligrosas en la trayectoria de salida.",
+      "image": "Capitulo_1/storyboards/E1_S8/v2/paneles/S8-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S8_El_Aceite_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Líquido al caer, respiración contenida.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S8_v2_006",
+      "shotId": "S8-06",
+      "title": "Una duda breve",
+      "description": "Primer plano fijo de Royal mirando el brillo del aceite y luego hacia la puerta de clase. Se imagina la caída de los tres; una duda breve no detiene la acción.",
+      "image": "Capitulo_1/storyboards/E1_S8/v2/paneles/S8-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S8_El_Aceite_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Ningún diálogo; aumenta un zumbido ambiental tenue.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S8_v2_007",
+      "shotId": "S8-07",
+      "title": "El bote tras el radiador",
+      "description": "Plano detalle fijo del bote, que coloca deprisa detrás de un radiador o mueble de limpieza cercano. La tapa queda visible. Una cantidad de aceite queda dentro: el envase podrá identificarse después.",
+      "image": "Capitulo_1/storyboards/E1_S8/v2/paneles/S8-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S8_El_Aceite_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "La puerta de un aula se abre a lo lejos.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S8_v2_008",
+      "shotId": "S8-08",
+      "title": "De vuelta en clase",
+      "description": "Plano general del pasillo con travelling de retroceso. Royal se apresura a entrar en su clase y se sienta antes de que el profesor lo mire.",
+      "image": "Capitulo_1/storyboards/E1_S8/v2/paneles/S8-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S8_El_Aceite_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Profesor: «Royal, siéntate». Royal: «Sí». Corte dentro del aula.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}

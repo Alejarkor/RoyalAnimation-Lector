@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S10",
+  "versionId": "v2",
+  "panels": [
+    {
+      "id": "E1_S10_v2_001",
+      "shotId": "S10-01",
+      "title": "Frente al director",
+      "description": "Plano general fijo del despacho. Royal está sentado frente al director; por la ventana se ven ambulancias y adultos trabajando, nunca un patio normal de nuevo.",
+      "image": "Capitulo_1/storyboards/E1_S10/v2/paneles/S10-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S10_En_Direccion_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Sirenas lejanas y voces amortiguadas.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S10_v2_002",
+      "shotId": "S10-02",
+      "title": "El bote recuperado",
+      "description": "Plano detalle fijo de la botella de aceite recuperada, ahora dentro de una bolsa sobre la mesa. La tapa y el nivel restante coinciden con lo visto en el comedor y la escalera.",
+      "image": "Capitulo_1/storyboards/E1_S10/v2/paneles/S10-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S10_En_Direccion_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "El plástico roza la mesa.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S10_v2_003",
+      "shotId": "S10-03",
+      "title": "Las piezas del incidente",
+      "description": "Plano medio del director, acercamiento discreto. No grita; está exhausto y contiene la rabia. Pone juntas las piezas del incidente.",
+      "image": "Capitulo_1/storyboards/E1_S10/v2/paneles/S10-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S10_En_Direccion_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Director: «Encontraron esto junto a la escalera. Una auxiliar te vio con él después de comer».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S10_v2_004",
+      "shotId": "S10-04",
+      "title": "Royal intenta explicarse",
+      "description": "Primer plano fijo de Royal. Mira el bote, luego sus manos. Trata de hablar, pero apenas puede sostener la voz.",
+      "image": "Capitulo_1/storyboards/E1_S10/v2/paneles/S10-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S10_En_Direccion_A_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Royal: «Era para que se cayeran ellos… Yo no sabía lo del simulacro».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S10_v2_005",
+      "shotId": "S10-05",
+      "title": "La gravedad de lo ocurrido",
+      "description": "Plano medio conjunto, cámara inmóvil. El director tarda en responder. La distancia entre los dos parece mayor que la mesa.",
+      "image": "Capitulo_1/storyboards/E1_S10/v2/paneles/S10-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S10_En_Direccion_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Director: «Hay alumnos muertos, Royal. He avisado a la policía. También a servicios sociales».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S10_v2_006",
+      "shotId": "S10-06",
+      "title": "La llamada sin respuesta",
+      "description": "Plano detalle del teléfono de sobremesa; panorámica breve al director. Llama a la casa de Royal, espera y no obtiene respuesta. Cuelga, mira a los profesionales que acaban de llegar al despacho.",
+      "image": "Capitulo_1/storyboards/E1_S10/v2/paneles/S10-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S10_En_Direccion_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          759,
+          503
+        ]
+      },
+      "context": "Tono de llamada sin contestación. Director: «Tendrán que ver dónde vive».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S10_v2_007",
+      "shotId": "S10-07",
+      "title": "Salir con los trabajadores sociales",
+      "description": "Plano general de salida, travelling lento detrás de Royal. Una trabajadora social y un compañero lo acompañan fuera. Royal pasa junto a las ambulancias sin alzar la vista.",
+      "image": "Capitulo_1/storyboards/E1_S10/v2/paneles/S10-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S10_En_Direccion_B_v2.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          0,
+          519,
+          759,
+          505
+        ]
+      },
+      "context": "Trabajadora: «Vamos a ir a casa contigo». Royal no contesta. Corte a la casa aislada.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}

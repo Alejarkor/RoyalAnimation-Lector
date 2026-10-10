@@ -131,44 +131,86 @@
         {
           "id": "E1_S8",
           "title": "El aceite en las escaleras",
-          "currentVersion": "v1",
+          "currentVersion": "v2",
           "versions": [
             {
               "id": "v1",
               "manifest": "Capitulo_1/storyboards/E1_S8/v1/manifest.json"
+            },
+            {
+              "id": "v2",
+              "label": "Fondos 2D simplificados",
+              "manifest": "Capitulo_1/storyboards/E1_S8/v2/manifest.json"
             }
           ]
         },
         {
           "id": "E1_S9",
           "title": "El simulacro",
-          "currentVersion": "v1",
+          "currentVersion": "v2",
           "versions": [
             {
               "id": "v1",
               "manifest": "Capitulo_1/storyboards/E1_S9/v1/manifest.json"
+            },
+            {
+              "id": "v2",
+              "label": "Fondos 2D simplificados",
+              "manifest": "Capitulo_1/storyboards/E1_S9/v2/manifest.json"
             }
           ]
         },
         {
           "id": "E1_S10",
           "title": "En dirección",
-          "currentVersion": "v1",
+          "currentVersion": "v2",
           "versions": [
             {
               "id": "v1",
               "manifest": "Capitulo_1/storyboards/E1_S10/v1/manifest.json"
+            },
+            {
+              "id": "v2",
+              "label": "Fondos 2D simplificados",
+              "manifest": "Capitulo_1/storyboards/E1_S10/v2/manifest.json"
             }
           ]
         },
         {
           "id": "E1_S11",
           "title": "La visita a casa",
-          "currentVersion": "v1",
+          "currentVersion": "v2",
           "versions": [
             {
               "id": "v1",
               "manifest": "Capitulo_1/storyboards/E1_S11/v1/manifest.json"
+            },
+            {
+              "id": "v2",
+              "label": "Fondos 2D simplificados",
+              "manifest": "Capitulo_1/storyboards/E1_S11/v2/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "E1_S12",
+          "title": "La ventana",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S12/v1/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "E1_S13",
+          "title": "Perderlos en el bosque",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S13/v1/manifest.json"
             }
           ]
         }
