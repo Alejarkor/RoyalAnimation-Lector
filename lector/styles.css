@@ -22,3 +22,7 @@ dialog{border:1px solid var(--line);border-radius:12px;background:var(--surface)
 .panel-context strong{color:var(--muted);white-space:normal}
 @media(max-width:900px){.reading-area .panel-grid:not([data-count="1"]){grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.reading-area .panel-grid{grid-template-columns:1fr!important}.panel-meta{font-size:13px}.panel-heading{font-size:14px}}
+.panel-art img,.zoom-canvas img{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
+.panel-comment{position:absolute;top:8px;right:8px;z-index:2;border:1px solid #ffffffb8;border-radius:7px;background:#202530dc;color:#fff;padding:7px 10px;font-size:12px;line-height:1.2;opacity:0;pointer-events:none;transition:opacity .15s}
+.panel-art:hover .panel-comment,.panel-art:focus-within .panel-comment,.panel-art.note-mode .panel-comment{opacity:1;pointer-events:auto}
+@media(hover:none){.panel-comment{display:none}}

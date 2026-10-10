@@ -1,12 +1,14 @@
 "use strict";
 
 const $ = (id) => document.getElementById(id);
-const ui = Object.fromEntries(["sidebar","scrim","contents","resetVersions","toggleSidebar","closeSidebar","chapterTitle","sectionTitle","versionSelect","panelCount","themeToggle","openNotes","noteCount","fullscreen","versionNote","errorNote","readingArea","panelGrid","previousPage","nextPage","pagePosition","zoomDialog","zoomTitle","sourceLink","zoomOut","zoomLevel","zoomIn","closeZoom","zoomScroll","zoomCanvas","zoomImage","zoomPins","notesDialog","closeNotes","notesTitle","addNote","allNotes","notesStatus","notesList","noteDialog","noteTitle","noteForm","noteAuthor","noteBody","noteWebsite","noteFormStatus","cancelNote","cancelNoteBottom","saveNote"].map((id) => [id,$(id)]));
+const ui = Object.fromEntries(["sidebar","scrim","contents","resetVersions","toggleSidebar","closeSidebar","chapterTitle","sectionTitle","versionSelect","panelCount","themeToggle","openNotes","noteCount","fullscreen","versionNote","errorNote","noteModeHint","readingArea","panelGrid","previousPage","nextPage","pagePosition","zoomDialog","zoomTitle","sourceLink","zoomOut","zoomLevel","zoomIn","closeZoom","zoomScroll","zoomCanvas","zoomImage","zoomPins","notesDialog","closeNotes","notesTitle","addNote","allNotes","notesStatus","notesList","noteDialog","noteTitle","noteForm","noteAuthor","noteBody","noteWebsite","noteFormStatus","cancelNote","cancelNoteBottom","saveNote"].map((id) => [id,$(id)]));
 const notesApi = "https://royal-notas-storyboard.alejarkor.chatgpt.site/api/notes";
 const asset = (path) => new URL(`../${path}`, document.baseURI).href;
 const storedCount = Number(localStorage.getItem("royal.panelCount"));
 let panelCount = Number.isInteger(storedCount) && storedCount >= 1 && storedCount <= 24 ? storedCount : 2;
 let catalog, pages = [], currentPage = 0, notes = [], entries = [], selectedVersions = {}, noteMode = false, noteTarget = null, zoomPanel = null, zoomScale = 1;
+let longPress = null, suppressImageClickUntil = 0;
+const LONG_PRESS_MS = 600, LONG_PRESS_MOVE_PX = 12;
 
 function setTheme(theme) {
   document.documentElement.dataset.theme = theme;
@@ -74,13 +76,29 @@ function mappedNote(note) {
 function notesFor(panel) {return notes.map(mappedNote).filter((mapped)=>mapped?.panel.id===panel.id);}
 function imageArea(image){const rect=image.getBoundingClientRect();const ratio=image.naturalWidth/image.naturalHeight;if(!ratio)return null;const width=Math.min(rect.width,rect.height*ratio),height=width/ratio;return {left:rect.left+(rect.width-width)/2,top:rect.top+(rect.height-height)/2,width,height};}
 function pointOnImage(event,image){const area=imageArea(image);if(!area)return null;const x=(event.clientX-area.left)/area.width,y=(event.clientY-area.top)/area.height;return x<0||x>1||y<0||y>1?null:{x:Math.round(x*10000),y:Math.round(y*10000)};}
+function cancelLongPress(){if(longPress){clearTimeout(longPress.timer);longPress=null;}}
+function bindImageNoteGestures(image,getPanel){
+  image.draggable=false;
+  image.addEventListener("pointerdown",(event)=>{
+    if(event.pointerType!=="touch"||!event.isPrimary){if(event.pointerType==="touch")cancelLongPress();return;}
+    cancelLongPress();const point=pointOnImage(event,image);if(!point)return;
+    const press={pointerId:event.pointerId,x:event.clientX,y:event.clientY,timer:0};longPress=press;
+    press.timer=setTimeout(()=>{if(longPress!==press)return;longPress=null;suppressImageClickUntil=performance.now()+900;const panel=getPanel();if(panel)beginNote(panel,point);},LONG_PRESS_MS);
+  });
+  image.addEventListener("pointermove",(event)=>{if(longPress?.pointerId===event.pointerId&&Math.hypot(event.clientX-longPress.x,event.clientY-longPress.y)>LONG_PRESS_MOVE_PX)cancelLongPress();});
+  image.addEventListener("pointerup",(event)=>{if(longPress?.pointerId===event.pointerId)cancelLongPress();});
+  image.addEventListener("pointercancel",(event)=>{if(longPress?.pointerId===event.pointerId)cancelLongPress();});
+  image.addEventListener("contextmenu",(event)=>{event.preventDefault();cancelLongPress();const point=pointOnImage(event,image),panel=getPanel();if(point&&panel&&!ui.noteDialog.open){suppressImageClickUntil=performance.now()+900;beginNote(panel,point);}});
+}
 function drawPins(container,image,panel){container.replaceChildren();const area=imageArea(image);if(!area)return;const parent=container.getBoundingClientRect();for(const [index,mapped] of notesFor(panel).entries()){const pin=document.createElement("button");pin.type="button";pin.className="pin";pin.textContent=String(index+1);pin.title=`${mapped.note.author}: ${mapped.note.body}`;pin.style.left=`${area.left-parent.left+mapped.x/10000*area.width}px`;pin.style.top=`${area.top-parent.top+mapped.y/10000*area.height}px`;pin.addEventListener("click",(event)=>{event.stopPropagation();ui.allNotes.checked=false;renderNotes(panel.id);ui.notesDialog.showModal();});container.append(pin);}}
 function renderVisiblePins(){for(const art of ui.panelGrid.querySelectorAll(".panel-art")){const panel=entries.find((entry)=>entry.panel.id===art.dataset.panelId)?.panel;if(panel)drawPins(art.querySelector(".pin-layer"),art.querySelector("img"),panel);}if(ui.zoomDialog.open&&zoomPanel)drawPins(ui.zoomPins,ui.zoomImage,zoomPanel);}
 function renderPanels(page){ui.panelGrid.replaceChildren();ui.panelGrid.dataset.count=String(panelCount);ui.panelGrid.style.setProperty("--columns",String(panelCount===1?1:panelCount<=4?2:panelCount<=12?3:4));
-  for(const panel of page.panels){const figure=document.createElement("figure");figure.className="panel";const art=document.createElement("div");art.className=`panel-art${noteMode?" note-mode":""}`;art.dataset.panelId=panel.id;
-    const image=document.createElement("img");image.src=asset(panel.image);image.alt=`${panel.shotId}: ${panel.title}`;image.loading="eager";image.decoding="async";image.addEventListener("load",renderVisiblePins);image.addEventListener("error",()=>{ui.errorNote.hidden=false;ui.errorNote.textContent=`No se pudo abrir ${panel.shotId}.`;});
-    const pins=document.createElement("div");pins.className="pin-layer";art.append(image,pins);
-    art.addEventListener("click",(event)=>{if(noteMode){const point=pointOnImage(event,image);if(point)beginNote(panel,point);}else openZoom(panel,image);});
+  for(const panel of page.panels){const figure=document.createElement("figure");figure.className="panel";const art=document.createElement("div");art.className=`panel-art${noteMode?" note-mode":""}`;art.dataset.panelId=panel.id;art.dataset.shotId=panel.shotId;
+    const image=document.createElement("img");image.src=asset(panel.image);image.alt=`${panel.shotId}: ${panel.title}`;image.loading="eager";image.decoding="async";image.addEventListener("load",renderVisiblePins);image.addEventListener("error",()=>{ui.errorNote.hidden=false;ui.errorNote.textContent=`No se pudo abrir ${panel.shotId}.`;});bindImageNoteGestures(image,()=>panel);
+    const pins=document.createElement("div");pins.className="pin-layer";
+    const commentButton=document.createElement("button");commentButton.type="button";commentButton.className="panel-comment";commentButton.textContent=noteMode?"Cancelar":"Comentar";commentButton.setAttribute("aria-label",`Elegir punto para comentar ${panel.shotId}`);commentButton.setAttribute("aria-pressed",String(noteMode));commentButton.addEventListener("click",(event)=>{event.stopPropagation();setNoteMode(!noteMode);});
+    art.append(image,pins,commentButton);
+    art.addEventListener("click",(event)=>{if(performance.now()<suppressImageClickUntil)return;if(event.target!==image)return;if(noteMode){const point=pointOnImage(event,image);if(point)beginNote(panel,point);}else openZoom(panel,image);});
     const caption=document.createElement("figcaption");caption.className="panel-meta";
     const heading=document.createElement("div");heading.className="panel-heading";const id=document.createElement("strong");id.textContent=panel.shotId;const title=document.createElement("span");title.textContent=panel.title;heading.append(id,title);caption.append(heading);
     const description=document.createElement("p");description.className="panel-description";description.textContent=panel.description||"Descripción pendiente de transcripción.";caption.append(description);
@@ -89,8 +107,8 @@ function renderPanels(page){ui.panelGrid.replaceChildren();ui.panelGrid.dataset.
   }
 }
 function showPage(index){if(!pages.length)return;currentPage=Math.max(0,Math.min(index,pages.length-1));const page=pages[currentPage];ui.chapterTitle.textContent=`Capítulo ${page.chapter.number} · ${page.chapter.title}`;ui.sectionTitle.textContent=page.section.title;ui.pagePosition.textContent=`Página ${currentPage+1} de ${pages.length} · ${page.start+1}–${page.start+page.panels.length} de ${page.version.panels.length}`;ui.previousPage.disabled=currentPage===0;ui.nextPage.disabled=currentPage===pages.length-1;renderVersion(page);renderContents();renderPanels(page);ui.noteCount.textContent=String(page.panels.reduce((sum,panel)=>sum+notesFor(panel).length,0));window.scrollTo({top:0});}
-function setNoteMode(enabled){noteMode=enabled;ui.addNote.classList.toggle("active",enabled);ui.addNote.textContent=enabled?"Cancelar nota":"Añadir nota";for(const art of ui.panelGrid.querySelectorAll(".panel-art"))art.classList.toggle("note-mode",enabled);}
-function beginNote(panel,point){noteTarget={panel,point};ui.noteTitle.textContent=`Nueva nota · ${panel.shotId}`;ui.noteFormStatus.textContent="";if(ui.zoomDialog.open)ui.zoomDialog.close();if(ui.notesDialog.open)ui.notesDialog.close();ui.noteDialog.showModal();ui.noteBody.focus();}
+function setNoteMode(enabled){noteMode=enabled;ui.addNote.classList.toggle("active",enabled);ui.addNote.textContent=enabled?"Cancelar selección":"Elegir punto";ui.noteModeHint.hidden=!enabled;for(const art of ui.panelGrid.querySelectorAll(".panel-art")){art.classList.toggle("note-mode",enabled);const button=art.querySelector(".panel-comment");if(button){button.textContent=enabled?"Cancelar":"Comentar";button.setAttribute("aria-label",enabled?"Cancelar selección del punto":`Elegir punto para comentar ${art.dataset.shotId}`);button.setAttribute("aria-pressed",String(enabled));}}}
+function beginNote(panel,point){if(ui.noteDialog.open)return;cancelLongPress();setNoteMode(false);noteTarget={panel,point};ui.noteTitle.textContent=`Nueva nota · ${panel.shotId}`;ui.noteFormStatus.textContent="";if(ui.zoomDialog.open)ui.zoomDialog.close();if(ui.notesDialog.open)ui.notesDialog.close();ui.noteDialog.showModal();ui.noteBody.focus();}
 function openZoom(panel,image){zoomPanel=panel;zoomScale=1;ui.zoomTitle.textContent=`${panel.shotId} · ${panel.title}`;ui.zoomImage.src=image.src;ui.zoomImage.alt=image.alt;ui.sourceLink.href=asset(panel.source.sheet);ui.sourceLink.hidden=!panel.source;ui.zoomDialog.showModal();ui.zoomImage.onload=()=>{updateZoom();renderVisiblePins();};if(ui.zoomImage.complete)updateZoom();}
 function updateZoom(){if(!zoomPanel)return;const width=zoomPanel.source?.rect[2]||ui.zoomImage.naturalWidth||800;ui.zoomCanvas.style.width=`${Math.max(200,Math.min(width,innerWidth*.88))*zoomScale}px`;ui.zoomLevel.textContent=`${Math.round(zoomScale*100)} %`;ui.zoomOut.disabled=zoomScale<=.75;ui.zoomIn.disabled=zoomScale>=3;requestAnimationFrame(renderVisiblePins);}
 function noteDate(note){return new Intl.DateTimeFormat("es-ES",{dateStyle:"medium",timeStyle:"short"}).format(note.created_at);}
@@ -126,10 +144,11 @@ ui.openNotes.addEventListener("click",()=>{ui.allNotes.checked=false;renderNotes
 ui.addNote.addEventListener("click",()=>{setNoteMode(!noteMode);ui.notesDialog.close();});
 ui.closeZoom.addEventListener("click",()=>ui.zoomDialog.close());ui.zoomDialog.addEventListener("click",(event)=>{if(event.target===ui.zoomDialog)ui.zoomDialog.close();});
 ui.zoomIn.addEventListener("click",()=>{zoomScale=Math.min(3,zoomScale+.25);updateZoom();});ui.zoomOut.addEventListener("click",()=>{zoomScale=Math.max(.75,zoomScale-.25);updateZoom();});
-ui.zoomCanvas.addEventListener("click",(event)=>{if(!noteMode||!zoomPanel)return;const point=pointOnImage(event,ui.zoomImage);if(point)beginNote(zoomPanel,point);});
+bindImageNoteGestures(ui.zoomImage,()=>zoomPanel);
+ui.zoomCanvas.addEventListener("click",(event)=>{if(performance.now()<suppressImageClickUntil||!noteMode||!zoomPanel||event.target!==ui.zoomImage)return;const point=pointOnImage(event,ui.zoomImage);if(point)beginNote(zoomPanel,point);});
 ui.cancelNote.addEventListener("click",()=>ui.noteDialog.close());ui.cancelNoteBottom.addEventListener("click",()=>ui.noteDialog.close());
 ui.noteForm.addEventListener("submit",async(event)=>{event.preventDefault();if(!noteTarget)return;ui.saveNote.disabled=true;ui.noteFormStatus.textContent="Guardando…";try{const response=await fetch(notesApi,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({image:noteTarget.panel.id,...noteTarget.point,author:ui.noteAuthor.value,body:ui.noteBody.value,website:ui.noteWebsite.value})});const data=await response.json();if(!response.ok)throw Error(data.error||"No se pudo guardar.");notes.unshift(data.note);ui.noteBody.value="";ui.noteDialog.close();setNoteMode(false);showPage(currentPage);}catch(error){ui.noteFormStatus.textContent=error.message;}finally{ui.saveNote.disabled=false;}});
 window.addEventListener("resize",()=>{if(innerWidth<=900&&!document.querySelector(".app").classList.contains("sidebar-hidden"))setSidebar(false);if(innerWidth>900)ui.scrim.hidden=true;renderVisiblePins();});
-document.addEventListener("keydown",(event)=>{if(event.key==="Escape")setSidebar(false);if(!catalog||ui.zoomDialog.open||ui.notesDialog.open||ui.noteDialog.open||/^(INPUT|TEXTAREA|SELECT)$/.test(event.target.tagName))return;if(event.key==="ArrowRight"){event.preventDefault();showPage(currentPage+1);}if(event.key==="ArrowLeft"){event.preventDefault();showPage(currentPage-1);}});
+document.addEventListener("keydown",(event)=>{if(event.key==="Escape"){setSidebar(false);if(noteMode)setNoteMode(false);}if(!catalog||ui.zoomDialog.open||ui.notesDialog.open||ui.noteDialog.open||/^(INPUT|TEXTAREA|SELECT)$/.test(event.target.tagName))return;if(event.key==="ArrowRight"){event.preventDefault();showPage(currentPage+1);}if(event.key==="ArrowLeft"){event.preventDefault();showPage(currentPage-1);}});
 let swipe=null;ui.readingArea.addEventListener("touchstart",(event)=>{const touch=event.changedTouches[0];swipe={x:touch.clientX,y:touch.clientY};},{passive:true});ui.readingArea.addEventListener("touchend",(event)=>{if(!swipe)return;const touch=event.changedTouches[0],dx=touch.clientX-swipe.x,dy=touch.clientY-swipe.y;swipe=null;if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5)showPage(currentPage+(dx<0?1:-1));},{passive:true});
 loadCatalog();

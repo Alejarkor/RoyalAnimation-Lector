@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f5f1e9">
   <title>Royal · Storyboards</title>
-  <link rel="stylesheet" href="./styles.css?v=f9c5688fca58">
-  <script src="./app.js?v=96a70224396e" defer></script>
+  <link rel="stylesheet" href="./styles.css?v=4c677c843b8a">
+  <script src="./app.js?v=ead402557498" defer></script>
 </head>
 <body>
   <div class="app">
@@ -30,6 +30,7 @@
       </header>
       <div id="versionNote" class="message" hidden></div>
       <div id="errorNote" class="error" role="alert" hidden></div>
+      <div id="noteModeHint" class="message" role="status" hidden>Haz clic en el punto de la viñeta donde quieres dejar la nota. Pulsa Esc para cancelar.</div>
       <section id="readingArea" class="reading-area" aria-label="Página del storyboard"><div id="panelGrid" class="panel-grid" aria-live="polite"></div></section>
       <footer class="pagebar">
         <button id="previousPage" class="page-button" type="button" aria-label="Página anterior">← <span>Anterior</span></button>
@@ -44,8 +45,8 @@
   </dialog>
   <dialog id="notesDialog" class="notes-dialog" aria-labelledby="notesTitle">
     <div class="dialog-head"><strong id="notesTitle">Notas</strong><button id="closeNotes" class="icon" type="button" aria-label="Cerrar">×</button></div>
-    <p class="notes-intro">Para comentar sin cuenta, pulsa «Añadir nota» y toca una viñeta.</p>
-    <div class="notes-toolbar"><button id="addNote" class="primary" type="button">Añadir nota</button><label><input id="allNotes" type="checkbox"> Todas las notas</label></div>
+    <p class="notes-intro">En móvil, mantén pulsada la imagen para comentar; un toque corto la amplía. En ordenador, haz clic derecho en el punto que quieras comentar; el clic izquierdo amplía la imagen. También puedes elegir el punto con el botón.</p>
+    <div class="notes-toolbar"><button id="addNote" class="primary" type="button">Elegir punto</button><label><input id="allNotes" type="checkbox"> Todas las notas</label></div>
     <p id="notesStatus" class="status" role="status"></p><div id="notesList" class="notes-list"></div>
   </dialog>
   <dialog id="noteDialog" class="note-dialog" aria-labelledby="noteTitle">
