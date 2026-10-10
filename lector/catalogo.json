@@ -79,7 +79,7 @@
         {
           "id": "E1_S4",
           "title": "Amanecer y camino al colegio",
-          "currentVersion": "v2",
+          "currentVersion": "v3",
           "versions": [
             {
               "id": "v1",
@@ -88,6 +88,21 @@
             {
               "id": "v2",
               "manifest": "Capitulo_1/storyboards/E1_S4/v2/manifest.json"
+            },
+            {
+              "id": "v3",
+              "manifest": "Capitulo_1/storyboards/E1_S4/v3/manifest.json"
+            }
+          ]
+        },
+        {
+          "id": "E1_S5",
+          "title": "Las burlas en la entrada",
+          "currentVersion": "v1",
+          "versions": [
+            {
+              "id": "v1",
+              "manifest": "Capitulo_1/storyboards/E1_S5/v1/manifest.json"
             }
           ]
         }

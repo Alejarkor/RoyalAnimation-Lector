@@ -1,0 +1,271 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S4",
+  "versionId": "v3",
+  "panels": [
+    {
+      "id": "E1_S4_v3_001",
+      "shotId": "S4-01",
+      "title": "Suena la alarma",
+      "description": "Amanecer. Primer plano del despertador de Royal en su cuarto. Empieza a sonar música de El Señor de los Anillos, elegida por él como alarma. La habitación conserva el desorden de la noche anterior.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v3.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          78,
+          500,
+          363
+        ]
+      },
+      "context": "La melodía rompe el silencio de la lluvia, ya más débil o terminada. La pieza exacta se concretará al preparar el sonido.",
+      "contextLabel": "Sonido y función"
+    },
+    {
+      "id": "E1_S4_v3_002",
+      "shotId": "S4-02",
+      "title": "Despierta y sonríe un poco",
+      "description": "Royal abre los ojos. Tiene todavía ojeras, pero reconoce la música; asoma una reacción pequeña, casi a su pesar. Se sienta en la cama siguiendo el pulso con los dedos.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v3.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          521,
+          78,
+          495,
+          363
+        ]
+      },
+      "context": "La música sigue saliendo del despertador, dentro de la escena.",
+      "contextLabel": "Sonido y función"
+    },
+    {
+      "id": "E1_S4_v3_003",
+      "shotId": "S4-03",
+      "title": "Baila su música",
+      "description": "Plano general del dormitorio. Royal se levanta y empieza a bailar de verdad: primero torpe y contenido, luego con un poco más de energía. La habitación sigue vieja y pobre.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v3.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1027,
+          78,
+          501,
+          363
+        ]
+      },
+      "context": "El contraste emocional nace de su baile, no de un montaje burlón de su miseria.",
+      "contextLabel": "Sonido y función"
+    },
+    {
+      "id": "E1_S4_v3_004",
+      "shotId": "S4-04",
+      "title": "Apaga la alarma",
+      "description": "Un movimiento breve acompaña el final del baile. Al parar la alarma, el gesto alegre se extingue poco a poco, pero no se convierte de inmediato en el rostro totalmente vacío de la noche.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v3.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          10,
+          500,
+          500,
+          453
+        ]
+      },
+      "context": "La casa vuelve a sonar: tuberías, pájaros, suelo húmedo. Ese instante de alegría le pertenece.",
+      "contextLabel": "Sonido y función"
+    },
+    {
+      "id": "E1_S4_v3_005",
+      "shotId": "S4-05",
+      "title": "Se prepara para el colegio",
+      "description": "Montaje corto y claro: Royal se lava, se viste con la ropa de su diseño de 12–13 años, coge la mochila y se pone la gorra verde oliva. Se prepara sin ayuda.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v3.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          521,
+          500,
+          495,
+          453
+        ]
+      },
+      "context": "Sonidos domésticos discretos. Evitar presentar esta rutina como una gran transformación heroica.",
+      "contextLabel": "Sonido y función"
+    },
+    {
+      "id": "E1_S4_v3_006",
+      "shotId": "S4-06",
+      "title": "La madre sigue durmiendo",
+      "description": "Desde el pasillo, Royal mira hacia el salón: su madre sigue dormida y tapada con la manta que él le puso. Royal comprueba que no se ha despertado y sale sin hacer ruido.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_A_v3.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          1027,
+          500,
+          501,
+          453
+        ]
+      },
+      "context": "No hay encuentro ni discusión matinal. La relación con la madre y el conflicto sobre el abuelo quedan para más adelante.",
+      "contextLabel": "Sonido y función"
+    },
+    {
+      "id": "E1_S4_v3_007",
+      "shotId": "S4-07",
+      "title": "Casa aislada",
+      "description": "Exterior general fijo, desde la ladera: la casa de Royal ocupa un extremo del encuadre, separada del pueblo por campos, camino y río. Royal sale, cierra y empieza a andar; la cámara no lo sigue de inmediato.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_B_v3.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          5,
+          0,
+          580,
+          437
+        ]
+      },
+      "context": "Pájaros, suelo húmedo y un último tarareo suyo. La soledad de la casa se entiende por geografía, sin rótulos ni explicación.",
+      "contextLabel": "Sonido y función"
+    },
+    {
+      "id": "E1_S4_v3_008",
+      "shotId": "S4-08",
+      "title": "La comarca y el puente",
+      "description": "Gran plano general alto, panorámica lenta que acompaña a Royal como una figura pequeña por el camino descendente. Al abrirse el encuadre aparecen el puente, el pueblo al fondo y las montañas donde se encuentra la casa del abuelo, aún muy lejana.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-08.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_B_v3.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          600,
+          0,
+          576,
+          437
+        ]
+      },
+      "context": "Solo ambiente rural y pasos amortiguados. Respetar la relación casa–pueblo–río del mapa.",
+      "contextLabel": "Sonido y función"
+    },
+    {
+      "id": "E1_S4_v3_009",
+      "shotId": "S4-09",
+      "title": "Largo sendero de barro",
+      "description": "Plano general lateral fijo: Royal cruza dos tramos de sendero entre parcelas y árboles; entra y sale del encuadre mientras la luz avanza. Un corte dentro del mismo plano de escala revela que sigue andando mucho después.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-09.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_B_v3.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          1190,
+          0,
+          579,
+          437
+        ]
+      },
+      "context": "Respiración, barro y pájaros. No acortar el viaje con un salto instantáneo.",
+      "contextLabel": "Sonido y función"
+    },
+    {
+      "id": "E1_S4_v3_010",
+      "shotId": "S4-10",
+      "title": "Cruza el puente",
+      "description": "Plano general desde la otra orilla, ligero travelling lateral: Royal atraviesa el puente sobre el río hacia el núcleo urbano. No mira el agua; va concentrado en llegar. La casa queda al otro lado, apenas visible.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-10.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_B_v3.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          5,
+          449,
+          580,
+          433
+        ]
+      },
+      "context": "Corriente bajo el puente, algún vehículo antiguo distante. Es un umbral geográfico antes del pueblo.",
+      "contextLabel": "Sonido y función"
+    },
+    {
+      "id": "E1_S4_v3_011",
+      "shotId": "S4-11",
+      "title": "Llega al pueblo",
+      "description": "Plano muy abierto fijo de la entrada al pueblo y del edificio escolar en su borde. Royal sube el último tramo mientras otros alumnos llegan en grupos; él viene solo y a pie.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-11.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_B_v3.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          600,
+          449,
+          576,
+          433
+        ]
+      },
+      "context": "El murmullo escolar sustituye poco a poco los sonidos del campo. Vestuario y objetos de finales de los noventa.",
+      "contextLabel": "Sonido y función"
+    },
+    {
+      "id": "E1_S4_v3_012",
+      "shotId": "S4-12",
+      "title": "Se acerca a la entrada",
+      "description": "Plano general frontal con acercamiento muy suave: Royal cruza el patio hasta la puerta. Varios chicos ocupan el paso, pero aún no se distinguen sus palabras. Cortar antes de que lo intercepten.",
+      "image": "Capitulo_1/storyboards/E1_S4/v3/paneles/S4-12.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S4_Amanecer_y_Camino_B_v3.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          1190,
+          449,
+          579,
+          433
+        ]
+      },
+      "context": "Campana o timbre de entrada a lo lejos. Empalme directo con S5-01 desde el mismo eje.",
+      "contextLabel": "Sonido y función"
+    }
+  ]
+}

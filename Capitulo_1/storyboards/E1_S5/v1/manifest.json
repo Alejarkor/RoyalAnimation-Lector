@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "sectionId": "E1_S5",
+  "versionId": "v1",
+  "panels": [
+    {
+      "id": "E1_S5_v1_001",
+      "shotId": "S5-01",
+      "title": "Les cortan el paso",
+      "description": "Plano general fijo, continuidad del eje S4-12. Royal se acerca a la puerta con la mochila; los tres chicos se desplazan justo lo suficiente para cortarle el paso.",
+      "image": "Capitulo_1/storyboards/E1_S5/v1/paneles/S5-01.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S5_Entrada_al_Colegio_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          8,
+          0,
+          754,
+          506
+        ]
+      },
+      "context": "Rumor de entrada, pisadas, timbre final.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S5_v1_002",
+      "shotId": "S5-02",
+      "title": "La primera burla",
+      "description": "Plano medio conjunto, cámara quieta a la altura de los chicos. El que va delante mira la ropa gastada de Royal y se vuelve hacia sus amigos, buscando público.",
+      "image": "Capitulo_1/storyboards/E1_S5/v1/paneles/S5-02.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S5_Entrada_al_Colegio_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          0,
+          750,
+          506
+        ]
+      },
+      "context": "Chico 1: «¿Tu madre sigue durmiendo entre botellas?» Risas breves.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S5_v1_003",
+      "shotId": "S5-03",
+      "title": "Royal baja la mirada",
+      "description": "Primer plano fijo de Royal. Baja la mirada un instante. La vergüenza se transforma en tensión, pero no avanza hacia ellos.",
+      "image": "Capitulo_1/storyboards/E1_S5/v1/paneles/S5-03.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S5_Entrada_al_Colegio_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          8,
+          517,
+          754,
+          500
+        ]
+      },
+      "context": "Chico 2, fuera de campo: «Hijo de puta».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S5_v1_004",
+      "shotId": "S5-04",
+      "title": "Royal responde",
+      "description": "Contraplano medio, leve acercamiento hacia Royal mientras levanta la cara. Sostiene la mirada del chico que ha hablado.",
+      "image": "Capitulo_1/storyboards/E1_S5/v1/paneles/S5-04.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S5_Entrada_al_Colegio_A_v1.png",
+        "size": [
+          1536,
+          1024
+        ],
+        "rect": [
+          777,
+          517,
+          750,
+          500
+        ]
+      },
+      "context": "Royal: «No soy ningún hijo de puta». Lo dice bajo y claro.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S5_v1_005",
+      "shotId": "S5-05",
+      "title": "El insulto a su madre",
+      "description": "Plano medio de los tres, sin movimiento. Chico 1 se inclina hacia él; el tercero deja de reír al ver la expresión de Royal.",
+      "image": "Capitulo_1/storyboards/E1_S5/v1/paneles/S5-05.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S5_Entrada_al_Colegio_B_v1.png",
+        "size": [
+          1536,
+          505
+        ],
+        "rect": [
+          8,
+          0,
+          754,
+          505
+        ]
+      },
+      "context": "Chico 1: «Claro que sí. Tu madre es una puta».",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S5_v1_006",
+      "shotId": "S5-06",
+      "title": "Contiene la rabia",
+      "description": "Plano detalle fijo de la mano de Royal apretándose contra la correa de la mochila; después, inclinación corta hasta su rostro. Parece que va a abalanzarse, pero afloja la mano. Mira a los tres uno por uno, como si los estuviera memorizando.",
+      "image": "Capitulo_1/storyboards/E1_S5/v1/paneles/S5-06.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S5_Entrada_al_Colegio_B_v1.png",
+        "size": [
+          1536,
+          505
+        ],
+        "rect": [
+          777,
+          0,
+          750,
+          505
+        ]
+      },
+      "context": "El timbre tapa la última risa. Royal no contesta.",
+      "contextLabel": "Diálogo y sonido"
+    },
+    {
+      "id": "E1_S5_v1_007",
+      "shotId": "S5-07",
+      "title": "Royal entra solo",
+      "description": "Plano general lateral, cámara fija. Royal rodea al grupo y entra. Los chicos se quedan con otros alumnos; para ellos el incidente ya ha terminado.",
+      "image": "Capitulo_1/storyboards/E1_S5/v1/paneles/S5-07.png",
+      "source": {
+        "sheet": "Capitulo_1/E1_S5_Entrada_al_Colegio_C_v1.png",
+        "size": [
+          1774,
+          887
+        ],
+        "rect": [
+          0,
+          0,
+          1774,
+          887
+        ]
+      },
+      "context": "Chico 2: «Vamos, que llegamos tarde». El ruido del patio engulle sus voces.",
+      "contextLabel": "Diálogo y sonido"
+    }
+  ]
+}
