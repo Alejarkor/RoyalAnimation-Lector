@@ -1,11 +1,13 @@
 "use strict";
 
 const $ = (id) => document.getElementById(id);
-const ui = Object.fromEntries(["sidebar","scrim","contents","resetVersions","toggleSidebar","closeSidebar","chapterTitle","sectionTitle","versionSelect","panelCount","themeToggle","openNotes","noteCount","fullscreen","versionNote","errorNote","noteModeHint","readingArea","panelGrid","previousPage","nextPage","pagePosition","zoomDialog","zoomTitle","sourceLink","zoomOut","zoomLevel","zoomIn","closeZoom","zoomScroll","zoomCanvas","zoomImage","zoomPins","notesDialog","closeNotes","notesTitle","addNote","allNotes","notesStatus","notesList","noteDialog","noteTitle","noteForm","noteAuthor","noteBody","noteWebsite","noteFormStatus","cancelNote","cancelNoteBottom","saveNote"].map((id) => [id,$(id)]));
+const ui = Object.fromEntries(["sidebar","scrim","contents","resetVersions","toggleSidebar","closeSidebar","chapterTitle","sectionTitle","versionSelect","panelCount","columnCount","themeToggle","openNotes","noteCount","fullscreen","versionNote","errorNote","noteModeHint","readingArea","panelGrid","previousPage","nextPage","pagePosition","zoomDialog","zoomTitle","sourceLink","zoomOut","zoomLevel","zoomIn","closeZoom","zoomScroll","zoomCanvas","zoomImage","zoomPins","notesDialog","closeNotes","notesTitle","addNote","allNotes","notesStatus","notesList","noteDialog","noteTitle","noteForm","noteAuthor","noteBody","noteWebsite","noteFormStatus","cancelNote","cancelNoteBottom","saveNote"].map((id) => [id,$(id)]));
 const notesApi = "https://royal-notas-storyboard.alejarkor.chatgpt.site/api/notes";
 const asset = (path) => new URL(`../${path}`, document.baseURI).href;
 const storedCount = Number(localStorage.getItem("royal.panelCount"));
 let panelCount = Number.isInteger(storedCount) && storedCount >= 1 && storedCount <= 24 ? storedCount : 2;
+const storedColumns = Number(localStorage.getItem("royal.columnCount"));
+let columnCount = Number.isInteger(storedColumns) && storedColumns >= 1 && storedColumns <= 4 ? storedColumns : 2;
 let catalog, pages = [], currentPage = 0, notes = [], entries = [], selectedVersions = {}, noteMode = false, noteTarget = null, zoomPanel = null, zoomScale = 1;
 let longPress = null, suppressImageClickUntil = 0;
 const LONG_PRESS_MS = 600, LONG_PRESS_MOVE_PX = 12;
@@ -19,6 +21,7 @@ function setTheme(theme) {
 }
 setTheme(localStorage.getItem("royal.theme") || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light"));
 ui.panelCount.value = String(panelCount);
+ui.columnCount.value = String(columnCount);
 
 function selectedVersion(section) { return section.versions.find((version) => version.id === (selectedVersions[section.id] || section.currentVersion)); }
 function rebuildPages() {
@@ -92,7 +95,7 @@ function bindImageNoteGestures(image,getPanel){
 }
 function drawPins(container,image,panel){container.replaceChildren();const area=imageArea(image);if(!area)return;const parent=container.getBoundingClientRect();for(const [index,mapped] of notesFor(panel).entries()){const pin=document.createElement("button");pin.type="button";pin.className="pin";pin.textContent=String(index+1);pin.title=`${mapped.note.author}: ${mapped.note.body}`;pin.style.left=`${area.left-parent.left+mapped.x/10000*area.width}px`;pin.style.top=`${area.top-parent.top+mapped.y/10000*area.height}px`;pin.addEventListener("click",(event)=>{event.stopPropagation();ui.allNotes.checked=false;renderNotes(panel.id);ui.notesDialog.showModal();});container.append(pin);}}
 function renderVisiblePins(){for(const art of ui.panelGrid.querySelectorAll(".panel-art")){const panel=entries.find((entry)=>entry.panel.id===art.dataset.panelId)?.panel;if(panel)drawPins(art.querySelector(".pin-layer"),art.querySelector("img"),panel);}if(ui.zoomDialog.open&&zoomPanel)drawPins(ui.zoomPins,ui.zoomImage,zoomPanel);}
-function renderPanels(page){ui.panelGrid.replaceChildren();ui.panelGrid.dataset.count=String(panelCount);ui.panelGrid.style.setProperty("--columns",String(panelCount===1?1:panelCount<=4?2:panelCount<=12?3:4));
+function renderPanels(page){ui.panelGrid.replaceChildren();ui.panelGrid.dataset.count=String(page.panels.length);ui.panelGrid.style.setProperty("--columns",String(columnCount));
   for(const panel of page.panels){const figure=document.createElement("figure");figure.className="panel";const art=document.createElement("div");art.className=`panel-art${noteMode?" note-mode":""}`;art.dataset.panelId=panel.id;art.dataset.shotId=panel.shotId;
     const image=document.createElement("img");image.src=asset(panel.image);image.alt=`${panel.shotId}: ${panel.title}`;image.loading="eager";image.decoding="async";image.addEventListener("load",renderVisiblePins);image.addEventListener("error",()=>{ui.errorNote.hidden=false;ui.errorNote.textContent=`No se pudo abrir ${panel.shotId}.`;});bindImageNoteGestures(image,()=>panel);
     const pins=document.createElement("div");pins.className="pin-layer";
@@ -136,6 +139,7 @@ function updatePanelCount(normalize=false){
 }
 ui.panelCount.addEventListener("input",()=>updatePanelCount());
 ui.panelCount.addEventListener("change",()=>updatePanelCount(true));
+ui.columnCount.addEventListener("change",()=>{columnCount=Math.max(1,Math.min(4,Number(ui.columnCount.value)||2));ui.columnCount.value=String(columnCount);localStorage.setItem("royal.columnCount",String(columnCount));if(pages[currentPage])renderPanels(pages[currentPage]);});
 ui.versionSelect.addEventListener("change",()=>{const page=pages[currentPage];selectedVersions[page.section.id]=ui.versionSelect.value===page.section.currentVersion?undefined:ui.versionSelect.value;if(!selectedVersions[page.section.id])delete selectedVersions[page.section.id];rebuildPages();showPage(findPage(page.section.id,Math.min(page.start,selectedVersion(page.section).panels.length-1)));});
 ui.resetVersions.addEventListener("click",()=>{const page=pages[currentPage];selectedVersions={};rebuildPages();showPage(findPage(page.section.id,Math.min(page.start,selectedVersion(page.section).panels.length-1)));});
 ui.themeToggle.addEventListener("click",()=>setTheme(document.documentElement.dataset.theme==="dark"?"light":"dark"));

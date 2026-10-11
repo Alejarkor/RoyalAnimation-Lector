@@ -10,6 +10,7 @@ dialog{border:1px solid var(--line);border-radius:12px;background:var(--surface)
 @media(max-width:600px){.toolbar{gap:4px}.heading strong{font-size:15px}.control select{max-width:120px}.control span{font-size:9px}.fullscreen{display:none}.panel-grid[data-count="4"],.panel-grid[data-count="6"]{grid-template-columns:1fr}.panel-grid[data-count="2"]{grid-template-columns:1fr}.panel-art img{max-height:none}.panel-grid{align-content:start}.reading-area{align-items:flex-start}.zoom-dialog{width:100vw;height:100dvh;max-width:100vw;max-height:100dvh;border-radius:0}.dialog-head a{font-size:10px}}
 .toolbar{position:sticky;top:0;z-index:10}
 .control input{width:62px;border:1px solid var(--line);border-radius:6px;background:var(--bg);color:var(--ink);padding:5px 6px;font-size:13px}
+#columnCount{width:54px;padding-right:18px}
 .reading-area .panel-grid{grid-template-columns:repeat(var(--columns),minmax(0,1fr));align-content:start;margin:0}
 .panel-art img{height:auto;max-height:none}
 .panel-grid[data-count="1"] .panel-art img{max-height:calc(100dvh - 210px)}
